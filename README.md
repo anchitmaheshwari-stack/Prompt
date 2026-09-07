@@ -38,7 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Prompt RCA pages (`/prompts`)
 
 Local-only analysis pages for the Peec AI prompt work. The Google Sheet
-"Prompt Analysis" is the only data source; nothing is stored in Supabase.
+"Prompt Analysis" is the only data source; the app has no database.
 
 - `/prompts` – the 23 focus prompts (Important Prompts tab) with visibility, position, Google rank and RCA status
 - `/prompts/<slug>` – one prompt: Action, Root cause, Lever, Answers, Fanouts, with an "Edit in sheet" link to the row
@@ -64,7 +64,3 @@ back to `public/screenshots/<prompt-slug>-<n>.jpg` for the n-th bucket (all 23 p
 `-1` and `-2`). Capture them in a ChatGPT temporary chat set to Unpersonalized, otherwise memory
 skews the answer.
 
-## Two apps in this repo
-
-- **Prompt analysis** at `/prompts` (the deployed site opens here). Reads only the Google Sheet; no database, no env vars.
-- **Blog fact-check review** at `/blog`, the tool this folder originally held. Needs `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` and a `blogs` table; it is unrelated to the prompt analysis and can be ignored or removed.
