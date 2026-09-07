@@ -63,3 +63,8 @@ holds the path, e.g. `/screenshots/uk-clients-1.jpg`. If the sheet cell is empty
 back to `public/screenshots/<prompt-slug>-<n>.jpg` for the n-th bucket (all 23 prompts have
 `-1` and `-2`). Capture them in a ChatGPT temporary chat set to Unpersonalized, otherwise memory
 skews the answer.
+
+## Two apps in this repo
+
+- **Prompt analysis** at `/prompts` (the deployed site opens here). Reads only the Google Sheet; no database, no env vars.
+- **Blog fact-check review** at `/blog`, the tool this folder originally held. Needs `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` and a `blogs` table; it is unrelated to the prompt analysis and can be ignored or removed.
