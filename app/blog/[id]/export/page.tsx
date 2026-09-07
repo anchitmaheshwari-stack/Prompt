@@ -1,4 +1,4 @@
-import { supabase, Blog, Section } from '@/lib/supabase';
+import { getSupabase, Blog, Section } from '@/lib/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ExportView from './ExportView';
@@ -12,7 +12,7 @@ export default async function ExportPage({
 }) {
   const { id } = await params;
 
-  const { data: blog } = await supabase
+  const { data: blog } = await getSupabase()
     .from('blogs')
     .select('*')
     .eq('id', id)
@@ -20,7 +20,7 @@ export default async function ExportPage({
 
   if (!blog) return notFound();
 
-  const { data: sections } = await supabase
+  const { data: sections } = await getSupabase()
     .from('sections')
     .select('*')
     .eq('blog_id', id)

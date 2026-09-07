@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase, type Section, type Issue } from '@/lib/supabase'
+import { getSupabase, type Section, type Issue } from '@/lib/supabase'
 
 type Props = {
   section: Section
@@ -41,7 +41,7 @@ export default function SectionCard({ section, issues, index }: Props) {
 
   async function saveSection() {
     setSaving(true)
-    const { error } = await supabase
+    const { error } = await getSupabase()
       .from('sections')
       .update({ content_final: content, resolved })
       .eq('id', section.id)

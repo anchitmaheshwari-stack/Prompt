@@ -1,10 +1,10 @@
-import { supabase, Blog } from '@/lib/supabase';
+import { getSupabase, Blog } from '@/lib/supabase';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function InboxPage() {
-  const { data: blogs, error } = await supabase
+  const { data: blogs, error } = await getSupabase()
     .from('blogs')
     .select('*')
     .order('created_at', { ascending: false });

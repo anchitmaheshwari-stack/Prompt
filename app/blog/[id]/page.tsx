@@ -1,4 +1,4 @@
-import { supabase, Section, Issue } from '@/lib/supabase';
+import { getSupabase, Section, Issue } from '@/lib/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SectionCard from './SectionCard';
@@ -12,7 +12,7 @@ export default async function ReviewPage({
 }) {
   const { id } = await params;
 
-  const { data: blog } = await supabase
+  const { data: blog } = await getSupabase()
     .from('blogs')
     .select('*')
     .eq('id', id)
@@ -20,7 +20,7 @@ export default async function ReviewPage({
 
   if (!blog) return notFound();
 
-  const { data: sections } = await supabase
+  const { data: sections } = await getSupabase()
     .from('sections')
     .select('*')
     .eq('blog_id', id)
@@ -28,7 +28,7 @@ export default async function ReviewPage({
 
   const sectionIds = (sections || []).map((s: Section) => s.id);
 
-  const { data: issues } = await supabase
+  const { data: issues } = await getSupabase()
     .from('issues')
     .select('*')
     .in('section_id', sectionIds);

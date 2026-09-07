@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase, type Blog, type Section } from '@/lib/supabase'
+import { getSupabase, type Blog, type Section } from '@/lib/supabase'
 
 type Props = {
   blog: Blog
@@ -97,7 +97,7 @@ export default function ExportView({ blog, sections }: Props) {
   }
 
   async function approve() {
-    const { error } = await supabase
+    const { error } = await getSupabase()
       .from('blogs')
       .update({ status: 'approved', approved_at: new Date().toISOString() })
       .eq('id', blog.id)
