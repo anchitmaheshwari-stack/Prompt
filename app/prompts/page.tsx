@@ -68,6 +68,9 @@ export default async function PromptsPage() {
           </p>
         </div>
         <div className="flex items-center gap-3 text-sm">
+          <Link href="/anatomy" className="text-gray-600 hover:text-gray-900 underline">
+            Page anatomy
+          </Link>
           <Link href="/prompts/all" className="text-gray-600 hover:text-gray-900 underline">
             All tracked prompts
           </Link>
