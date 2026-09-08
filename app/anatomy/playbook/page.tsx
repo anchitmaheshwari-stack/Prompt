@@ -10,7 +10,9 @@ function rate(p: { retrievals: number; citations: number }) {
 }
 
 export default function PlaybookPage() {
-  const items = listAnatomies().filter((a) => a.playbook);
+  const all = listAnatomies().filter((a) => a.playbook);
+  const items = all.filter((a) => !a.branded_only);
+  const branded = all.filter((a) => a.branded_only);
   return (
     <main className="max-w-5xl mx-auto p-8">
       <div className="mb-6 text-sm flex gap-4">
@@ -20,7 +22,7 @@ export default function PlaybookPage() {
       <h1 className="text-2xl font-semibold mb-1">Content playbook</h1>
       <p className="text-sm text-gray-600 mb-2">
         One blueprint per content bucket, derived from the page ChatGPT cites most in that bucket and the Skydo page that competes with it.
-        ChatGPT only, 2026-06-06 to 2026-09-04. Each bucket links to its full side-by-side teardown.
+        ChatGPT only, unbranded prompts only (the 105 prompts Peec tags non-branded), 2026-06-06 to 2026-09-04. Each bucket links to its full side-by-side teardown.
       </p>
       <p className="text-sm text-gray-600 mb-8">
         The rule underneath every bucket: ChatGPT answers each query in a fixed shape, and it cites the page whose blocks already match that shape.
@@ -90,6 +92,18 @@ export default function PlaybookPage() {
           );
         })}
       </div>
+
+      {branded.length > 0 && (
+        <section className="mt-10 border border-dashed border-gray-300 rounded-lg p-5 text-sm text-gray-600">
+          <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Not in the unbranded playbook</div>
+          {branded.map((a) => (
+            <p key={a.slug} className="mb-1">
+              <Link href={`/anatomy/${a.slug}`} className="font-medium text-gray-800 hover:underline">{a.playbook!.bucket}</Link>
+              {' '}· reached only through branded queries; the teardown is kept for reference.
+            </p>
+          ))}
+        </section>
+      )}
     </main>
   );
 }

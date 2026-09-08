@@ -18,16 +18,16 @@
       "label": "Skydo",
       "url": "https://skydo.com/receive-international-payments-in-india/freelancer",
       "title": "Receive International Payments as a Freelancer in India",
-      "type": "Persona landing page (Peec: PRODUCT_PAGE), the landing template with a freelancer compliance section. Sister pages: /design-agency 12/10, /video-production-agency 6/1, /software-developer.",
-      "retrievals": 114,
-      "citations": 153,
+      "type": "Persona landing page (Peec: PRODUCT_PAGE), the landing template with a freelancer compliance section. All 26 persona pages together: 52 fetches, 52 citations on unbranded prompts.",
+      "retrievals": 5,
+      "citations": 9,
       "author": "none",
       "published": "not stated",
       "modified": "not stated",
       "schema": "FAQPage, BreadcrumbList"
     }
   },
-  "verdict": "Skydo's freelancer page is cited well when fetched (1.34 per fetch) but is fetched only on 'Skydo vs X for freelancers' prompts. On the persona prompts in the focus set ('as an SEO agency', 'as an architecture firm', 'as a service exporter') ChatGPT wants a setup checklist: documents, the profession's purpose code, what the invoice must say, GST and LUT, a workflow. Winvesta's 3,845-word architects guide is that checklist and is cited 2.33 times per fetch; Skydo's persona pages are the product template and are not fetched for those queries at all.",
+  "verdict": "On unbranded persona prompts ('as an SEO agency', 'as an architecture firm', 'as a service exporter') ChatGPT wants a setup checklist: documents, the profession's purpose code, what the invoice must say, GST and LUT, a workflow. Winvesta's 3,845-word architects guide is that checklist and is cited 2.33 times per fetch; Payoneer's India guide is cited 1,501 times. Skydo's 26 persona landing pages are fetched 52 times in total on these prompts: they are the product template with a persona word swapped in, and ChatGPT does not fetch them for 'how to receive payments as a <persona>'.",
   "metrics": [
     {
       "metric": "Words",
@@ -86,7 +86,7 @@
     {
       "metric": "Where it is cited",
       "a": "'How to receive international payments as an Architecture Firm' chat: 6 citations; ChatGPT reproduced the purpose code, the invoice field list, the documents list and the workflow",
-      "b": "'skydo vs stripe for freelancers' chat: 8 citations; all brand-comparison prompts",
+      "b": "'skydo vs stripe for freelancers' chat (branded): 8 citations. On unbranded prompts the /freelancer page is fetched 5 times.",
       "note": "Winvesta wins persona prompts; Skydo's page is only reached through brand prompts."
     },
     {
@@ -151,7 +151,7 @@
     ],
     "b": [
       {
-        "chat": "skydo vs stripe for freelancers (cited 8 times)",
+        "chat": "skydo vs stripe for freelancers (a branded prompt; cited 8 times there. On unbranded prompts the page is fetched 5 times.)",
         "answer": "Best for: freelancers, consultants, agencies getting paid by clients. Payment method: client pays via bank transfer/local rails. Fees: flat fee model, no forex markup (according to Skydo). GST/export paperwork: Skydo focuses on freelancer/export compliance features like FIRA workflows.",
         "page": "Hero bullets, 'How Skydo works' step 2, the compliance section"
       },
@@ -166,9 +166,9 @@
     "Persona prompts are answered as a setup checklist: register, open a current account, invoice, receive, keep FIRA; documents; purpose code; GST and LUT; workflow. The winning pages are that checklist with the profession's specifics filled in.",
     "The profession-specific purpose code is the anchor citation. ChatGPT names P1009 for architects and cites the page that explains it. Skydo's persona pages never name a code.",
     "An invoice field list is copied item for item. Winvesta's list became ChatGPT's 'Your invoice should include' list.",
-    "Skydo's persona pages are the landing template with a persona word swapped in. They are cited only on 'Skydo vs X for freelancers' prompts, where the page is about Skydo anyway.",
+    "Skydo's persona pages are the landing template with a persona word swapped in. They are cited only on branded 'Skydo vs X for freelancers' prompts; on unbranded persona prompts all 26 pages together are fetched 52 times.",
     "Skydo's compliance block (FIRA, purpose code, GST, LUT, SOFTEX, EDF, 44ADA) is the only part in the right shape, and it is buried after two calculators and a carousel.",
-    "Retrieval, not citation, is the problem for this bucket: 114 fetches for /freelancer vs 573 for Xflow's freelancer guide and 1,237 for Payoneer's guide.",
+    "Retrieval, not citation, is the problem for this bucket: 52 fetches across all 26 Skydo persona pages vs 457 for Xflow's freelancer guide and 1,183 for Payoneer's guide on unbranded prompts.",
     "Long paragraphs did not hurt Winvesta because every paragraph carries a code, a rule, a section number or a fee. Specific beats short."
   ],
   "spec": [
@@ -199,12 +199,12 @@
     ],
     "evidence": [
       "winvesta.in P1009 architects guide: 107 citations from 46 fetches (2.33), the highest rate of any competitor page.",
-      "payoneer.com India country guide: 1,512 from 1,237 (1.22); cited 7 times in the SEO-agency chat for the 5-step setup and documents.",
-      "skydo.com/receive-international-payments-in-india/freelancer: 153 from 114 (1.34) but fetched only on brand-comparison prompts; /design-agency 12 from 10; /video-production-agency 6 from 1.",
-      "xflowpay.com/blog/international-payments-for-freelancers: 140 from 573 (0.24), a ranked list, not a checklist.",
+      "payoneer.com India country guide: 1,501 from 1,183 (1.27); cited 7 times in the SEO-agency chat for the 5-step setup and documents.",
+      "skydo.com persona landing pages (/freelancer, /design-agency, /animation-studio and 23 more): 52 fetches, 52 citations in total on unbranded prompts.",
+      "xflowpay.com/blog/international-payments-for-freelancers: 108 from 457 (0.24), a ranked list, not a checklist.",
       "No Skydo URL among the sources in the architecture-firm or SEO-agency chats."
     ]
   },
   "slug": "persona-guide",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)"
 }

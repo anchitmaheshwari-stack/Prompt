@@ -7,8 +7,8 @@
       "url": "https://wise.com/in/business/receive-money",
       "title": "Receive international payments | Accept payments from overseas",
       "type": "Vendor product page (Peec: PRODUCT_PAGE). The most-cited URL of any domain in the window.",
-      "retrievals": 1539,
-      "citations": 2516,
+      "retrievals": 1443,
+      "citations": 2449,
       "author": "none",
       "published": "not stated",
       "modified": "not stated",
@@ -18,16 +18,16 @@
       "label": "Skydo",
       "url": "https://skydo.com/features/global-remittances",
       "title": "Skydo | Receive International Business Payments at Low Cost",
-      "type": "Feature page (Peec: PRODUCT_PAGE). One of four near-identical /features pages: global-remittances 32/359, get-global-payments 19/218, international-payments-with-skydo 21/190, international-transfers 12/110.",
-      "retrievals": 359,
-      "citations": 32,
+      "type": "Feature page (Peec: PRODUCT_PAGE). One of twelve /features pages sharing one title; together they get 29 fetches and 1 citation on unbranded prompts.",
+      "retrievals": 9,
+      "citations": 0,
       "author": "none",
       "published": "not stated",
       "modified": "not stated",
       "schema": "none"
     }
   },
-  "verdict": "Wise's product page is cited 1.63 times per fetch with 483 words and no comparison, no table and no prose. Skydo's four feature pages share one title, are fetched 877 times and cited 84 times in total (0.10). ChatGPT reaches product pages on vendor-check fanouts ('Wise India receive money business', 'site:skydo.com receive USD') and wants one page that states, under its own heading, what account details, what rate, what document, what time, who is eligible and what regulator. Wise's page is that list. Skydo's is a hero, a savings calculator and three benefit tiles.",
+  "verdict": "Wise's product page is cited 1.70 times per fetch with 483 words and no comparison, no table and no prose. Skydo's twelve feature pages share one title and get 29 fetches and one citation between them. ChatGPT reaches product pages on vendor-check fanouts ('Wise India receive money business', 'site:skydo.com receive USD') and wants one page that states, under its own heading, what account details, what rate, what document, what time, who is eligible and what regulator. Wise's page is that list. Skydo's is a hero, a savings calculator and three benefit tiles.",
   "metrics": [
     {
       "metric": "Words in body",
@@ -98,14 +98,14 @@
     {
       "metric": "Duplicates",
       "a": "one URL",
-      "b": "four URLs with the same title and near-identical content splitting 877 fetches",
+      "b": "twelve /features URLs with the same title splitting 29 fetches",
       "note": "Consolidate to one."
     },
     {
       "metric": "Skydo's product-shaped winner",
       "a": "",
-      "b": "skydo.com/faqs/fees?q=how-much-does-skydo-charge: 996 citations from 984 fetches (1.01). One question, one answer with the three fee slabs.",
-      "note": "The FAQ page proves the shape: one heading, one fact, no pitch."
+      "b": "On unbranded prompts none. skydo.com/faqs/fees is fetched 3 times and cited 0. The landing page (357 citations from 289 fetches, 1.24) is the only Skydo page ChatGPT quotes for 'what Skydo gives me', and it is comparison-shaped.",
+      "note": "On branded prompts the fee FAQ page reaches 1.01 per fetch, which shows the one-question-one-answer shape works once the brand is in the query."
     }
   ],
   "skeleton": {
@@ -170,7 +170,7 @@
     "One heading per entity-attribute pair with one sentence of value under it is the whole trick. Currency → account details; step 3 → deliverables; benefit → checkable fact; eligibility → reader types; regulator → status.",
     "Skydo's feature pages have no heading elements, no paragraphs and no dates. The crawler sees a hero and tiles.",
     "Four duplicate feature pages with one title split the fetches and give ChatGPT no reason to prefer any of them.",
-    "Skydo's fee FAQ page (1.01 per fetch, 996 citations) already proves the shape works on skydo.com: one question, one answer, the numbers.",
+    "On branded prompts Skydo's fee FAQ page (one question, one answer, the numbers) is cited 1.01 per fetch; on unbranded prompts nothing on skydo.com plays the product-page role, so the landing page carries it.",
     "The hero comparison ('10x less than PayPal') is unquotable; the eligibility block at the bottom is quotable and should be near the top.",
     "The product page must not compare. The comparison already lives on the landing page and the compare pages, which win their buckets."
   ],
@@ -200,13 +200,13 @@
       "One URL per product job. Merge duplicates and 301 them."
     ],
     "evidence": [
-      "wise.com/in/business/receive-money: 2,516 citations from 1,539 fetches (1.63), the most-cited URL of any domain.",
-      "razorpay.com/docs international payments 365/230 (1.59). stripe.com/in/pricing 726/419 (1.73). xflowpay.com/pricing 475/220 (2.16). payoneer.com/en-in/about/pricing 1,899/1,000 (1.90).",
-      "skydo.com/features/global-remittances 32/359 (0.09); get-global-payments 19/218; international-payments-with-skydo 21/190; international-transfers 12/110. Four pages, one title, 84 citations in total.",
-      "skydo.com/faqs/fees?q=how-much-does-skydo-charge 996/984 (1.01): the one Skydo page in this shape already works.",
+      "wise.com/in/business/receive-money: 2,449 citations from 1,443 fetches (1.70), the most-cited product page of any domain.",
+      "payoneer.com/en-in/about/pricing 913/695 (1.31). payoneer.com/en-in/get-paid-by-clients 902/1,024 (0.88). razorpay.com/docs international payments 365/230 (1.59). docs.stripe.com India guide 831/513 (1.62).",
+      "skydo.com /features pages: twelve URLs, one title, 29 fetches, 1 citation in total. /features/global-remittances 0 from 9.",
+      "skydo.com landing page 357/289 (1.24) is the only Skydo page cited for what Skydo gives you, and it is a comparison page.",
       "Aug 11 'site:skydo.com' fanout: 14 URLs fetched, none cited."
     ]
   },
   "slug": "vendor-product-page",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)"
 }

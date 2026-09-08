@@ -1,5 +1,5 @@
 {
-  "bucket": "Comparison: Skydo vs X",
+  "bucket": "Comparison: Skydo vs X (branded prompts only)",
   "title": "Comparison page: Skydo's compare/skydo-vs-payoneer vs Xflow's blog/skydo-vs-wise",
   "pages": {
     "a": {
@@ -7,8 +7,8 @@
       "url": "https://skydo.com/compare/skydo-vs-payoneer",
       "title": "Payoneer vs Skydo: What's best for Indian exporters in 2026?",
       "type": "Compare page (Peec: COMPARISON). Skydo's second most-cited URL after the landing page.",
-      "retrievals": 529,
-      "citations": 941,
+      "retrievals": 55,
+      "citations": 13,
       "author": "none",
       "published": "not stated",
       "modified": "not stated",
@@ -19,15 +19,15 @@
       "url": "https://xflowpay.com/blog/skydo-vs-wise",
       "title": "Skydo vs Wise: A Complete Comparison for Indian Users",
       "type": "Blog comparison (Peec: COMPARISON). Xflow's most-fetched comparison page.",
-      "retrievals": 818,
-      "citations": 355,
+      "retrievals": 7,
+      "citations": 0,
       "author": "Rahul Unnikrishnan, Head of operations; verified by Deepthi Rajeev; published 06/08/2026",
       "published": "2025-08-11 (schema) / 06/08/2026 (visible)",
       "modified": "not stated",
       "schema": "BlogPosting, Person, FAQPage, BreadcrumbList"
     }
   },
-  "verdict": "This is the bucket Skydo already wins. Skydo vs Payoneer, vs PayPal and vs Stripe are each cited 1.5 to 1.9 times per fetch; Xflow's comparisons of Skydo are fetched more and cited less than half as often. ChatGPT lifts the row labels of Skydo's comparison table and the 'X is better for / Skydo is better for' bullets almost verbatim. The one weak page, Skydo vs Wise at 0.61, loses share to Xflow's blog and to Wise's own pages, not to a better structure.",
+  "verdict": "Not an unbranded bucket. On the 105 unbranded prompts the seven Skydo-vs-X pages get 98 fetches and 29 citations in total (skydo-vs-payoneer 13 from 55, skydo-vs-wise 16 from 29, skydo-vs-stripe 0 from 5) and Xflow's Skydo vs Wise blog gets 0 from 7. These pages are reached only through branded queries ('skydo vs payoneer for freelancers'), where Skydo's compare template is cited 1.5 to 1.9 times per fetch and Xflow's blog under 0.5. The teardown below is kept for that branded use; the numbers in the table and the lifted sentences come from branded chats and are not part of the unbranded playbook.",
   "metrics": [
     {
       "metric": "Words",
@@ -205,7 +205,8 @@
       "1,300-1,700 words. Only two brands on the page. Four CTAs at most. No calculator-only content; keep the numbers in text."
     ],
     "evidence": [
-      "skydo.com/compare/skydo-vs-paypal: 750 citations from 400 fetches (1.88). skydo-vs-payoneer 941/529 (1.78). skydo-vs-stripe 942/614 (1.53). blog/skydo-vs-infinity 1,347/739 (1.82).",
+      "Unbranded prompts only: all seven Skydo-vs-X pages together get 98 fetches and 29 citations; this bucket does not exist on unbranded queries.",
+      "Branded prompts: skydo.com/compare/skydo-vs-paypal: 750 citations from 400 fetches (1.88). skydo-vs-payoneer 941/529 (1.78). skydo-vs-stripe 942/614 (1.53). blog/skydo-vs-infinity 1,347/739 (1.82).",
       "xflowpay.com/blog/skydo-vs-wise 355/818 (0.43); skydo-vs-paypal 180/645 (0.28); skydo-vs-infinity 84/660 (0.13).",
       "infinityapp.in/blog/infinity-vs-skydo 587/485 (1.21): three worked examples reproduced whole by ChatGPT.",
       "xflowpay.com/compare/xflow-vs-skydo 158/84 (1.88): Xflow's only high-rate comparison uses the compare-page shape.",
@@ -213,5 +214,6 @@
     ]
   },
   "slug": "x-vs-y-comparison",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
+  "branded_only": true
 }

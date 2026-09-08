@@ -31,6 +31,8 @@ export type Anatomy = {
   diagnosis: string[];
   spec: string[];
   playbook?: Playbook;
+  /** True when the bucket only exists on branded prompts; kept for reference, excluded from the unbranded playbook. */
+  branded_only?: boolean;
 };
 
 const DIR = path.join(process.cwd(), 'data', 'anatomy');

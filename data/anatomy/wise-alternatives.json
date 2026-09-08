@@ -1,15 +1,15 @@
 {
   "slug": "wise-alternatives",
   "title": "Wise alternatives: Xflow's blog post vs Skydo's compare page",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
   "pages": {
     "a": {
       "label": "Xflow",
       "url": "https://www.xflowpay.com/blog/wise-alternatives",
       "title": "Best Wise Alternatives for Receiving International Payments in India",
       "type": "Blog post (Peec: ALTERNATIVE)",
-      "retrievals": 431,
-      "citations": 430,
+      "retrievals": 363,
+      "citations": 428,
       "author": "Rahul Unnikrishnan, Head of Operations; verified by Deepthi Rajeev, General Counsel",
       "published": "2025-12-02",
       "modified": "2026-08-14",
@@ -20,8 +20,8 @@
       "url": "https://www.skydo.com/compare/wise-alternatives",
       "title": "The Best Wise Alternatives for Indian Exporters in 2026",
       "type": "Compare page (Peec: ALTERNATIVE)",
-      "retrievals": 485,
-      "citations": 78,
+      "retrievals": 167,
+      "citations": 65,
       "author": "none",
       "published": "not stated",
       "modified": "not stated",
@@ -263,10 +263,11 @@
       "Four CTAs at most. Static HTML: no carousel, no logo-only table headers, no calculator in the crawled text."
     ],
     "evidence": [
-      "xflowpay.com/blog/wise-alternatives: 430 citations from 431 fetches (1.00 per fetch) vs skydo.com/compare/wise-alternatives 78 from 485 (0.16).",
-      "xflowpay.com/blog/payoneer-alternatives: 478 from 363 (1.32) vs Skydo's compare page 380 from 375 (1.01), Skydo's best alternatives page.",
-      "xflowpay.com/blog/stripe-alternatives: 143 from 258 (0.55) vs Skydo 30 from 455 (0.07).",
-      "infinityapp.in/blog/xflow-alternatives: 438 from 490 (0.89) vs skydo.com/blog/xflow-price-features-alternatives 307 from 404 (0.76).",
+      "xflowpay.com/blog/wise-alternatives: 428 citations from 363 fetches (1.18) vs skydo.com/compare/wise-alternatives 65 from 167 (0.39).",
+      "xflowpay.com/blog/payoneer-alternatives: 478 from 276 (1.73) vs skydo.com/compare/payoneer-alternatives 372 from 204 (1.82), Skydo's best page on unbranded prompts.",
+      "xflowpay.com/blog/paypal-alternatives: 221 from 244 (0.91) vs skydo.com/compare/paypal-alternatives 98 from 281 (0.35).",
+      "xflowpay.com/blog/stripe-alternatives: 143 from 182 (0.79) vs skydo.com/compare/stripe-alternatives 13 from 57 (0.23).",
+      "infinityapp.in/blog/xflow-alternatives: 292 from 235 (1.24) vs skydo.com/blog/xflow-price-features-alternatives 2 from 19 (0.11).",
       "ChatGPT lifted five different brands' lines from Xflow's page and only Skydo's own line from Skydo's page."
     ]
   }

@@ -17,7 +17,7 @@ export default function AnatomyIndex() {
       <h1 className="text-2xl font-semibold mb-1">Page anatomy</h1>
       <p className="text-sm text-gray-600 mb-3">
         Side-by-side teardowns of a competitor page that ChatGPT cites and the Skydo page that competes for the same query.
-        Numbers come from Peec (ChatGPT only) and from the pages as crawled. One teardown per content bucket; each ends in a blueprint.
+        Numbers come from Peec (ChatGPT only, unbranded prompts only) and from the pages as crawled. One teardown per content bucket; each ends in a blueprint.
       </p>
       <p className="mb-6">
         <Link href="/anatomy/playbook" className="inline-block rounded-md bg-gray-900 text-white text-sm px-3 py-1.5 hover:bg-gray-700">
@@ -27,7 +27,12 @@ export default function AnatomyIndex() {
       <ul className="space-y-3">
         {items.map((a) => (
           <li key={a.slug} className="border border-gray-200 rounded-lg p-4">
-            {a.bucket && <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">{a.bucket}</div>}
+            {a.bucket && (
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                {a.bucket}
+                {a.branded_only && <span className="ml-2 rounded bg-gray-100 px-1.5 py-0.5 text-[10px] normal-case tracking-normal text-gray-600">branded prompts only</span>}
+              </div>
+            )}
             <Link href={`/anatomy/${a.slug}`} className="font-medium hover:underline">{a.title}</Link>
             <div className="text-xs text-gray-500 mt-1">
               {a.pages.a.label}: {a.pages.a.citations} citations / {a.pages.a.retrievals} fetches ({rate(a.pages.a)}) ·{' '}

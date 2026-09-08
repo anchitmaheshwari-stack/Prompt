@@ -18,8 +18,8 @@
       "label": "Skydo",
       "url": "https://skydo.com/blog/how-to-receive-money-from-usa-to-india",
       "title": "Receive Money from the US to India, the Smarter Way",
-      "type": "Blog URL serving the landing-page template (Peec: COMPARISON). Skydo's only corridor page with volume.",
-      "retrievals": 159,
+      "type": "Blog URL serving the landing-page template (Peec: COMPARISON). Skydo's only corridor page with volume; the Canada blog gets 4 citations from 19 fetches and there is no UK, EU, AU or AE page.",
+      "retrievals": 90,
       "citations": 86,
       "author": "none",
       "published": "not stated",
@@ -27,7 +27,7 @@
       "schema": "FAQPage, BreadcrumbList"
     }
   },
-  "verdict": "Skydo's USA page is fetched three times as often as Infinity's GBP page and cited at 0.54 per fetch versus 0.76. Worse, in its top chat it was cited six times and Skydo was not named in the answer: the facts it supplied (SWIFT details, ACH local details, FIRC and GST notes) were attributed to Wise, Payoneer and 'direct bank transfer' because Skydo's own method is labelled 'Virtual multicurrency accounts' and its facts sit in marketing blocks.",
+  "verdict": "On unbranded prompts Skydo's USA page is the better-cited of the two: 86 citations from 90 fetches (0.96) against Infinity's 39 from 51 (0.76). The problem is different. In its top chat the page was cited six times and Skydo was not named: the facts it supplied (SWIFT details, ACH local details, FIRC and GST notes) were attributed to Wise, Payoneer and 'direct bank transfer' because Skydo's own method is labelled 'Virtual multicurrency accounts' and its facts sit in marketing blocks. And Skydo has one corridor; Infinity's page is the model for the six that are missing.",
   "metrics": [
     {
       "metric": "Words",
@@ -93,7 +93,7 @@
       "metric": "Skydo named in the citing answer",
       "a": "Skydo named second ('flat fee instead of a percentage') in the cheapest-GBP chat, sourced from Infinity's page",
       "b": "Not named in the 'receive payments from my US client' chat despite 6 citations",
-      "note": "The corridor page that names Skydo as a method gets Skydo into the answer; Skydo's own page does not."
+      "note": "The corridor page that names Skydo as a method gets Skydo into the answer; Skydo's own page, cited more often, does not."
     }
   ],
   "skeleton": {
@@ -156,7 +156,7 @@
     ]
   },
   "diagnosis": [
-    "Corridor prompts are answered as a ranked list of methods for that corridor, each with a one-line cost verdict, then documents and tax. Infinity's page is that list; Skydo's is the landing template with 'US' inserted.",
+    "Corridor prompts are answered as a ranked list of methods for that corridor, each with a one-line cost verdict, then documents and tax. Skydo's USA page is cited well because its ACH/Fedwire and SWIFT facts fit that list; it loses the brand credit because those facts are not under Skydo's name.",
     "The corridor-specific mechanism is the citation magnet: sort code and Faster Payments for GBP, ACH and Fedwire for USD. Skydo has the USD mechanism written well and gets no credit because the method heading is generic.",
     "Name Skydo as the method. Infinity's page gets Skydo into a 'cheapest GBP' answer by listing 'Infinity, Skydo, and Xflow' under virtual GBP accounts. Skydo's own page says 'Skydo is one such option' after four marketing blocks.",
     "A 'Your situation → best option' table is the decision block ChatGPT copies for corridor and persona prompts alike.",
@@ -189,13 +189,13 @@
       "One page per corridor from the same blueprint: USA, UK, EU, Australia, Canada, UAE, Singapore."
     ],
     "evidence": [
-      "infinityapp.in/blog/receive-gbp-in-india: 39 citations from 51 fetches (0.76); gets Skydo named in the 'cheapest GBP' answer.",
-      "skydo.com/blog/how-to-receive-money-from-usa-to-india: 86 from 159 (0.54); 6 citations in the top chat with Skydo absent from the answer.",
-      "infinityapp.in receive-eur 38/65 (0.58), receive-usd 39/148 (0.26).",
+      "skydo.com/blog/how-to-receive-money-from-usa-to-india: 86 citations from 90 fetches (0.96); 6 citations in the top chat with Skydo absent from the answer.",
+      "infinityapp.in/blog/receive-gbp-in-india: 39 from 51 (0.76); gets Skydo named in the 'cheapest GBP' answer.",
+      "skydo.com/blog/how-to-transfer-money-from-canada-to-india: 4 from 19 (0.21). No Skydo GBP, EUR, AUD or AED corridor page has retrievals.",
       "sendmoneycompare.com UAE→India guide 122/105 (1.16) and UK→India 30/66: consumer corridor guides fill the corridors Skydo has no page for.",
-      "Skydo has no GBP, EUR, AUD, CAD or AED corridor page with retrievals in the window."
+      "Unbranded corridor prompts in the set: USA, UK, Europe, Canada, Australia, UAE, Singapore, plus 'my <nationality> client' for 12 countries."
     ]
   },
   "slug": "corridor-guide",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)"
 }

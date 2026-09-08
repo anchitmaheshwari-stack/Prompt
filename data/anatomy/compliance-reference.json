@@ -18,7 +18,7 @@
       "label": "Skydo",
       "url": "https://skydo.com/blog/rbi_purpose_code_for_inward_remittance",
       "title": "RBI Purpose Code for Inward Remittance (2026 guide)",
-      "type": "Skydo's compliance blogs (Peec: HOW_TO_GUIDE / ARTICLE). 23 compliance URLs on skydo.com: 280 fetches, 43 citations in 90 days.",
+      "type": "Skydo's compliance blogs (Peec: HOW_TO_GUIDE / ARTICLE). 17 compliance URLs on skydo.com with retrievals on unbranded prompts: 72 fetches, 30 citations in 90 days.",
       "retrievals": 9,
       "citations": 0,
       "author": "Skydo author, dated 2025-06-18",
@@ -27,7 +27,7 @@
       "schema": "BlogPosting, HowTo, FAQPage, Person"
     }
   },
-  "verdict": "Compliance fanouts (RBI purpose code, FIRC, LUT, GST on export of services, SOFTEX) are the largest fanout family in the focus set, and skydo.com wins almost none of them: 421 compliance-shaped URLs get 3% of retrievals and 0.6% of citations. ChatGPT cites government pages first and then short, signed, code-specific guides. Skydo's purpose-code blog is 4,044 words with 103 bullets and 30 H3s and was cited zero times in nine fetches; the FIRC guide is 6,418 words and was cited zero times in six.",
+  "verdict": "Compliance fanouts (RBI purpose code, FIRC, LUT, GST on export of services, SOFTEX) are the largest fanout family in the focus set, and skydo.com wins almost none of them: the 17 compliance URLs that get fetched at all total 72 fetches and 30 citations. ChatGPT cites government pages first and then short, signed, code-specific guides. Skydo's purpose-code blog is 4,044 words with 103 bullets and 30 H3s and was cited zero times in nine fetches; the FIRC guide is 6,418 words and was cited zero times in six.",
   "metrics": [
     {
       "metric": "Words",
@@ -163,5 +163,5 @@
     ]
   },
   "slug": "compliance-reference",
-  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)"
 }
