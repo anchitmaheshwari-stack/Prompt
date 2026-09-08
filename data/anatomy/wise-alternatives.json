@@ -30,23 +30,108 @@
   },
   "verdict": "Both pages are fetched about equally often. Xflow's is quoted once per fetch, Skydo's once in six. The gap is in how the content is shaped, not in reach.",
   "metrics": [
-    {"metric": "Words in the article body", "a": "3,492", "b": "2,662", "note": "Xflow is longer but split into far smaller units."},
-    {"metric": "Paragraphs / average words per paragraph", "a": "118 / 12.8", "b": "22 / 33.9", "note": "Xflow writes one claim per paragraph. Skydo writes prose blocks."},
-    {"metric": "Bullet points", "a": "117", "b": "7", "note": "Each Xflow bullet is a standalone, quotable claim under a brand heading."},
-    {"metric": "Headings H2 / H3 / H4", "a": "15 / 8 / 35", "b": "7 / 0 / 9", "note": "Xflow gives every alternative its own H3 and five H4 sub-blocks. Skydo's alternative cards carry no headings at all in the crawled text."},
-    {"metric": "Named alternatives to Wise", "a": "7 fintech brands: Xflow, Skydo, Payoneer, Airwallex, BriskPe, Infinity, Remitly", "b": "1 fintech brand (Skydo) plus 6 methods: SWIFT, PayPal, Stripe, Payoneer, Dodo, remittance apps", "note": "The prompt asks for alternatives. ChatGPT's answers are lists of named platforms. Skydo's page gives it one name to lift."},
-    {"metric": "Block per alternative", "a": "Best for / Key features (5-6 bullets) / Pros (4) / Cons (4) / Verdict = about 15 bullets each, 105 in total", "b": "Descriptor line, one paragraph, Strengths (3), Limitations (3), Cost, Speed, FIRA, Best for, CTA", "note": "Skydo's structure is fine on screen, but strengths and limitations arrive as bare lines without list markup or a heading naming the brand."},
-    {"metric": "Tables", "a": "2, both with text column headers: 'Platform / Fee model / Best for / About on a $1,000 invoice' and 'Platform / $2,000 / $5,000 / $10,000 / Vs top payout'", "b": "2: a criteria table (Field / Details) and a 7-column feature table whose header cells are logos, so the crawled header row reads '| Features | | | | | | |'", "note": "ChatGPT cannot attribute Skydo's feature-table columns to a platform. Xflow's rows are quotable as 'Skydo: about ₹93,200 on $1,000'."},
-    {"metric": "Currency figures / percentages", "a": "86 / 20", "b": "109 / 46", "note": "Skydo has more numbers, but many sit in a calculator widget with no labels in text (₹3,76,808 ₹3,87,065 ...)."},
-    {"metric": "Dated facts (month + year)", "a": "10: 'as of July 2026', 'G2 as of June 2026', PA-CB 'January 2026' and 'February 2026'", "b": "7: 'from Feb 2026', 'January 2026', '2026' in title", "note": "Xflow dates its fee figures and its review ratings. Skydo dates only regulatory events."},
-    {"metric": "Labelled estimates ('about', '~')", "a": "27", "b": "13", "note": "Xflow marks every competitor number as 'about' and its own as 'exact'. ChatGPT copies the hedge and trusts the number."},
-    {"metric": "Methodology and provenance sections", "a": "'How we chose these alternatives' (4 criteria) and 'How we verified this' (sources and dates)", "b": "'What to look for' criteria table; no verification note", "note": "Two sections that exist only to make the page citable."},
-    {"metric": "Author / verifier / dates on page", "a": "Named author with LinkedIn, named verifier, published and updated dates", "b": "None", "note": "BlogPosting and Person schema on Xflow; Skydo exposes only FAQPage."},
-    {"metric": "FAQ", "a": "7 Q&As in the crawled text", "b": "6 Q&As in the crawled text", "note": "Comparable. Skydo's answers are promotional ('Skydo stands out'); Xflow's answer the question first."},
-    {"metric": "Brand mentions (Wise / self / Skydo or Xflow)", "a": "Wise 45, Xflow 30, Skydo 14", "b": "Wise 32, Skydo 32, Xflow 0", "note": "Xflow names Skydo 14 times with correct pricing. Skydo does not mention Xflow, Infinity, BriskPe, Airwallex or Winvesta once."},
-    {"metric": "Calls to action", "a": "5", "b": "11 ('Try Skydo Today' after every card)", "note": "Every CTA is a line ChatGPT has to skip."},
-    {"metric": "Internal links / external links", "a": "22 / 1 (links to its own review of each brand)", "b": "16 / 9 (footer socials plus one wise.com pricing link)", "note": "Xflow's per-brand review links let ChatGPT hop to a deeper Xflow page for the same brand."},
-    {"metric": "Crawl artefacts in the text ChatGPT sees", "a": "None beyond nav", "b": "SWIFT card duplicated twice (carousel), unlabeled calculator numbers, logo-only table headers, 'Approved under RBI's PA-CB framework' repeated five times", "note": "Skydo's page loses a third of its signal before ChatGPT reads a word."}
+    {
+      "metric": "Words in the article body",
+      "a": "3,492",
+      "b": "2,662",
+      "note": "Xflow is longer but split into far smaller units."
+    },
+    {
+      "metric": "Paragraphs / average words per paragraph",
+      "a": "118 / 12.8",
+      "b": "22 / 33.9",
+      "note": "Xflow writes one claim per paragraph. Skydo writes prose blocks."
+    },
+    {
+      "metric": "Bullet points",
+      "a": "117",
+      "b": "7",
+      "note": "Each Xflow bullet is a standalone, quotable claim under a brand heading."
+    },
+    {
+      "metric": "Headings H2 / H3 / H4",
+      "a": "15 / 8 / 35",
+      "b": "7 / 0 / 9",
+      "note": "Xflow gives every alternative its own H3 and five H4 sub-blocks. Skydo's alternative cards carry no headings at all in the crawled text."
+    },
+    {
+      "metric": "Named alternatives to Wise",
+      "a": "7 fintech brands: Xflow, Skydo, Payoneer, Airwallex, BriskPe, Infinity, Remitly",
+      "b": "1 fintech brand (Skydo) plus 6 methods: SWIFT, PayPal, Stripe, Payoneer, Dodo, remittance apps",
+      "note": "The prompt asks for alternatives. ChatGPT's answers are lists of named platforms. Skydo's page gives it one name to lift."
+    },
+    {
+      "metric": "Block per alternative",
+      "a": "Best for / Key features (5-6 bullets) / Pros (4) / Cons (4) / Verdict = about 15 bullets each, 105 in total",
+      "b": "Descriptor line, one paragraph, Strengths (3), Limitations (3), Cost, Speed, FIRA, Best for, CTA",
+      "note": "Skydo's structure is fine on screen, but strengths and limitations arrive as bare lines without list markup or a heading naming the brand."
+    },
+    {
+      "metric": "Tables",
+      "a": "2, both with text column headers: 'Platform / Fee model / Best for / About on a $1,000 invoice' and 'Platform / $2,000 / $5,000 / $10,000 / Vs top payout'",
+      "b": "2: a criteria table (Field / Details) and a 7-column feature table whose header cells are logos, so the crawled header row reads '| Features | | | | | | |'",
+      "note": "ChatGPT cannot attribute Skydo's feature-table columns to a platform. Xflow's rows are quotable as 'Skydo: about ₹93,200 on $1,000'."
+    },
+    {
+      "metric": "Currency figures / percentages",
+      "a": "86 / 20",
+      "b": "109 / 46",
+      "note": "Skydo has more numbers, but many sit in a calculator widget with no labels in text (₹3,76,808 ₹3,87,065 ...)."
+    },
+    {
+      "metric": "Dated facts (month + year)",
+      "a": "10: 'as of July 2026', 'G2 as of June 2026', PA-CB 'January 2026' and 'February 2026'",
+      "b": "7: 'from Feb 2026', 'January 2026', '2026' in title",
+      "note": "Xflow dates its fee figures and its review ratings. Skydo dates only regulatory events."
+    },
+    {
+      "metric": "Labelled estimates ('about', '~')",
+      "a": "27",
+      "b": "13",
+      "note": "Xflow marks every competitor number as 'about' and its own as 'exact'. ChatGPT copies the hedge and trusts the number."
+    },
+    {
+      "metric": "Methodology and provenance sections",
+      "a": "'How we chose these alternatives' (4 criteria) and 'How we verified this' (sources and dates)",
+      "b": "'What to look for' criteria table; no verification note",
+      "note": "Two sections that exist only to make the page citable."
+    },
+    {
+      "metric": "Author / verifier / dates on page",
+      "a": "Named author with LinkedIn, named verifier, published and updated dates",
+      "b": "None",
+      "note": "BlogPosting and Person schema on Xflow; Skydo exposes only FAQPage."
+    },
+    {
+      "metric": "FAQ",
+      "a": "7 Q&As in the crawled text",
+      "b": "6 Q&As in the crawled text",
+      "note": "Comparable. Skydo's answers are promotional ('Skydo stands out'); Xflow's answer the question first."
+    },
+    {
+      "metric": "Brand mentions (Wise / self / Skydo or Xflow)",
+      "a": "Wise 45, Xflow 30, Skydo 14",
+      "b": "Wise 32, Skydo 32, Xflow 0",
+      "note": "Xflow names Skydo 14 times with correct pricing. Skydo does not mention Xflow, Infinity, BriskPe, Airwallex or Winvesta once."
+    },
+    {
+      "metric": "Calls to action",
+      "a": "5",
+      "b": "11 ('Try Skydo Today' after every card)",
+      "note": "Every CTA is a line ChatGPT has to skip."
+    },
+    {
+      "metric": "Internal links / external links",
+      "a": "22 / 1 (links to its own review of each brand)",
+      "b": "16 / 9 (footer socials plus one wise.com pricing link)",
+      "note": "Xflow's per-brand review links let ChatGPT hop to a deeper Xflow page for the same brand."
+    },
+    {
+      "metric": "Crawl artefacts in the text ChatGPT sees",
+      "a": "None beyond nav",
+      "b": "SWIFT card duplicated twice (carousel), unlabeled calculator numbers, logo-only table headers, 'Approved under RBI's PA-CB framework' repeated five times",
+      "note": "Skydo's page loses a third of its signal before ChatGPT reads a word."
+    }
   ],
   "skeleton": {
     "a": [
@@ -84,18 +169,58 @@
   },
   "lifted": {
     "a": [
-      {"chat": "best wise alternatives in india, Aug 2026 (cited both pages 5 times each)", "answer": "Xflow — best for larger business/export payments. Mid-market FX, flat-fee options, next-business-day settlement and automated eFIRA; it supports Indian companies/LLPs as well as individuals.", "page": "H3 1. Xflow > H4 Best for and Key features bullets"},
-      {"chat": "same chat", "answer": "BriskPe / Infinity — worth considering for freelancers. Both focus on India-based professionals receiving overseas payments with relatively simple fee structures.", "page": "H3 5. BriskPe and H3 6. Infinity > Best for lines"},
-      {"chat": "same chat, use-case table", "answer": "$1k–$10k+ client invoices: Skydo or Xflow. Company / SaaS / agency: Xflow or Airwallex.", "page": "H2 How to choose: 'flat fees (Xflow, Skydo) win from about $1,000 upward'; 'registered company or LLP ... look at Xflow, Skydo, Airwallex'"},
-      {"chat": "wise alternatives, Aug 2026", "answer": "Remitly — good for sending money to family/bank accounts; often competitive for India.", "page": "H3 7. Remitly > Best for: 'One-off or personal transfers ... not business receiving'"},
-      {"chat": "best xflow alternatives in india (cited this page 8 times)", "answer": "BriskPe: export-focused workflow, virtual accounts, compliance features. Wise Business: transparent pricing, strong global network.", "page": "The page is used as a brand reference even on a prompt about Xflow itself, because each brand block stands alone."}
+      {
+        "chat": "best wise alternatives in india, Aug 2026 (cited both pages 5 times each)",
+        "answer": "Xflow — best for larger business/export payments. Mid-market FX, flat-fee options, next-business-day settlement and automated eFIRA; it supports Indian companies/LLPs as well as individuals.",
+        "page": "H3 1. Xflow > H4 Best for and Key features bullets"
+      },
+      {
+        "chat": "same chat",
+        "answer": "BriskPe / Infinity — worth considering for freelancers. Both focus on India-based professionals receiving overseas payments with relatively simple fee structures.",
+        "page": "H3 5. BriskPe and H3 6. Infinity > Best for lines"
+      },
+      {
+        "chat": "same chat, use-case table",
+        "answer": "$1k–$10k+ client invoices: Skydo or Xflow. Company / SaaS / agency: Xflow or Airwallex.",
+        "page": "H2 How to choose: 'flat fees (Xflow, Skydo) win from about $1,000 upward'; 'registered company or LLP ... look at Xflow, Skydo, Airwallex'"
+      },
+      {
+        "chat": "wise alternatives, Aug 2026",
+        "answer": "Remitly — good for sending money to family/bank accounts; often competitive for India.",
+        "page": "H3 7. Remitly > Best for: 'One-off or personal transfers ... not business receiving'"
+      },
+      {
+        "chat": "best xflow alternatives in india (cited this page 8 times)",
+        "answer": "BriskPe: export-focused workflow, virtual accounts, compliance features. Wise Business: transparent pricing, strong global network.",
+        "page": "The page is used as a brand reference even on a prompt about Xflow itself, because each brand block stands alone."
+      }
     ],
     "b": [
-      {"chat": "best wise alternatives in india (same chat as above)", "answer": "Skydo — best overall for Indian freelancers/exporters. Flat fees, 0% FX markup, local USD/EUR/GBP receiving accounts, and free FIRA.", "page": "Skydo card: Strengths lines and descriptor"},
-      {"chat": "best infinity alternatives in india (cited 7 times)", "answer": "Skydo – RBI-licensed cross-border payments platform ... zero forex markup, flat fees, automated compliance (e-FIRA/eBRC), and quick settlements.", "page": "Skydo card"},
-      {"chat": "same chat", "answer": "Traditional Bank SWIFT – Direct bank wiring via your AD Bank remains a compliant option with full control, but tends to be slower and may have higher markup.", "page": "SWIFT card: 'You retain full control over FIRA and eBRC ... settlement takes 3-5 business days'"},
-      {"chat": "same chat", "answer": "Stripe – pricing and availability vary in India. PayPal – typically higher fees compared to newer fintechs.", "page": "Stripe and PayPal cards"},
-      {"chat": "wise alternatives, Aug 2026", "answer": "Skydo — particularly good for Indian freelancers/exporters receiving USD ... flat fees, zero FX markup, and FIRA documentation.", "page": "Skydo card. Note what ChatGPT could not take from this page: any other named alternative."}
+      {
+        "chat": "best wise alternatives in india (same chat as above)",
+        "answer": "Skydo — best overall for Indian freelancers/exporters. Flat fees, 0% FX markup, local USD/EUR/GBP receiving accounts, and free FIRA.",
+        "page": "Skydo card: Strengths lines and descriptor"
+      },
+      {
+        "chat": "best infinity alternatives in india (cited 7 times)",
+        "answer": "Skydo – RBI-licensed cross-border payments platform ... zero forex markup, flat fees, automated compliance (e-FIRA/eBRC), and quick settlements.",
+        "page": "Skydo card"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Traditional Bank SWIFT – Direct bank wiring via your AD Bank remains a compliant option with full control, but tends to be slower and may have higher markup.",
+        "page": "SWIFT card: 'You retain full control over FIRA and eBRC ... settlement takes 3-5 business days'"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Stripe – pricing and availability vary in India. PayPal – typically higher fees compared to newer fintechs.",
+        "page": "Stripe and PayPal cards"
+      },
+      {
+        "chat": "wise alternatives, Aug 2026",
+        "answer": "Skydo — particularly good for Indian freelancers/exporters receiving USD ... flat fees, zero FX markup, and FIRA documentation.",
+        "page": "Skydo card. Note what ChatGPT could not take from this page: any other named alternative."
+      }
     ]
   },
   "diagnosis": [
@@ -118,5 +243,31 @@
     "Cut CTAs to four: after the shortlist, after the table, after the Skydo block, at the end.",
     "Move the methods (SWIFT, PayPal, Stripe, Dodo, remittance) into one 'Other ways to receive payments' section below the seven brands, or link to the landing page that already covers them.",
     "Success check after 30 days: citations per retrieval on this URL above 0.5 (today 0.16), and ChatGPT lifting at least one non-Skydo claim from the page."
-  ]
+  ],
+  "bucket": "Alternatives listicle",
+  "playbook": {
+    "bucket": "Alternatives listicle",
+    "use_when": "The query is '<brand> alternatives', '<brand> competitors' or 'best alternatives to <brand> in India'. ChatGPT's answer is a ranked list of named platforms with a one-line role each and a use-case table.",
+    "blueprint": [
+      "Title and H1 contain the query verbatim: 'Best <Brand> alternatives for receiving international payments in India (2026)'.",
+      "Byline: author, verifier, published and updated dates. BlogPosting and Person schema.",
+      "First sentence is the ranked list of named platforms. Seven names. Skydo first, competitors named honestly, including Xflow, Infinity, BriskPe, Airwallex, Winvesta where they fit.",
+      "Two-sentence 'why people leave <Brand>' with the specific triggers (percentage fee grows, entity restriction, FIRA not automatic).",
+      "Shortlist block: 7 bullets, brand in bold, one line each.",
+      "Comparison table with text column headers: Platform / Fee model / Best for / About on a $1,000 invoice, dated 'as of <month> 2026'. Second table: net INR at $2,000 / $5,000 / $10,000.",
+      "'How we chose' with 4 criteria, and a compliance-fit block: PA-CB status and FIRA handling per brand with dates.",
+      "One H3 per brand, numbered. Under each: H4 Best for (one sentence), H4 Key features (5-6 bullets), H4 Pros (4), H4 Cons (4), H4 Verdict (one line). Give competitors accurate numbers and give Skydo an honest con.",
+      "'How to choose' with 4 bullets keyed to entity type, invoice size, compliance, and how you get paid.",
+      "'How we verified this' with sources and dates. FAQ of 6-7 questions with factual two-sentence answers.",
+      "Label estimates 'about' and your own numbers 'exact'. 3,000-3,500 words is fine when it is 100+ bullets and short paragraphs.",
+      "Four CTAs at most. Static HTML: no carousel, no logo-only table headers, no calculator in the crawled text."
+    ],
+    "evidence": [
+      "xflowpay.com/blog/wise-alternatives: 430 citations from 431 fetches (1.00 per fetch) vs skydo.com/compare/wise-alternatives 78 from 485 (0.16).",
+      "xflowpay.com/blog/payoneer-alternatives: 478 from 363 (1.32) vs Skydo's compare page 380 from 375 (1.01), Skydo's best alternatives page.",
+      "xflowpay.com/blog/stripe-alternatives: 143 from 258 (0.55) vs Skydo 30 from 455 (0.07).",
+      "infinityapp.in/blog/xflow-alternatives: 438 from 490 (0.89) vs skydo.com/blog/xflow-price-features-alternatives 307 from 404 (0.76).",
+      "ChatGPT lifted five different brands' lines from Xflow's page and only Skydo's own line from Skydo's page."
+    ]
+  }
 }

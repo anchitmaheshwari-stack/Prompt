@@ -107,6 +107,33 @@ export default async function AnatomyPage({ params }: { params: Promise<{ slug: 
           ))}
         </ol>
       </Section>
+
+      {a.playbook && (
+        <Section title={`Playbook: ${a.playbook.bucket}`}>
+          <p className="text-sm text-gray-700 mb-3">
+            <span className="font-semibold">Use when: </span>
+            {a.playbook.use_when}
+          </p>
+          <div className="grid md:grid-cols-[2fr_1fr] gap-4">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Blueprint, top to bottom</div>
+              <ol className="list-decimal pl-5 space-y-2 text-sm">
+                {a.playbook.blueprint.map((d, i) => (
+                  <li key={i}>{d}</li>
+                ))}
+              </ol>
+            </div>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Evidence</div>
+              <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700">
+                {a.playbook.evidence.map((d, i) => (
+                  <li key={i}>{d}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Section>
+      )}
     </main>
   );
 }

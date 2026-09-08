@@ -1,0 +1,201 @@
+{
+  "bucket": "Corridor: receive money from <country> / in <currency>",
+  "title": "Corridor page: Infinity's receive-GBP-in-India guide vs Skydo's receive-money-from-USA blog",
+  "pages": {
+    "a": {
+      "label": "Infinity",
+      "url": "https://infinityapp.in/blog/receive-gbp-in-india",
+      "title": "7 Safe Ways to Receive GBP Payments in India in 2026",
+      "type": "Corridor listicle (Peec: LISTICLE), one of a set (USD, EUR, GBP).",
+      "retrievals": 51,
+      "citations": 39,
+      "author": "Amrit Sharma; posted Jun 9, 2026",
+      "published": "2026-06-09",
+      "modified": "not stated",
+      "schema": "BlogPosting, FAQPage, Organization"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/blog/how-to-receive-money-from-usa-to-india",
+      "title": "Receive Money from the US to India, the Smarter Way",
+      "type": "Blog URL serving the landing-page template (Peec: COMPARISON). Skydo's only corridor page with volume.",
+      "retrievals": 159,
+      "citations": 86,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage, BreadcrumbList"
+    }
+  },
+  "verdict": "Skydo's USA page is fetched three times as often as Infinity's GBP page and cited at 0.54 per fetch versus 0.76. Worse, in its top chat it was cited six times and Skydo was not named in the answer: the facts it supplied (SWIFT details, ACH local details, FIRC and GST notes) were attributed to Wise, Payoneer and 'direct bank transfer' because Skydo's own method is labelled 'Virtual multicurrency accounts' and its facts sit in marketing blocks.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "3,714",
+      "b": "1,937",
+      "note": ""
+    },
+    {
+      "metric": "Headings H2 / H3",
+      "a": "18 / 28: TL;DR table, What is safest, What documents, 7 ways table, one H2 per method with H3 How it works / Strengths / Limitations / When it makes sense, Cost comparison, Which method for your situation, Mistakes to avoid, FAQ",
+      "b": "11 / 0: Why prefer Skydo, 3 steps, Side-by-side, Best ways (carousel), How your US client pays (ACH/Fedwire), Six factors, Save more (slider), Video, Testimonials, FAQ, CTA",
+      "note": "Infinity's H2s are the method names; Skydo's methods are cards without headings."
+    },
+    {
+      "metric": "Tables",
+      "a": "4, all with text headers: Best option / Use case; 13-row features x 7 methods; Cost on £5,000 by method; Your situation / Best option / Why",
+      "b": "1, logo headers, 5 rows",
+      "note": "Infinity's 'Your situation → Best option' table is the decision block ChatGPT wants."
+    },
+    {
+      "metric": "Bullets",
+      "a": "78",
+      "b": "8",
+      "note": ""
+    },
+    {
+      "metric": "Paragraphs / average words / over 60",
+      "a": "197 / 16 / 1",
+      "b": "7 / 55 / 2",
+      "note": ""
+    },
+    {
+      "metric": "Corridor-specific facts",
+      "a": "GBP account number and sort code; Faster Payments; £5,000 worked cost by method (₹12,000-25,000 lost on SWIFT); purpose codes P0802/P0803/P0805; incoming wire charge ₹500-₹2,500; UK clients reluctant to send international wires",
+      "b": "ACH free or a few cents, 1-3 days; Fedwire; $25-$50 wire + 2-4% markup; FIRA ₹100-₹500 per request; $10,000 comparison in a logo table",
+      "note": "Skydo's ACH/Fedwire section is the best corridor content on the page and the one block ChatGPT reused (attributed elsewhere)."
+    },
+    {
+      "metric": "Documents block",
+      "a": "H2 What documents do you need: PAN/GST, purpose code, FIRA/FIRC, LUT, payment advice, accounting record (6 bullets)",
+      "b": "Inside FAQ answers only",
+      "note": ""
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Infinity 25, SWIFT 18, PayPal 15, Payoneer 14, Wise 13, Stripe 6, Razorpay 3, Skydo 1, Xflow 1",
+      "b": "Skydo 39, PayPal 8, SWIFT 7, Stripe 4, Wise 2",
+      "note": "Infinity names Skydo and Xflow as virtual-GBP-account providers."
+    },
+    {
+      "metric": "CTAs",
+      "a": "10",
+      "b": "39",
+      "note": "'Start Saving Now with Skydo' appears after every one of the six factors."
+    },
+    {
+      "metric": "Dated facts",
+      "a": "2026 in title and date; 'from April 2026' Wise change",
+      "b": "none on page; '2026' in title tag only",
+      "note": ""
+    },
+    {
+      "metric": "Skydo named in the citing answer",
+      "a": "Skydo named second ('flat fee instead of a percentage') in the cheapest-GBP chat, sourced from Infinity's page",
+      "b": "Not named in the 'receive payments from my US client' chat despite 6 citations",
+      "note": "The corridor page that names Skydo as a method gets Skydo into the answer; Skydo's own page does not."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 7 Safe Ways to Receive GBP Payments in India in 2026; author; date",
+      "Intro: what happens when a UK client sends GBP (rails, conversion, fees, documents) in 5 short paragraphs",
+      "H2 Best Way (2026): 7-row table Best option / Use case; link to GBP calculator",
+      "H2 What is the safest way: 8 numbered criteria",
+      "H2 What documents do you need: 6 bullets",
+      "H2 7 Safe Ways: 13-row feature table across 7 methods",
+      "H2 1. Infinity ... H2 7. Payment gateways: each with Best for, H3 How it works, H3 Strengths (bullets), H3 Limitations (bullets), H3 When it makes sense, one worked £ example",
+      "H2 Cost comparison on £5,000: 6-row table",
+      "H2 Which method should you choose: 8-row Your situation / Best option / Why table",
+      "H2 Mistakes to avoid: 9 bullets",
+      "H2 FAQ: 6 questions as H3",
+      "CTA, footer"
+    ],
+    "b": [
+      "H1 Receive Money from the US to India, the Smarter Way; 4 benefit bullets; calculator; badges",
+      "H2 Why Indian businesses prefer Skydo: 150+ currencies, flat fees, FIRA",
+      "H2 3 simple steps",
+      "H2 Side-by-side comparison: 5-row logo-header table on a $10,000 payment",
+      "H2 Best ways to receive money from the US: carousel of 4 cards (SWIFT, gateways, remittance, virtual accounts) with Pros/Cons/Cost/Speed/FIRA/Best for, 'Try Skydo Today' after each, SWIFT card duplicated",
+      "H2 How your US client pays you via ACH and Fedwire: two tabs, cost to client, speed, best for",
+      "H2 Six factors: label + Look for + CTA, six times",
+      "H2 Slider; H2 Video; H2 Testimonials",
+      "H2 FAQ: 7 questions",
+      "H2 CTA"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "Cheapest way to receive GBP in India (cited 4 times, position 2)",
+        "answer": "Skydo: often very competitive for Indian freelancers and businesses receiving international payments, especially for invoices. It charges a flat fee instead of a percentage in many cases.",
+        "page": "H2 3. Virtual GBP Account: 'platforms in India, like Infinity, Skydo, and Xflow, that allow Indian professionals to get a virtual GBP account with an account number and sort code'"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Direct SWIFT transfer to your Indian bank: convenient but often the most expensive due to exchange-rate markups and possible intermediary bank charges. PayPal: generally the most expensive because of high transaction fees and a significant exchange-rate markup.",
+        "page": "H2 2. SWIFT > Limitations bullets; H2 5. PayPal > Limitations bullets"
+      }
+    ],
+    "b": [
+      {
+        "chat": "how can i receive payments from my us client (cited 6 times, position 3; Skydo not named)",
+        "answer": "Direct bank transfer (SWIFT): provide your client with your bank account number, SWIFT/BIC code, bank name and address. Often involves intermediary bank fees and less favorable exchange rates.",
+        "page": "SWIFT card: Cons and Cost lines"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Your client can pay using local US bank details (ACH) if available (attributed to Wise). Payoneer gives you US receiving account details, allowing US clients to pay you via ACH.",
+        "page": "H2 How your US client pays you via ACH: the mechanism is Skydo's but the page labels the method 'Virtual multicurrency accounts' and only says 'Skydo is one such option', so the credit went to Wise and Payoneer"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Issue an invoice for each payment. Keep the foreign remittance documentation (FIRC or eFIRC). If registered for GST, exports of services may qualify as zero-rated supplies.",
+        "page": "FAQ answers on FIRA and 'safe and legal'"
+      }
+    ]
+  },
+  "diagnosis": [
+    "Corridor prompts are answered as a ranked list of methods for that corridor, each with a one-line cost verdict, then documents and tax. Infinity's page is that list; Skydo's is the landing template with 'US' inserted.",
+    "The corridor-specific mechanism is the citation magnet: sort code and Faster Payments for GBP, ACH and Fedwire for USD. Skydo has the USD mechanism written well and gets no credit because the method heading is generic.",
+    "Name Skydo as the method. Infinity's page gets Skydo into a 'cheapest GBP' answer by listing 'Infinity, Skydo, and Xflow' under virtual GBP accounts. Skydo's own page says 'Skydo is one such option' after four marketing blocks.",
+    "A 'Your situation → best option' table is the decision block ChatGPT copies for corridor and persona prompts alike.",
+    "Thirty-nine CTAs. Six of them are between the six factors ChatGPT would otherwise quote as a list.",
+    "Documents and mistakes lists are cheap citations. Infinity has both; Skydo has neither outside the FAQ.",
+    "Skydo has no UK, EU, Canada, Australia or UAE corridor page in the window. Infinity has USD, EUR and GBP; 'send money from X to India' consumer guides fill the rest."
+  ],
+  "spec": [
+    "Rebuild /blog/how-to-receive-money-from-usa-to-india as an article, and add GBP/UK, EUR, AUD, CAD and AED pages from the same blueprint.",
+    "H1 'How to receive money from the USA to India (2026): methods, fees and timelines'. Author, date.",
+    "Lead with the corridor mechanism: how a US client pays (ACH vs Fedwire, cost to them, time), what account details they need, then the list of methods.",
+    "Methods as numbered H2s (SWIFT, PayPal, Wise, Payoneer, Skydo, Stripe) each with How it works, Fees on a $5,000 invoice, Time, FIRA, Best for. Skydo by name with its real fee.",
+    "Cost table on $5,000 with text headers and a 'Your situation → best option' table.",
+    "Documents list, mistakes list, compliance paragraph with purpose codes, FAQ of 6.",
+    "2,000-3,000 words, 60-80 bullets, 4 tables with text headers, one CTA at the end."
+  ],
+  "playbook": {
+    "bucket": "Corridor: receive money from <country> / in <currency>",
+    "use_when": "The query names a country or currency: 'receive money from USA to India', 'cheapest way to receive GBP in India', 'get paid by UK clients'. ChatGPT answers with the corridor mechanism, a ranked list of methods with a cost verdict each, then documents and tax.",
+    "blueprint": [
+      "H1 'How to receive money from <country> to India (2026): methods, fees and timelines'. Author and date.",
+      "Intro in 4-5 short paragraphs on what happens when a <country> client pays: rails, conversion, fee points, documents.",
+      "TL;DR table: method → use case, 6-7 rows.",
+      "Corridor mechanism section: the local rail (ACH/Fedwire, Faster Payments, SEPA), the account details the client needs, cost and time on the client's side.",
+      "Documents list: PAN/GST, purpose code with the common codes, FIRA/FIRC, LUT, payment advice, accounting record.",
+      "Methods as numbered H2s: SWIFT, PayPal, Wise, Payoneer, Skydo, gateways. Each with How it works, Strengths, Limitations, a worked cost on a fixed amount in the corridor currency, When it makes sense. Skydo named as a method, not as 'one such option'.",
+      "Cost table on the fixed amount with text headers, then a 'Your situation → best option → why' table.",
+      "Mistakes to avoid: 8-9 bullets. FAQ: 6 corridor questions as headings.",
+      "2,000-3,000 words, 60-80 bullets, 4 tables with text headers, brands named roughly equally, one CTA at the end.",
+      "One page per corridor from the same blueprint: USA, UK, EU, Australia, Canada, UAE, Singapore."
+    ],
+    "evidence": [
+      "infinityapp.in/blog/receive-gbp-in-india: 39 citations from 51 fetches (0.76); gets Skydo named in the 'cheapest GBP' answer.",
+      "skydo.com/blog/how-to-receive-money-from-usa-to-india: 86 from 159 (0.54); 6 citations in the top chat with Skydo absent from the answer.",
+      "infinityapp.in receive-eur 38/65 (0.58), receive-usd 39/148 (0.26).",
+      "sendmoneycompare.com UAE→India guide 122/105 (1.16) and UK→India 30/66: consumer corridor guides fill the corridors Skydo has no page for.",
+      "Skydo has no GBP, EUR, AUD, CAD or AED corridor page with retrievals in the window."
+    ]
+  },
+  "slug": "corridor-guide",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+}

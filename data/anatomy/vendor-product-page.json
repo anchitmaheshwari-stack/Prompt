@@ -1,0 +1,212 @@
+{
+  "bucket": "Vendor product page: what <brand> gives me",
+  "title": "Product page: Wise's receive-money page vs Skydo's /features/global-remittances",
+  "pages": {
+    "a": {
+      "label": "Wise",
+      "url": "https://wise.com/in/business/receive-money",
+      "title": "Receive international payments | Accept payments from overseas",
+      "type": "Vendor product page (Peec: PRODUCT_PAGE). The most-cited URL of any domain in the window.",
+      "retrievals": 1539,
+      "citations": 2516,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "none"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/features/global-remittances",
+      "title": "Skydo | Receive International Business Payments at Low Cost",
+      "type": "Feature page (Peec: PRODUCT_PAGE). One of four near-identical /features pages: global-remittances 32/359, get-global-payments 19/218, international-payments-with-skydo 21/190, international-transfers 12/110.",
+      "retrievals": 359,
+      "citations": 32,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "none"
+    }
+  },
+  "verdict": "Wise's product page is cited 1.63 times per fetch with 483 words and no comparison, no table and no prose. Skydo's four feature pages share one title, are fetched 877 times and cited 84 times in total (0.10). ChatGPT reaches product pages on vendor-check fanouts ('Wise India receive money business', 'site:skydo.com receive USD') and wants one page that states, under its own heading, what account details, what rate, what document, what time, who is eligible and what regulator. Wise's page is that list. Skydo's is a hero, a savings calculator and three benefit tiles.",
+  "metrics": [
+    {
+      "metric": "Words in body",
+      "a": "483",
+      "b": "323",
+      "note": "Both short. Only one is structured."
+    },
+    {
+      "metric": "Headings H1 / H2",
+      "a": "3 / 21: one H2 per currency (USD, GBP, EUR, AUD, NZD, CAD, SGD, HUF), 'How to receive money from abroad in India', benefit headings, eligibility, FAQ questions",
+      "b": "0 / 0: every heading is a styled div",
+      "note": "Skydo's feature pages have no heading elements at all."
+    },
+    {
+      "metric": "Paragraphs / average words",
+      "a": "21 / 13",
+      "b": "0 (text sits in divs)",
+      "note": "Every Wise sentence is under 20 words and sits under its own heading."
+    },
+    {
+      "metric": "One sentence per entity-attribute",
+      "a": "'US Dollar: get your own Routing (ABA) and Account Number'; 'British Pound: Account Number and Sort Code'; 'Euro: SWIFT/BIC and IBAN'",
+      "b": "'Free global bank accounts in 5 mins', '150+ countries supported'",
+      "note": "Wise names the detail per currency; Skydo names a count."
+    },
+    {
+      "metric": "Process",
+      "a": "3 numbered steps; step 3 names the deliverables: 'You receive rupees in your INR bank account, and eFIRC in your inbox'",
+      "b": "none",
+      "note": "Step 3 is quoted in all four top chats."
+    },
+    {
+      "metric": "Fact blocks",
+      "a": "mid-market rate with a conversion fee; eFIRC for every transfer; payment in under 90 minutes",
+      "b": "Real-time conversion rates (1 USD = 83.3568 INR); $19 / $29 / 0.3%; RBI & FEMA compliant; Instant FIRA; Real-time tracking",
+      "note": "Skydo has the facts; they are tiles without headings or sentences."
+    },
+    {
+      "metric": "Eligibility statement",
+      "a": "'Are you a small business or freelancer receiving payments from overseas?' with a 'Check if you qualify' link",
+      "b": "'Skydo is not for: personal payments, sending abroad, cards/crypto. Skydo is best for: businesses & freelancers, transactions over $500'",
+      "note": "Skydo's is good and is the last block on the page."
+    },
+    {
+      "metric": "Regulatory line",
+      "a": "'RBI-approved inward remittance via a local bank partner; Wise Payments India is an in-principle approved PA-CB'",
+      "b": "'RBI & FEMA compliant' tile; 'Licensed by RBI' badge",
+      "note": "Name the regulator, the status and the date."
+    },
+    {
+      "metric": "FAQ",
+      "a": "Questions only, mirroring objections: does my client need Wise, which company types, limit per payment",
+      "b": "none",
+      "note": ""
+    },
+    {
+      "metric": "Competitors and comparison",
+      "a": "none (PayPal once in a footer line)",
+      "b": "'10x less than PayPal, 5x less than banks' in the hero",
+      "note": "A product page does not compare; the comparison lives on the compare pages."
+    },
+    {
+      "metric": "CTAs",
+      "a": "15 (nav and footer mostly)",
+      "b": "7",
+      "note": ""
+    },
+    {
+      "metric": "Duplicates",
+      "a": "one URL",
+      "b": "four URLs with the same title and near-identical content splitting 877 fetches",
+      "note": "Consolidate to one."
+    },
+    {
+      "metric": "Skydo's product-shaped winner",
+      "a": "",
+      "b": "skydo.com/faqs/fees?q=how-much-does-skydo-charge: 996 citations from 984 fetches (1.01). One question, one answer with the three fee slabs.",
+      "note": "The FAQ page proves the shape: one heading, one fact, no pitch."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H2 Get international account details in India for free",
+      "H2 per currency x8, one sentence each naming the account details",
+      "H2 How to receive money from abroad in India: 3 steps, step 3 names INR in bank + eFIRC in inbox",
+      "3 benefit blocks: rate basis, document issued, time",
+      "Eligibility line with 'Check if you qualify'",
+      "FAQ questions only",
+      "Regulatory footer: RBI approval, PA-CB status"
+    ],
+    "b": [
+      "Hero: 'Stop losing money on global business transfers... 10x less than PayPal, 5x less than banks'",
+      "Stats: 200,000+ payments, 40,000+ exporters, 150+ countries",
+      "Savings calculator: monthly revenue slider → annual savings",
+      "Testimonial",
+      "'How Skydo helps you save more': free global accounts in 5 mins; real-time rate; flat fee $19/$29/0.3%",
+      "'The payments partner you can trust': RBI & FEMA compliant; Instant FIRA; Real-time tracking",
+      "'Skydo is not for / best for' lists",
+      "Footer"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "UK clients prompt (Wise cited 3 times)",
+        "answer": "gives eligible Indian businesses GBP account details, including a UK account number and sort code",
+        "page": "H2 British Pound + its one sentence"
+      },
+      {
+        "chat": "all four top chats",
+        "answer": "Wise converts it to INR and transfers it to your Indian bank account. Wise says it also provides an eFIRC for each transfer",
+        "page": "Step 3 of the process"
+      },
+      {
+        "chat": "freelancer prompts",
+        "answer": "Wise currently says its receiving feature in India is available to business customers, including sole traders/freelancers",
+        "page": "Eligibility line + FAQ question 'Which company types are eligible?'"
+      },
+      {
+        "chat": "'how can i receive payments from my us client' (Wise cited 3, Payoneer get-paid-by-clients cited 3)",
+        "answer": "Your client can pay using local US bank details (ACH) if available, and you receive the funds in your Indian bank account. Wise also provides eFIRC documentation.",
+        "page": "H2 US Dollar sentence + step 3"
+      }
+    ],
+    "b": [
+      {
+        "chat": "'Infinity payments vs Skydo fees' (Infinity blog cited 9)",
+        "answer": "skydo.com/features/international-transfers sat at source position 10 with 0 citations; skydo.com/faqs/fees at position 8 with 0. The fee slabs in the answer came from Infinity's page.",
+        "page": "Fee tiles exist on the feature page but have no heading, no sentence and no date, so the competitor's sentence about Skydo's fees was preferred."
+      },
+      {
+        "chat": "'site:skydo.com India international payments fees USD receive' (Aug 11)",
+        "answer": "14 skydo.com URLs retrieved, none cited.",
+        "page": "No page on skydo.com states 'what Skydo gives me' as a list of headed one-sentence facts."
+      }
+    ]
+  },
+  "diagnosis": [
+    "Product pages are fetched on vendor-verification fanouts, after the brand is already shortlisted. ChatGPT is looking for attributes to quote, not persuasion.",
+    "One heading per entity-attribute pair with one sentence of value under it is the whole trick. Currency → account details; step 3 → deliverables; benefit → checkable fact; eligibility → reader types; regulator → status.",
+    "Skydo's feature pages have no heading elements, no paragraphs and no dates. The crawler sees a hero and tiles.",
+    "Four duplicate feature pages with one title split the fetches and give ChatGPT no reason to prefer any of them.",
+    "Skydo's fee FAQ page (1.01 per fetch, 996 citations) already proves the shape works on skydo.com: one question, one answer, the numbers.",
+    "The hero comparison ('10x less than PayPal') is unquotable; the eligibility block at the bottom is quotable and should be near the top.",
+    "The product page must not compare. The comparison already lives on the landing page and the compare pages, which win their buckets."
+  ],
+  "spec": [
+    "Merge the four /features pages into one URL, e.g. /receive-money, with 301s from the others.",
+    "Title 'Receive international payments in India'. H1 the same.",
+    "One H2 per currency Skydo supports (USD: routing and account number; GBP: sort code and account number; EUR: IBAN; CAD; AUD; SGD; AED), one sentence each.",
+    "Three numbered steps ending 'INR in your Indian bank within 24 hours, FIRA in your dashboard'.",
+    "Three fact blocks as H2 + one sentence: live mid-market rate with zero markup; flat fee $19 up to $2,000, $29 to $10,000, 0.3% above, dated; FIRA free on every payment.",
+    "Eligibility H2 near the top: freelancers, sole proprietors, LLPs, Pvt Ltd; 'Skydo is not for' list kept.",
+    "Regulatory H2: 'RBI PA-CB final authorisation, January 2026'.",
+    "FAQ questions matching the objections: does my client need Skydo, which company types, limits, which countries, FIRA.",
+    "Under 700 words. No calculator, no competitor names, no comparison. Real HTML headings and paragraphs."
+  ],
+  "playbook": {
+    "bucket": "Vendor product page: what <brand> gives me",
+    "use_when": "The fanout checks a vendor already on the shortlist: '<brand> India receive money business', 'site:<brand>.com receive USD', '<brand> FIRA', '<brand> eligibility'. ChatGPT wants attributes to quote under the brand's name.",
+    "blueprint": [
+      "URL and title carry the job in the searcher's words: /receive-money, 'Receive international payments in India'.",
+      "One H2 per entity-attribute pair, one sentence under each. Currencies first: the exact account details you get per currency.",
+      "A numbered process whose last step names the deliverables (INR in bank, FIRA in inbox).",
+      "Benefit blocks as checkable facts: rate basis, document issued, time to settle, fee slabs with a date.",
+      "Eligibility statement naming reader types (freelancer, sole proprietor, LLP, Pvt Ltd) with a qualify link, and a 'not for' list.",
+      "Regulatory status in plain words: regulator, status, date.",
+      "FAQ questions that mirror objections: does my client need an account, who is eligible, limits, countries.",
+      "Under 700 words. Real HTML headings and paragraphs. No comparison, no competitor names, no calculator in the crawled text.",
+      "One URL per product job. Merge duplicates and 301 them."
+    ],
+    "evidence": [
+      "wise.com/in/business/receive-money: 2,516 citations from 1,539 fetches (1.63), the most-cited URL of any domain.",
+      "razorpay.com/docs international payments 365/230 (1.59). stripe.com/in/pricing 726/419 (1.73). xflowpay.com/pricing 475/220 (2.16). payoneer.com/en-in/about/pricing 1,899/1,000 (1.90).",
+      "skydo.com/features/global-remittances 32/359 (0.09); get-global-payments 19/218; international-payments-with-skydo 21/190; international-transfers 12/110. Four pages, one title, 84 citations in total.",
+      "skydo.com/faqs/fees?q=how-much-does-skydo-charge 996/984 (1.01): the one Skydo page in this shape already works.",
+      "Aug 11 'site:skydo.com' fanout: 14 URLs fetched, none cited."
+    ]
+  },
+  "slug": "vendor-product-page",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+}

@@ -1,0 +1,210 @@
+{
+  "bucket": "Persona: how <profession> receives international payments",
+  "title": "Persona page: Winvesta's architects purpose-code guide vs Skydo's /freelancer landing page",
+  "pages": {
+    "a": {
+      "label": "Winvesta",
+      "url": "https://winvesta.in/blog/businesses/p1009-purpose-code-guide-for-indian-architects-receiving-foreign-payments",
+      "title": "P1009 purpose code: guide for Indian architects receiving foreign payments",
+      "type": "Persona how-to (Peec: HOW_TO_GUIDE). Highest citation rate of any competitor page in the window.",
+      "retrievals": 46,
+      "citations": 107,
+      "author": "Swastik Nigam; 10 June 2026; '2 minutes read'",
+      "published": "2026-06-10",
+      "modified": "not stated",
+      "schema": "Article, FAQPage, Organization"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/receive-international-payments-in-india/freelancer",
+      "title": "Receive International Payments as a Freelancer in India",
+      "type": "Persona landing page (Peec: PRODUCT_PAGE), the landing template with a freelancer compliance section. Sister pages: /design-agency 12/10, /video-production-agency 6/1, /software-developer.",
+      "retrievals": 114,
+      "citations": 153,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage, BreadcrumbList"
+    }
+  },
+  "verdict": "Skydo's freelancer page is cited well when fetched (1.34 per fetch) but is fetched only on 'Skydo vs X for freelancers' prompts. On the persona prompts in the focus set ('as an SEO agency', 'as an architecture firm', 'as a service exporter') ChatGPT wants a setup checklist: documents, the profession's purpose code, what the invoice must say, GST and LUT, a workflow. Winvesta's 3,845-word architects guide is that checklist and is cited 2.33 times per fetch; Skydo's persona pages are the product template and are not fetched for those queries at all.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "3,845",
+      "b": "2,371",
+      "note": "Length is not the lever; shape is."
+    },
+    {
+      "metric": "Headings",
+      "a": "H1 + 17 H3: What P1009 covers, P1009 vs P1014, How to use P1009 when invoicing, GST on your overseas design fees, FEMA repatriation timeline, How architects collect foreign payments and what it costs, A practical payment workflow, FAQ (6 questions as H3)",
+      "b": "H1 + 9 H2: How do freelancers receive, How much can you save, How Skydo works, How does Skydo compare, How do freelancers stay compliant, What should freelancers look for, Why freelancers trust Skydo, FAQ, CTA",
+      "note": "Winvesta's headings are the persona's questions; Skydo's are the landing template."
+    },
+    {
+      "metric": "Persona-specific facts",
+      "a": "Purpose code P1009 with its RBI description; P1009 vs P1014 rule; invoice line to copy; 5 export-of-services conditions; LUT path (Services → User Services → RFD-11); Budget 2026 Section 13(8)(b) change; 9-month FEMA window; $15-$45 intermediary fee; 1.5-3% bank margin",
+      "b": "7 compliance items for freelancers: FIRA, purpose code (no code given), GST, LUT, SOFTEX, new EDF from October 2026, Section 44ADA ₹75 lakh",
+      "note": "Skydo's compliance block is the best part of the page and the only part shaped like the answer."
+    },
+    {
+      "metric": "Paragraphs / average words / over 60",
+      "a": "81 / 46 / 20",
+      "b": "5 / 50 / 1 (cards, not paragraphs)",
+      "note": "Winvesta's paragraphs are long and it still wins: specificity beats brevity here."
+    },
+    {
+      "metric": "Bullets",
+      "a": "0 in HTML (lists are written as sentences)",
+      "b": "10",
+      "note": "Bullets are not required when every sentence is a fact."
+    },
+    {
+      "metric": "Tables",
+      "a": "0",
+      "b": "1, logo headers",
+      "note": ""
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Winvesta 12, RBI 12, FEMA 14, GST 34, SWIFT 10, PayPal 6, Wise 6",
+      "b": "Skydo 49, PayPal 11, SWIFT 13, Wise 6, Stripe 3, GST 14",
+      "note": "Winvesta's own product appears in one section near the end."
+    },
+    {
+      "metric": "Dated facts",
+      "a": "June 2026 date; 'Budget 2026'; 'FEMA Export and Import Regulations 2026'; 'from April 2026' Wise change",
+      "b": "'From October 2026' EDF; no page date",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "3",
+      "b": "25",
+      "note": ""
+    },
+    {
+      "metric": "Where it is cited",
+      "a": "'How to receive international payments as an Architecture Firm' chat: 6 citations; ChatGPT reproduced the purpose code, the invoice field list, the documents list and the workflow",
+      "b": "'skydo vs stripe for freelancers' chat: 8 citations; all brand-comparison prompts",
+      "note": "Winvesta wins persona prompts; Skydo's page is only reached through brand prompts."
+    },
+    {
+      "metric": "Pattern check: Payoneer's India guide",
+      "a": "payoneer.com country guide: 1,512 citations from 1,237 fetches (1.22). Cited 7 times in the 'SEO agency' chat for: 5-step setup, documents (Aadhaar/PAN, bank proof), FEMA purpose codes, GST/LUT, fees by method.",
+      "b": "",
+      "note": "The same setup-checklist shape wins for every profession."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 P1009 purpose code: guide for Indian architects receiving foreign payments",
+      "Author, date, read time",
+      "Opening scene: 'Your Dubai client has approved the concept drawings... your bank calls asking what the purpose code means'",
+      "Scope paragraph: what the guide covers, in one sentence",
+      "H3 What P1009 covers: definition, the services list, the services-vs-construction rule",
+      "H3 P1009 vs P1014: how to choose, what happens if you use the wrong code",
+      "H3 How to use P1009 when invoicing: the invoice field list and the exact line to add, LUT line, what to reply if the bank asks",
+      "H3 GST on your overseas design fees: 5 export conditions, zero-rated, LUT path, Budget 2026 change, FIRA",
+      "H3 The FEMA repatriation timeline: 9 months",
+      "H3 How architects collect foreign payments and what it costs: SWIFT, PayPal/Wise, GCA, with fees",
+      "H3 A practical payment workflow: 5 steps invoice → INR",
+      "Disclaimer, one CTA",
+      "H2 FAQ: 6 questions as H3"
+    ],
+    "b": [
+      "H1 Receive International Payments as a Freelancer in India",
+      "4 benefit bullets, CTA, calculator, PA-CB badge x4",
+      "H2 How do freelancers receive international payments: carousel of 6 method cards with Pros/Cons/Settlement/Cost/FIRA/Ideal for, 'Try Skydo Today' after each, SWIFT card duplicated",
+      "H2 How much can freelancers save: slider",
+      "H2 How Skydo works for freelancers: 4 steps",
+      "H2 How does Skydo compare: 6-column logo-header table",
+      "H2 How do freelancers stay compliant: 7 numbered items (FIRA, purpose code, GST, LUT, SOFTEX, EDF, 44ADA)",
+      "H2 What should freelancers look for: 6 label + 'Look for' pairs",
+      "H2 Why freelancers trust Skydo: quote, stats",
+      "H2 FAQ: 5 questions",
+      "H2 CTA"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "How to receive International Payments in India as a Architecture Firms (cited 6 times)",
+        "answer": "For architectural services, banks commonly use P1009 – Architectural, Engineering and Other Technical Services. Include this purpose code on your invoice to reduce delays.",
+        "page": "H3 What P1009 covers; H3 How to use P1009 when invoicing"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Your invoice should include: firm name and address, client's name and address, invoice number and date, description of services, amount in USD/EUR/GBP, bank details, SWIFT code, RBI Purpose Code P1009, LUT declaration.",
+        "page": "The invoice field list, item for item"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Documents: PAN, current account, GST registration, LUT, client agreement, professional invoice. After receiving payment keep the invoice, contract, payment advice, FIRA.",
+        "page": "H3 A practical payment workflow, last paragraph"
+      },
+      {
+        "chat": "How to receive International Payments in India as a SEO Agency (Payoneer guide cited 7 times)",
+        "answer": "1. Register your business 2. Open a current account 3. Invoice in USD/EUR/GBP 4. Receive through a provider or bank 5. Keep FIRA/FIRC. Documents: PAN, Aadhaar, GST registration, current account, business registration, invoice.",
+        "page": "Payoneer guide: Step 1-5 and FAQ 5 on FEMA"
+      }
+    ],
+    "b": [
+      {
+        "chat": "skydo vs stripe for freelancers (cited 8 times)",
+        "answer": "Best for: freelancers, consultants, agencies getting paid by clients. Payment method: client pays via bank transfer/local rails. Fees: flat fee model, no forex markup (according to Skydo). GST/export paperwork: Skydo focuses on freelancer/export compliance features like FIRA workflows.",
+        "page": "Hero bullets, 'How Skydo works' step 2, the compliance section"
+      },
+      {
+        "chat": "How to receive International Payments in India as a SEO Agency / Architecture Firm",
+        "answer": "Skydo not retrieved. No Skydo page was among the 12 sources in either chat.",
+        "page": "Skydo has no page whose title matches 'receive international payments as an <agency type>' in guide form; the persona landing pages are not fetched on these queries."
+      }
+    ]
+  },
+  "diagnosis": [
+    "Persona prompts are answered as a setup checklist: register, open a current account, invoice, receive, keep FIRA; documents; purpose code; GST and LUT; workflow. The winning pages are that checklist with the profession's specifics filled in.",
+    "The profession-specific purpose code is the anchor citation. ChatGPT names P1009 for architects and cites the page that explains it. Skydo's persona pages never name a code.",
+    "An invoice field list is copied item for item. Winvesta's list became ChatGPT's 'Your invoice should include' list.",
+    "Skydo's persona pages are the landing template with a persona word swapped in. They are cited only on 'Skydo vs X for freelancers' prompts, where the page is about Skydo anyway.",
+    "Skydo's compliance block (FIRA, purpose code, GST, LUT, SOFTEX, EDF, 44ADA) is the only part in the right shape, and it is buried after two calculators and a carousel.",
+    "Retrieval, not citation, is the problem for this bucket: 114 fetches for /freelancer vs 573 for Xflow's freelancer guide and 1,237 for Payoneer's guide.",
+    "Long paragraphs did not hurt Winvesta because every paragraph carries a code, a rule, a section number or a fee. Specific beats short."
+  ],
+  "spec": [
+    "Write one guide per persona in the focus prompts (SEO/marketing agency, architecture firm, software developer, design agency, IT services exporter, consultant, video production agency) at /blog or a /guides path, separate from the persona landing pages.",
+    "H1: 'How to receive international payments in India as a <persona> (2026)'. Author with credential, date, read time.",
+    "Open with the persona's real scene in two sentences, then a one-sentence scope line.",
+    "Sections in this order: the purpose code for this profession and its neighbour code; what your invoice must contain (a copyable list, including the purpose code line and the LUT line); documents to have; GST treatment with the five export conditions and the LUT path; FEMA realisation window; methods with real fees for this invoice size; a 5-step workflow; FAQ.",
+    "Skydo appears once, in the methods section, with its real fee and a real limitation.",
+    "1,500-2,500 words, no calculator, one CTA at the end, Article + Person + FAQPage schema.",
+    "Link the persona landing page to the guide and the guide to the landing page so the product page inherits the fetches."
+  ],
+  "playbook": {
+    "bucket": "Persona: how <profession> receives international payments",
+    "use_when": "The query names a profession or business type: 'as an SEO agency', 'as an architecture firm', 'as a freelancer', 'as a service exporter'. ChatGPT answers with a setup checklist, documents, the purpose code, invoice contents, GST/LUT and a workflow.",
+    "blueprint": [
+      "H1 'How to receive international payments in India as a <persona> (2026)'. Author, credential, date, read time.",
+      "Two-sentence opening scene from the persona's life, then one sentence of scope.",
+      "Purpose code section: the code for this profession, its RBI description, the neighbour code and the rule for choosing, what happens if you get it wrong.",
+      "Invoice section: a copyable field list ending with the exact purpose-code line and the LUT line.",
+      "Documents to have: PAN, current account in the firm's name, GST registration, LUT, contract, invoice.",
+      "GST: the five export-of-services conditions, zero-rating, the LUT filing path, any current-year change with its section number.",
+      "FEMA realisation window and what to do if a client pays late.",
+      "Methods for this persona's invoice sizes: SWIFT, PayPal, Wise, Payoneer, Skydo, each with a fee and a limitation. Skydo once, honestly.",
+      "5-step workflow from invoice to INR, then what to keep for audit.",
+      "FAQ of 5-6 persona questions as headings with two-sentence answers.",
+      "1,500-2,500 words. Every paragraph carries a code, rule, number or date. One CTA at the end. Article + Person + FAQPage schema.",
+      "Keep the persona landing page for product intent and link it to the guide."
+    ],
+    "evidence": [
+      "winvesta.in P1009 architects guide: 107 citations from 46 fetches (2.33), the highest rate of any competitor page.",
+      "payoneer.com India country guide: 1,512 from 1,237 (1.22); cited 7 times in the SEO-agency chat for the 5-step setup and documents.",
+      "skydo.com/receive-international-payments-in-india/freelancer: 153 from 114 (1.34) but fetched only on brand-comparison prompts; /design-agency 12 from 10; /video-production-agency 6 from 1.",
+      "xflowpay.com/blog/international-payments-for-freelancers: 140 from 573 (0.24), a ranked list, not a checklist.",
+      "No Skydo URL among the sources in the architecture-firm or SEO-agency chats."
+    ]
+  },
+  "slug": "persona-guide",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+}

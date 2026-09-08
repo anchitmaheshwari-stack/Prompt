@@ -1,0 +1,153 @@
+{
+  "slug": "how-to-guide",
+  "bucket": "Blog: how-to guide",
+  "title": "How-to guide: roar.bank.in's guide vs Skydo's /blog how-to on the same topic",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts",
+  "pages": {
+    "a": {
+      "label": "Roarbank",
+      "url": "https://roar.bank.in/en/blog/how-to-receive-international-payments-in-india",
+      "title": "How to Receive and Make International Payments in India?",
+      "type": "Blog how-to guide (Peec: HOW_TO_GUIDE). The most-cited editorial page of any domain in the window.",
+      "retrievals": 1429,
+      "citations": 1728,
+      "author": "Deep Ballu, content writer, with LinkedIn; dated 27 May 2026",
+      "published": "2026-05-27",
+      "modified": "not stated",
+      "schema": "no Article schema; FAQ visible in text"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://www.skydo.com/blog/how-to-receive-international-payments-in-india",
+      "title": "How to Receive International Payments in India",
+      "type": "Blog URL, but the HTML is byte-identical to the landing page /receive-international-payments-in-india (Peec: HOW_TO_GUIDE)",
+      "retrievals": 1151,
+      "citations": 171,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage, VideoObject, Organization"
+    }
+  },
+  "verdict": "Skydo's most-fetched blog post is not a blog post. It is the product landing page served at a /blog URL: same calculator, same carousel, same eleven CTAs. ChatGPT fetches it 1,151 times because the URL and title match the query, then quotes it once in seven fetches. Roarbank's plain guide on the same topic is quoted 1.2 times per fetch.",
+  "metrics": [
+    {"metric": "Words in the article body", "a": "1,741", "b": "2,551", "note": "The winner is shorter."},
+    {"metric": "Paragraphs / average words / paragraphs over 60 words", "a": "22 / 31 / 0", "b": "prose lives inside cards; the crawled text has no paragraph structure", "note": "Roarbank never lets a paragraph run past 60 words."},
+    {"metric": "Bullet points", "a": "45 in 13 lists", "b": "6", "note": "Roarbank's bullets are the 'How does it work' steps and the tips, the two things ChatGPT lifts most."},
+    {"metric": "Headings H2 / H3 / H4", "a": "6 / 7 / 5: one numbered H3 per method, H4 per gateway brand, H4 per FAQ question", "b": "9 H2, 2 H3, no heading per method (methods are carousel cards)", "note": "A method without a heading cannot be cited as a method."},
+    {"metric": "Per-method block", "a": "Fixed pattern, 5 times: one-paragraph description, 'How does it work?' (3-5 bullets), 'Fees & Charges' mini-table (Fee type / Approximate cost / Notes) with a disclaimer, 'Processing Time' (2 bullets)", "b": "Card: description, Pros (2-3 lines), Cons (2-3 lines), Cost, Settlement time, FIRA, Ideal for, 'Try Skydo Today'", "note": "Both carry the same facts. Roarbank's are under labelled sub-headings and in tables with text headers; Skydo's are bare lines glued to labels ('CostFlat $19...')."},
+    {"metric": "Opening block", "a": "Two-paragraph intro naming the reader (freelancers, exporters, SaaS founders) and the scope, then 'Key Takeaways': 5 bullets, one per method plus one selection rule", "b": "One paragraph, then a fee calculator whose numbers appear in the text without labels, then 'Approved under RBI's PA-CB framework' five times", "note": "ChatGPT reads the first 200 words to decide what the page is. Roarbank's say 'guide'. Skydo's say 'product'."},
+    {"metric": "Requirements checklist", "a": "H2 'Basic requirements before you start': 5 bullets (bank account, SWIFT/BIC, PAN, GST, invoice)", "b": "Only inside an FAQ answer", "note": "Lifted verbatim in the 'open an account' answer."},
+    {"metric": "Comparison tables", "a": "1: Method / Pros / Cons with text headers", "b": "1: 7 columns whose header cells are logos, so the crawled header reads '| Features | | | | |'", "note": "ChatGPT cannot attribute Skydo's columns to a platform."},
+    {"metric": "Selection guidance", "a": "H2 'Tips to pick the best method': 6 bullets, each with a bolded lead ('Consider the payment amount:')", "b": "H2 'Six factors to consider': six label + 'Look for' pairs, no bullets", "note": "The tips are the second most-lifted block."},
+    {"metric": "Brand mentions", "a": "PayPal 19, Wise 17, Razorpay 10, Cashfree 8, SWIFT 9. Roarbank's own product appears once, in a banner.", "b": "Skydo 42, PayPal 10, Wise 7, SWIFT 12, Stripe 3, Payoneer 1", "note": "Roarbank's page is about the reader's options. Skydo's is about Skydo."},
+    {"metric": "Calls to action", "a": "1 (app download banner)", "b": "11", "note": "Every 'Try Skydo Today' is a line between two facts."},
+    {"metric": "Numbers", "a": "9 currency figures, 10 percentages, each inside a fee table with a disclaimer", "b": "82 numeric claims, many in the calculator and the logo table", "note": "Fewer numbers, better placed."},
+    {"metric": "Dated facts", "a": "Page dated 27.05.2026; fee tables carry 'indicative, subject to change'", "b": "No date on the page", "note": "A date on the page is what lets ChatGPT say 'as of 2026'."},
+    {"metric": "FAQ", "a": "4 Q&As as H4 headings, two-sentence answers, no product pitch", "b": "10 Q&As, most answers end in a Skydo recommendation", "note": "Both are crawled. Roarbank's answers are quotable as facts."},
+    {"metric": "Crawl artefacts", "a": "None", "b": "SWIFT card duplicated, calculator numbers without labels, logo table headers, PA-CB badge repeated five times", "note": "Same defects as the compare page, because it is the same template."},
+    {"metric": "Second winner, for the pattern", "a": "smeadvisory.in how-to-invoice-overseas-clients: 709 words, 7 numbered H2s, 22 bullets, author FCA, date, read time, specific codes (P0802, P0807, P1006), GSTR-1 Table 6A, Rule 115. 312 citations from 221 fetches, 1.41 per fetch.", "b": "skydo.com/blog/freelance-payment-methods-india: 107 citations from 470 fetches, 0.23 per fetch", "note": "Short, numbered, specific, signed. The rate beats every Skydo blog."}
+  ],
+  "skeleton": {
+    "a": [
+      "H1 as the question: How to Receive and Make International Payments in India?",
+      "Date 27.05.2026",
+      "Intro paragraph 1: who this is for (freelancers, exporters, SaaS founders, consultants, agencies)",
+      "Intro paragraph 2: what the guide covers (methods, fees, limits, documentation, tips)",
+      "Key Takeaways: 5 bullets, one per method (SWIFT, PayPal, Wise, gateways) plus 'choose based on size, convenience, fees, speed, documentation'",
+      "H2 Understanding international payments in India: definition, FEMA and RBI named with links",
+      "H2 Basic requirements before you start: 5-bullet checklist",
+      "H2 How to receive international payments in India?",
+      "H3 1. Direct Bank Transfer (SWIFT): description; 'How does it work?' 3 bullets; Fees & Charges table (6 rows) with disclaimer; Processing Time 2 bullets",
+      "H3 2. PayPal: same block",
+      "H3 3. Wise: same block, with a worked $1,000 example",
+      "H3 4. International Payment Gateways, H4 Razorpay: same block",
+      "H3 5. Cashfree: same block",
+      "H2 Which is the best way: Method / Pros / Cons table",
+      "H2 Tips to pick the best method: 6 bullets with bolded leads",
+      "H2 Conclusion: two short paragraphs",
+      "FAQ: 4 questions as H4, two-sentence answers",
+      "Author box: name, role, LinkedIn"
+    ],
+    "b": [
+      "H1 How to Receive International Payments in India",
+      "One paragraph: 'four ways ... here's a lowdown'",
+      "Calculator: USD slider, four INR figures without labels, 'Save with Skydo'",
+      "'Approved under RBI's PA-CB framework' x5, trust badges",
+      "H2 Ways to receive: carousel of 6 cards (SWIFT, PayPal, Wise, Stripe, Remittance, Skydo). No heading per card; Pros/Cons as bare lines; Cost/Settlement/FIRA/Ideal for; 'Try Skydo Today' after each; SWIFT card duplicated",
+      "H2 Side-by-side comparison: 8-row table, logo headers",
+      "H2 How to stay RBI compliant: purpose code and FIRC/FIRA paragraphs",
+      "H2 Six factors to consider: label + 'Look for' pairs",
+      "H2 Why choose Skydo",
+      "H2 Watch how Skydo helps (video)",
+      "H2 What Skydo users say",
+      "H2 Receive money from 40+ countries (link list)",
+      "H2 FAQ: 10 Q&As",
+      "H2 Ready to save more (CTA)"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {"chat": "How to open an account for receiving international payments in India (cited 11 times)", "answer": "Share your account IBAN/IFSC and SWIFT/BIC code with the payer ... The payer sends funds via SWIFT ... Funds are credited in INR (after conversion) to your bank account.", "page": "H3 1. SWIFT > 'How does it work?' bullets"},
+      {"chat": "same chat", "answer": "You might need PAN/GST and invoice documentation for compliance and reporting.", "page": "H2 Basic requirements before you start"},
+      {"chat": "same chat", "answer": "Wise Business: provides international bank details to receive money; converts and deposits INR; automatic eFIRC documentation.", "page": "H3 3. Wise > 'How does it work?' bullets"},
+      {"chat": "same chat", "answer": "SWIFT bank transfers are typically slower and costlier than fintech options. Wise / Payoneer / other fintech often make accounting and documentation easier.", "page": "H2 Tips: 'Look at processing speed' and 'Check documentation and compliance needs'"},
+      {"chat": "How to receive international payments as a Service Exporter (cited 10 times)", "answer": "Processing 1–5 business days. Banks may charge receiving + intermediary fees. Exchange rate mark-ups can be high.", "page": "H3 1. SWIFT > Fees & Charges table and Processing Time bullets"},
+      {"chat": "same chat", "answer": "Provide clear bank details and SWIFT/BIC to the client. Confirm fees, FX rates, and intermediary charges upfront. Keep all invoices and export documentation.", "page": "H2 Tips bullets"}
+    ],
+    "b": [
+      {"chat": "cheapest platform to receive international payments in India (Skydo's best case, cited 6 times)", "answer": "Skydo: flat fee (~US$19–29), 0% FX markup, often the cheapest for invoices above roughly US$2,000. Wise Business around 1.6–2%. Payoneer around 2–3%+. PayPal often 4–8% effective cost.", "page": "The method cards and the comparison table. This is a price-comparison prompt, so the product-page facts fit."},
+      {"chat": "How to receive international payments as a Service Exporter (same chat as Roarbank's 10 citations)", "answer": "Not cited. The page sat at source position 21 of 22 and contributed nothing; the landing page at position 5 gave 2 citations.", "page": "On a how-to prompt the product template has no 'how it works' steps, requirements list or tips to lift."}
+    ]
+  },
+  "diagnosis": [
+    "The blog is the landing page. The HTML at /blog/how-to-receive-international-payments-in-india is identical to /receive-international-payments-in-india. ChatGPT fetches it as a guide and finds a product page.",
+    "How-to answers have a fixed shape: numbered method, how it works, fees, time, then tips and compliance. Roarbank's page is already in that shape, so each block maps to a sentence in the answer.",
+    "Steps beat cards. The single most-lifted unit is the 'How does it work?' bullet list under each method. Skydo's cards have no steps at all.",
+    "A requirements checklist and a tips list are the cheapest citations on the page. Roarbank has both; Skydo has neither as a list.",
+    "Fee tables need text headers and a date or disclaimer. Roarbank's six-row fee tables are quoted; Skydo's logo-header table is invisible.",
+    "Brand balance signals a guide. Roarbank names four platforms roughly equally and its own once. Skydo names itself 42 times and gives Stripe three lines.",
+    "One CTA. Roarbank's only pitch is a banner. Skydo's eleven CTAs break every block ChatGPT would otherwise quote whole.",
+    "Short and specific wins the rate. SME Advisory's 709-word signed guide with codes and section numbers is cited 1.41 times per fetch, the best rate of any editorial page in the window."
+  ],
+  "spec": [
+    "Give the blog URL its own article. Do not serve the landing page template at /blog. Keep the landing page for product intent; the blog is for the how-to query.",
+    "H1 as the question, date and author under it, Article plus Person schema.",
+    "Intro: two paragraphs, who it is for and what it covers. No calculator, no badges.",
+    "Key takeaways: 5 bullets, one per method plus one selection rule.",
+    "Before you start: 5-6 bullet checklist (Indian bank account, SWIFT/BIC, PAN, GST registration, invoice, purpose code).",
+    "Methods as numbered H3s, 6 of them: SWIFT, PayPal, Wise, Payoneer, payment gateways (Razorpay, Cashfree), Skydo. Each with the same four sub-blocks: one-paragraph description; 'How it works' 3-5 bullets; 'Fees' mini-table with Fee type / Approximate cost / Notes and an 'as of <month> 2026' line; 'Time to receive' 2 bullets. Skydo is one method among six with its real numbers, not 'Recommended'.",
+    "Comparison table with text headers: Method / Best for / Typical cost / Time / FIRA.",
+    "How to choose: 6 bullets with bolded leads keyed to amount, fees, speed, client convenience, documentation, frequency.",
+    "Compliance section with codes and numbers: purpose code (P0802, P0807), FIRC vs FIRA, AD bank, GST LUT, realisation window, each linking to the reference page.",
+    "FAQ: 4-6 questions as headings, two-sentence factual answers, FAQPage schema.",
+    "Length 1,500-2,000 words. No paragraph over 60 words. 40-60 bullets. One CTA at the end.",
+    "Success check after 30 days: citations per fetch above 0.6 on this URL (today 0.15) and the page cited on how-to prompts, not only price prompts."
+  ],
+  "playbook": {
+    "bucket": "Blog: how-to guide",
+    "use_when": "The query starts with 'how to' or 'how can I' and expects a set of methods or steps: receive international payments, get paid from a country, invoice a foreign client, open an account.",
+    "blueprint": [
+      "Title and H1 are the question itself, with 'in India' and the year in the title tag.",
+      "Byline with author name, credential, date and read time. Article and Person schema.",
+      "Intro in two paragraphs: the reader types this is for, and the scope. Nothing about the brand.",
+      "Key takeaways block: 5 bullets, one per method, plus one rule for choosing.",
+      "Before-you-start checklist: 5-6 bullets of documents and prerequisites.",
+      "Methods as numbered H3s under one H2. Same four sub-blocks every time: description paragraph, 'How it works' 3-5 bullets, fees mini-table with text headers and a date, time-to-receive 2 bullets. Name real platforms with real numbers under each method. Skydo is one entry, with its own numbers and its own cons.",
+      "One comparison table with text headers: Method / Best for / Cost / Time / FIRA.",
+      "How-to-choose list: 6 bullets with a bolded lead phrase each.",
+      "Compliance section with codes, forms and windows, linking to the reference pages rather than re-explaining.",
+      "FAQ of 4-6 questions as headings, two-sentence factual answers, FAQPage schema.",
+      "1,500-2,000 words. Paragraphs under 40 words on average, none over 60. 40-60 bullets. One CTA, at the end.",
+      "Never reuse a landing-page template for a blog URL. No calculators, carousels, logo-header tables or repeated badges."
+    ],
+    "evidence": [
+      "roar.bank.in how-to guide: 1,728 citations from 1,429 fetches (1.21 per fetch), the most-cited editorial page of any domain.",
+      "payoneer.com country guide: 1,494 from 1,230 (1.21). 15 H3s, 53 bullets, FAQ, Article + Person schema.",
+      "smeadvisory.in invoicing guide: 312 from 221 (1.41). 709 words, 7 numbered H2s, signed by an FCA.",
+      "playto.so complete guide: 286 from 313 (0.91). 'Part 1: Is it legal? Yes.' first line, 2 tables with text headers.",
+      "skydo.com/blog how-to: 171 from 1,151 (0.15). Landing-page template at a blog URL.",
+      "skydo.com/blog/freelance-payment-methods-india: 107 from 470 (0.23)."
+    ]
+  }
+}

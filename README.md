@@ -64,3 +64,12 @@ back to `public/screenshots/<prompt-slug>-<n>.jpg` for the n-th bucket (all 23 p
 `-1` and `-2`). Capture them in a ChatGPT temporary chat set to Unpersonalized, otherwise memory
 skews the answer.
 
+
+### Page anatomy and playbook (`/anatomy`)
+
+One side-by-side teardown per content bucket (how-to guide, alternatives listicle, Skydo-vs-X comparison,
+persona guide, corridor guide, compliance reference, vendor product page). Each compares the page ChatGPT
+cites most in that bucket with the Skydo page that competes for the same query: Peec retrievals/citations,
+HTML structure metrics, skeleton, the sentences ChatGPT lifted, diagnosis, rewrite spec and a bucket blueprint.
+Data lives in `data/anatomy/<slug>.json`; `/anatomy/playbook` shows all blueprints on one page.
+Bucket order is `BUCKET_ORDER` in `lib/anatomy.ts`.

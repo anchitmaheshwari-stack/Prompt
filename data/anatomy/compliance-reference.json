@@ -1,0 +1,167 @@
+{
+  "bucket": "Compliance reference: purpose codes, FIRC/FIRA, LUT, SOFTEX, FEMA",
+  "title": "Compliance reference: the pages ChatGPT cites on RBI/FIRC/GST fanouts vs Skydo's compliance blogs",
+  "pages": {
+    "a": {
+      "label": "Winners",
+      "url": "https://tutorial.gst.gov.in/userguide/refund/Furnishing_of_Letter_of_Undertaking.htm",
+      "title": "Furnishing of Letter of Undertaking (gst.gov.in) and the winvesta.in / livemint.com guides",
+      "type": "Government reference pages and short signed guides. gst.gov.in LUT page 289/165 (1.75); winvesta P1009 107/46 (2.33); livemint freelancer tax guide 99/45 (2.20); RBI master direction 1,145/941 (1.22); CBIC sectoral FAQ 477/337 (1.42); dgft eBRC manual 102/43 (2.37).",
+      "retrievals": 165,
+      "citations": 289,
+      "author": "gst.gov.in: none. winvesta: Swastik Nigam, June 2026. livemint: Eshita Gain, 25 May 2026, quoting a ClearTax tax expert.",
+      "published": "2026-05-25 (livemint), 2026-06-10 (winvesta)",
+      "modified": "not stated",
+      "schema": "Article + FAQPage (winvesta); NewsArticle (livemint)"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/blog/rbi_purpose_code_for_inward_remittance",
+      "title": "RBI Purpose Code for Inward Remittance (2026 guide)",
+      "type": "Skydo's compliance blogs (Peec: HOW_TO_GUIDE / ARTICLE). 23 compliance URLs on skydo.com: 280 fetches, 43 citations in 90 days.",
+      "retrievals": 9,
+      "citations": 0,
+      "author": "Skydo author, dated 2025-06-18",
+      "published": "2025-06-18",
+      "modified": "not stated",
+      "schema": "BlogPosting, HowTo, FAQPage, Person"
+    }
+  },
+  "verdict": "Compliance fanouts (RBI purpose code, FIRC, LUT, GST on export of services, SOFTEX) are the largest fanout family in the focus set, and skydo.com wins almost none of them: 421 compliance-shaped URLs get 3% of retrievals and 0.6% of citations. ChatGPT cites government pages first and then short, signed, code-specific guides. Skydo's purpose-code blog is 4,044 words with 103 bullets and 30 H3s and was cited zero times in nine fetches; the FIRC guide is 6,418 words and was cited zero times in six.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "winvesta 3,845; livemint ~900; gst.gov.in LUT page ~600",
+      "b": "purpose-code blog 4,044; FIRC guide 6,418; p0807 guide 1,517",
+      "note": "Skydo's p0807 guide (1,517 words) is the one Skydo compliance page with a good rate: 6 citations from 3 fetches."
+    },
+    {
+      "metric": "Scope per page",
+      "a": "One code (P1009), one form (LUT), one question (how to report overseas income)",
+      "b": "All purpose codes in one page; 'all you need to know' about FIRC",
+      "note": "One page per code or form is the winning unit."
+    },
+    {
+      "metric": "Specifics that get cited",
+      "a": "P1009 vs P1014 rule; invoice line to copy; RFD-11 path; five export conditions; 9-month window; Section 44ADA ₹50 lakh/₹75 lakh; ITR-3 vs ITR-4; advance tax ₹10,000 and 15 March; Form 67 for FTC; Budget 2026 Section 13(8)(b)",
+      "b": "Codes listed with RBI descriptions in a table; explanations without section numbers or dates",
+      "note": "ChatGPT copies section numbers, form names, thresholds and dates."
+    },
+    {
+      "metric": "Headings",
+      "a": "winvesta: 17 H3 each one question; livemint: 5 H2 each a question ('Can freelancers opt for presumptive taxation?', 'How should freelancers report overseas income?')",
+      "b": "purpose-code blog: 14 H2 / 30 H3; FIRC guide: 13 H2 / 14 H3",
+      "note": "Question headings match the fanout phrasing."
+    },
+    {
+      "metric": "Author and date",
+      "a": "Named author with credential or quoted expert; May/June 2026 dates",
+      "b": "Author present; dated June 2025 and Feb 2025",
+      "note": "A 2025 date on a rules page reads as stale for 2026 fanouts."
+    },
+    {
+      "metric": "Tables",
+      "a": "none needed",
+      "b": "purpose-code blog: 1 table whose header cells are duplicated by the crawler ('Category (as per RBI)Category(as per RBI)')",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "winvesta 3; livemint 0",
+      "b": "purpose-code blog 26; FIRC guide 25",
+      "note": ""
+    },
+    {
+      "metric": "Paragraphs over 60 words",
+      "a": "winvesta 20 of 81 (long but each carries a rule)",
+      "b": "FIRC guide 17 of 63; purpose-code blog 0 of 69",
+      "note": "Length is fine when every paragraph is a rule with a number."
+    },
+    {
+      "metric": "Who gets cited on these fanouts",
+      "a": "rbi.org.in, cbic-gst.gov.in, tutorial.gst.gov.in, dgft.gov.in, then winvesta, livemint, taxguru, cleartax",
+      "b": "skydo.com compliance URLs: 43 citations total across 23 pages",
+      "note": ""
+    },
+    {
+      "metric": "Skydo pages with a good rate",
+      "a": "",
+      "b": "blog/p0807-purpose-code-guide 6/3 (2.00); blog/importance-of-fira-for-freelancers 10/7 (1.43); blog/softex-form-guide 4/5 (0.80)",
+      "note": "The short, single-topic Skydo pages already work; they are just not fetched."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "Winvesta: H1 with the code and the persona; author, date, read time; scene; scope; H3 What the code covers; H3 Code vs neighbour code; H3 How to use it on the invoice (copyable line); H3 GST on these fees (five conditions, LUT path, Budget 2026 change, FIRA); H3 FEMA window; H3 How to collect and what it costs; H3 Workflow; FAQ as H3s",
+      "Livemint: H1 as the question; standfirst; author; date; 5 H2 questions each answered in 2-3 paragraphs quoting a named tax expert with thresholds (₹50 lakh, ₹75 lakh, ₹10,000, 15 March), forms (ITR-3, ITR-4, Form 67) and a 6-bullet documents list",
+      "gst.gov.in LUT page: title as the task; numbered steps with the exact menu path and form name"
+    ],
+    "b": [
+      "Purpose-code blog: H1; intro; H2 What is a purpose code; H2 Why it matters; H2 List of purpose codes (table of codes, category, description, when to use); H2 per category with H3 per code; H2 How to choose; H2 How Skydo helps; FAQ; 26 CTAs",
+      "FIRC guide: 13 H2s from definition to 'How Skydo automates FIRC', 6,418 words, 17 paragraphs over 60 words, 25 CTAs"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "How to receive International Payments in India as a Architecture Firms (winvesta cited 6 times)",
+        "answer": "Use the correct RBI purpose code: P1009 – Architectural, Engineering and Other Technical Services. Include this purpose code on your invoice. LUT if exporting services without charging IGST. Keep FIRA, invoice, contract, payment advice.",
+        "page": "H3 What P1009 covers; H3 How to use P1009 when invoicing; H3 GST; H3 Workflow"
+      },
+      {
+        "chat": "Freelancer tax fanouts (livemint cited 2.2 per fetch)",
+        "answer": "Presumptive taxation under Section 44ADA up to ₹50 lakh (₹75 lakh if 95% digital); report under Income from Business or Profession, ITR-4 or ITR-3; advance tax if liability exceeds ₹10,000; LUT to export without IGST; keep FIRC/e-FIRA and Form 67.",
+        "page": "The five H2 questions and the documents list"
+      }
+    ],
+    "b": [
+      {
+        "chat": "Nine fetches of the purpose-code blog, six of the FIRC guide",
+        "answer": "Zero citations. ChatGPT read both pages and quoted rbi.org.in, cbic-gst.gov.in or a signed guide instead.",
+        "page": "Long, undated for 2026, all codes on one page, product sections between the rules"
+      }
+    ]
+  },
+  "diagnosis": [
+    "Compliance fanouts are answered with a rule, a number and a source. Government pages win because they are the source; guides win when they carry section numbers, form names, thresholds and dates.",
+    "One page per code or form. ChatGPT cites the page about P1009, the page about LUT, the page about reporting overseas income. Skydo's all-codes page and all-about-FIRC page are never the best source for any single fanout.",
+    "Question headings match fanout phrasing. Livemint's five H2 questions are the questions ChatGPT was asked to answer.",
+    "A copyable line beats an explanation: the invoice line 'RBI Purpose Code: P1009 — Architectural, Engineering and Other Technical Services' was reproduced verbatim.",
+    "A 2025 date on a rules page loses to a 2026 date. Rules pages need a visible 'updated' date and a 'what changed in 2026' line.",
+    "Product sections between rules cost citations. 'How Skydo automates FIRC' inside a FIRC explainer signals a sales page; the crawler also broke Skydo's table headers.",
+    "Skydo's short single-topic pages (p0807, importance-of-fira, softex) already cite at 0.8 to 2.0 per fetch. The bucket needs more of those and fewer 6,000-word guides. This is the consolidation project on the Consolidation Plan tab."
+  ],
+  "spec": [
+    "One reference page per entity: each purpose code Skydo supports (P0802, P0807, P0805, P1009, P1006...), FIRC, FIRA, e-FIRC, LUT, SOFTEX, EDF, eBRC, EDPMS, GST on export of services, Section 44ADA, realisation window.",
+    "Each page 700-1,500 words: definition in the first sentence; who it applies to; the neighbour term and how to choose; the exact line to put on the invoice or form; the government path (portal menu, form number); the dates and thresholds; what happens if wrong; a 5-step workflow; FAQ of 4-6.",
+    "Named author with credential (CA or the compliance lead), visible published and updated dates, 'what changed in 2026' line, Article + FAQPage schema.",
+    "Cite the RBI/CBIC/DGFT source by circular number with an outbound link on every page.",
+    "No product section in the body. One line at the end: 'Skydo tags this code automatically and issues a FIRA on every payment.'",
+    "Redirect the long guides into the new pages or trim them to hub pages that link out."
+  ],
+  "playbook": {
+    "bucket": "Compliance reference: purpose codes, FIRC/FIRA, LUT, SOFTEX, FEMA",
+    "use_when": "The fanout asks for a rule: 'RBI purpose code for software exports', 'FIRC vs FIRA', 'LUT for export of services', 'GST on foreign client income', 'SOFTEX form'. ChatGPT answers with the rule, the number or form, and cites the source.",
+    "blueprint": [
+      "One page per code, form or rule. Title is the entity plus the year: 'P0802 purpose code (2026): software consultancy exports'.",
+      "First sentence is the definition. Second is who it applies to.",
+      "Neighbour section: the code or form it is confused with and the rule for choosing.",
+      "Copyable line: the exact text for the invoice, the form field, or the portal menu path with the form number.",
+      "Numbers and dates: thresholds, windows, fees, the circular number, 'what changed in 2026'.",
+      "What happens if you get it wrong, in three sentences.",
+      "5-step workflow, then a documents-to-keep list.",
+      "FAQ of 4-6 questions phrased the way the fanouts are phrased.",
+      "700-1,500 words. Named author with credential, published and updated dates, outbound link to the RBI/CBIC/DGFT source, Article + FAQPage schema.",
+      "No product section in the body. One closing line on how Skydo handles it. One CTA."
+    ],
+    "evidence": [
+      "tutorial.gst.gov.in LUT page: 289 citations from 165 fetches (1.75). dgft.gov.in eBRC manual 102/43 (2.37). RBI master direction 1,145/941 (1.22). CBIC sectoral FAQ 477/337 (1.42).",
+      "winvesta.in P1009 guide 107/46 (2.33). livemint.com freelancer tax guide 99/45 (2.20). taxguru.in FEMA note 25/60 (0.42).",
+      "skydo.com/blog/rbi_purpose_code_for_inward_remittance 0/9. blog/all-you-need-to-know-about-firc 0/6. blog/compliance-guideline-for-inward-remittance 9/18 (0.50).",
+      "skydo.com/blog/p0807-purpose-code-guide 6/3 (2.00) and blog/importance-of-fira-for-freelancers 10/7 (1.43): the short single-topic pages already work.",
+      "skydo.com compliance-shaped URLs: 421 pages, 3% of Skydo retrievals, 0.6% of citations (Consolidation Plan tab)."
+    ]
+  },
+  "slug": "compliance-reference",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+}

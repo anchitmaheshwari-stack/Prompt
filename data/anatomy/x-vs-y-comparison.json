@@ -1,0 +1,217 @@
+{
+  "bucket": "Comparison: Skydo vs X",
+  "title": "Comparison page: Skydo's compare/skydo-vs-payoneer vs Xflow's blog/skydo-vs-wise",
+  "pages": {
+    "a": {
+      "label": "Skydo",
+      "url": "https://skydo.com/compare/skydo-vs-payoneer",
+      "title": "Payoneer vs Skydo: What's best for Indian exporters in 2026?",
+      "type": "Compare page (Peec: COMPARISON). Skydo's second most-cited URL after the landing page.",
+      "retrievals": 529,
+      "citations": 941,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage only"
+    },
+    "b": {
+      "label": "Xflow",
+      "url": "https://xflowpay.com/blog/skydo-vs-wise",
+      "title": "Skydo vs Wise: A Complete Comparison for Indian Users",
+      "type": "Blog comparison (Peec: COMPARISON). Xflow's most-fetched comparison page.",
+      "retrievals": 818,
+      "citations": 355,
+      "author": "Rahul Unnikrishnan, Head of operations; verified by Deepthi Rajeev; published 06/08/2026",
+      "published": "2025-08-11 (schema) / 06/08/2026 (visible)",
+      "modified": "not stated",
+      "schema": "BlogPosting, Person, FAQPage, BreadcrumbList"
+    }
+  },
+  "verdict": "This is the bucket Skydo already wins. Skydo vs Payoneer, vs PayPal and vs Stripe are each cited 1.5 to 1.9 times per fetch; Xflow's comparisons of Skydo are fetched more and cited less than half as often. ChatGPT lifts the row labels of Skydo's comparison table and the 'X is better for / Skydo is better for' bullets almost verbatim. The one weak page, Skydo vs Wise at 0.61, loses share to Xflow's blog and to Wise's own pages, not to a better structure.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "1,541",
+      "b": "2,122",
+      "note": "Shorter wins again."
+    },
+    {
+      "metric": "Headings H2 / H3 / H4",
+      "a": "7 / 1 / 2: Detailed comparison, Pricing and forex, Compliance and rails, Who should use Payoneer over Skydo, What customers say, How to migrate, FAQ",
+      "b": "15 / 1 / 25: Intro, TL;DR, What Skydo offers, What Wise offers, Quick comparison, Why Skydo, Why Wise, Pricing, Calculator, Cost table, Why Xflow, Key features of Xflow, Bottom line, CTA, FAQ",
+      "note": "Xflow spends three H2s and 8 bullets on Xflow in a page titled Skydo vs Wise."
+    },
+    {
+      "metric": "Comparison table",
+      "a": "1 table, 11 labelled rows grouped Pricing / Compliance / Payment & experience: total cost on $10K, inactivity fee, FIRA, eBRC, GST invoicing, RBI status, settlement, support, founded. Header cells are logos.",
+      "b": "2 tables with text headers: 8-row feature table and a 4-row cost table at $1,000 / $5,000 / $10,000 / $25,000",
+      "note": "ChatGPT's answer table in the top chat reuses Skydo's row labels one for one."
+    },
+    {
+      "metric": "Verdict bullets",
+      "a": "'Payoneer is better for' 5 bullets, 'Skydo is better for' 5 bullets. Honest: Upwork/Fiverr payouts, Amazon sellers, outward payments, 20-year track record.",
+      "b": "'Why choose Skydo' 6 H4s, 'Why choose Wise' 5 H4s, then 'Why Xflow' and 'Bottom line' that recommend Xflow",
+      "note": "The two-sided bullets are the second most-lifted block."
+    },
+    {
+      "metric": "Worked numbers",
+      "a": "$5,000 example inside a calculator widget; the crawled text keeps the lines ($50 ACH fee, ₹4,05,059 vs ₹4,15,079)",
+      "b": "$1,000 worked example in prose plus the 4-row cost table",
+      "note": "Infinity's page (1.21 per fetch) has three worked examples at $1,500 / $5,000 / $20,000 and ChatGPT reproduced all three."
+    },
+    {
+      "metric": "Paragraphs / average words / over 60",
+      "a": "11 / 32 / 1",
+      "b": "58 / 25 / 1",
+      "note": "Both short."
+    },
+    {
+      "metric": "Bullets",
+      "a": "18",
+      "b": "26",
+      "note": ""
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Skydo 46, Payoneer 33",
+      "b": "Wise 53, Skydo 47, Xflow 11",
+      "note": "Xflow's third brand dilutes a two-brand query."
+    },
+    {
+      "metric": "Dated facts",
+      "a": "'as of January 2026' RBI status, 'Jan 2026' in the table; page has no date",
+      "b": "'as of January 2026', 'as of February 2026', visible published date",
+      "note": "Add a page date to Skydo's template."
+    },
+    {
+      "metric": "CTAs",
+      "a": "16",
+      "b": "7",
+      "note": "Skydo's CTAs sit between blocks, not inside the table, so they cost less here than on the how-to page."
+    },
+    {
+      "metric": "FAQ",
+      "a": "7 Q&As, each a full two- to four-sentence factual answer with numbers (inactivity fee $29.95 under $6,000; PA-CB Jan 2026)",
+      "b": "5 Q&As, two of them recommend Xflow",
+      "note": "Skydo's FAQ answers are quotable as facts."
+    },
+    {
+      "metric": "Migration steps",
+      "a": "5 numbered steps with times (5 min, instant, 10 min, same day, 24-48 hrs) and a documents list",
+      "b": "none",
+      "note": "Lifted into 'what many freelancers do' in the top chat."
+    },
+    {
+      "metric": "Sister pages, same template",
+      "a": "skydo-vs-paypal 750/400 (1.88), skydo-vs-stripe 942/614 (1.53), skydo-vs-wise 585/952 (0.61), blog/skydo-vs-infinity 1,347/739 (1.82)",
+      "b": "skydo-vs-paypal 180/645 (0.28), skydo-vs-infinity 84/660 (0.13), compare/xflow-vs-skydo 158/84 (1.88)",
+      "note": "Xflow's only strong comparison is its own compare page, built like Skydo's."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 Payoneer vs Skydo: What's best for Indian exporters in 2026?",
+      "4 bullets: save ₹29,000 per $10K, flat $19-$29 with zero markup, FIRA + GST invoicing, 30,000+ businesses",
+      "Calculator: $5,000 → ₹4,05,059 vs ₹4,15,079, 'You lose 2.4%'",
+      "H2 The Detailed Comparison: one-paragraph lead, then the 11-row table",
+      "H2 Pricing and Forex: one paragraph of Payoneer's layered fees (1% ACH, 3.2% + $0.49 card, 2-3% conversion, $29.95 inactivity) vs Skydo flat fee; calculator lines",
+      "H2 Compliance, Payment Rails and Platform: paired statements Payoneer vs Skydo (FIRA timing, eBRC, GST invoicing, purpose code, SOFTEX)",
+      "H2 Who Should Use Payoneer Over Skydo: H4 Payoneer is better for (5 bullets), H4 Skydo is better for (5 bullets)",
+      "H2 What Customers Say After Switching: 3 testimonials with numbers",
+      "H2 How to Migrate: 5 steps with times, documents list",
+      "H2 FAQ: 7 questions with full answers",
+      "Footer"
+    ],
+    "b": [
+      "Nav, breadcrumb, category, date, author, verifier",
+      "Xflow banner CTA",
+      "H2 Introduction: 3 paragraphs",
+      "H2 TL;DR: 5 bullets, the fifth about Xflow",
+      "H2 What does Skydo offer: 7 H4 features",
+      "H2 What does Wise offer: 5 H4 features",
+      "H2 Quick comparison: 8-row table with text headers",
+      "H2 Why choose Skydo over Wise: 6 H4s",
+      "H2 Why choose Wise over Skydo: 5 H4s",
+      "H2 How do the pricing structures compare: Skydo slabs, Wise percentage, bullets",
+      "H2 Calculator (empty in crawl)",
+      "H2 How much would you pay: 4-row cost table",
+      "H2 Why is Xflow a solid alternative; H2 Key features of Xflow: 8 bullets",
+      "H2 Bottom line: recommends Xflow",
+      "H2 CTA; H2 FAQ: 5 questions"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "skydo vs payoneer for freelancers (cited 14 times, position 1 of 12 sources)",
+        "answer": "Table rows: Forex markup 'claims 0% markup on live FX rates' / 'FX spread on withdrawals'; Fee structure 'flat fee around $19–29' / 'percentage-based plus FX'; FIRA 'built-in and automated'; Settlement 'within 1 business day' / '2–4 business days'; Sending money abroad; Track record 'founded 2005'.",
+        "page": "The 11-row comparison table, row by row"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Choose Skydo if you invoice clients directly... Choose Payoneer if most income comes from Upwork, Fiverr, Amazon, Etsy... occasionally need outbound payments.",
+        "page": "H4 'Payoneer is better for' and 'Skydo is better for' bullets"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Even Skydo's own comparison notes that some users keep Payoneer for marketplace payouts while routing direct B2B client payments through Skydo.",
+        "page": "Testimonial (Megha B.) and the migration section's 'run both in parallel'"
+      }
+    ],
+    "b": [
+      {
+        "chat": "skydo vs wise for freelancers (cited 8 times; Skydo's own compare page cited 2)",
+        "answer": "Table: Pricing flat $19–29 then percentage / percentage-based; Exchange rate mid-market both; Compliance 'free FIRA/e-FIRC' / 'FIRA available but may involve additional fees'; Multi-currency account No / Yes; Settlement 1–2 days / same day to 2 days. Cost example $2,000: Skydo ~$19, Wise ~$30–35.",
+        "page": "H2 Quick comparison table and the cost table"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Nothing about Xflow. The three Xflow sections and the Xflow-favouring FAQ answers were skipped.",
+        "page": "H2 Why is Xflow a solid alternative, Bottom line, FAQ"
+      }
+    ]
+  },
+  "diagnosis": [
+    "A two-brand comparison is answered as a table plus two 'choose X if' lists. Skydo's page is built as exactly that, so each block maps to a block in the answer.",
+    "Row labels are the citation unit. ChatGPT copies the left column of the table (fee structure, FX markup, FIRA, settlement, support, founded) and fills the cells from the page.",
+    "Honest two-sided bullets get cited. 'Payoneer is better for Upwork payouts' is quoted because it is true and specific; a page that only praises itself gives ChatGPT nothing for the other side.",
+    "Third-brand injection lowers the rate. Xflow's Skydo vs Wise page has three sections on Xflow that ChatGPT never quotes; they add fetch weight without citations.",
+    "Worked examples at several invoice sizes are copied whole. Infinity's page with three examples is cited 1.21 per fetch and ChatGPT reproduced every number.",
+    "Skydo's table headers are logos, so the crawled header reads '| Features | | |'. It still works on a two-column page because the H1 names the order, but it is fragile.",
+    "No date, no author on Skydo's compare template. 'As of January 2026' inside the text carries the recency for now.",
+    "Skydo vs Wise underperforms (0.61) because that query has more competition (Wise's own pages, Xflow's blog), not because the page differs from Skydo vs Payoneer."
+  ],
+  "spec": [
+    "Keep the Skydo compare template. Replace logo header cells with text: Feature / Payoneer / Skydo.",
+    "Add a visible published and updated date, an author with title, and BlogPosting + Person schema alongside FAQPage.",
+    "Add a cost-at-three-sizes table: $1,000 / $5,000 / $20,000 with total cost and INR received for both brands, dated 'as of <month> 2026'.",
+    "Keep 'X is better for / Skydo is better for' at five bullets each and keep the competitor's real strengths.",
+    "Cut CTAs from 16 to four: hero, after the table, after the verdict, footer.",
+    "For Skydo vs Wise: add the Wise-specific facts ChatGPT wants (entity restriction to sole proprietors and freelancers, $10,000 per-transaction cap, $2.50 FIRA, April 2026 personal-account change) as table rows with dates."
+  ],
+  "playbook": {
+    "bucket": "Comparison: Skydo vs X",
+    "use_when": "The query names two brands: 'Skydo vs Wise', 'Payoneer vs Skydo for freelancers', 'Infinity payments vs Skydo fees'. ChatGPT answers with one table, two 'choose X if' lists and a cost example.",
+    "blueprint": [
+      "H1 as the query with the year: '<Brand> vs Skydo: which is better for Indian exporters in 2026?'. Date, author and title under it.",
+      "Four-bullet summary of the differences with numbers (fee model, FX markup, FIRA, settlement).",
+      "One comparison table with text headers, 10-12 labelled rows grouped under Pricing, Compliance, Payment & experience. Every cell a fact with a number or a date.",
+      "Pricing section: the competitor's fee layers named one by one, then Skydo's flat fee. One worked example in prose.",
+      "Cost-at-three-sizes table ($1,000 / $5,000 / $20,000): total cost and INR received for both, dated.",
+      "Compliance and rails: paired statements, competitor first, Skydo second, for FIRA timing, eBRC, GST invoicing, purpose code, SOFTEX.",
+      "'<Brand> is better for' 5 bullets and 'Skydo is better for' 5 bullets. Keep the competitor's true strengths.",
+      "Two or three customer quotes with numbers, then 'How to migrate' in 5 timed steps with a documents list.",
+      "FAQ of 6-7 questions with two- to four-sentence factual answers that include the numbers.",
+      "1,300-1,700 words. Only two brands on the page. Four CTAs at most. No calculator-only content; keep the numbers in text."
+    ],
+    "evidence": [
+      "skydo.com/compare/skydo-vs-paypal: 750 citations from 400 fetches (1.88). skydo-vs-payoneer 941/529 (1.78). skydo-vs-stripe 942/614 (1.53). blog/skydo-vs-infinity 1,347/739 (1.82).",
+      "xflowpay.com/blog/skydo-vs-wise 355/818 (0.43); skydo-vs-paypal 180/645 (0.28); skydo-vs-infinity 84/660 (0.13).",
+      "infinityapp.in/blog/infinity-vs-skydo 587/485 (1.21): three worked examples reproduced whole by ChatGPT.",
+      "xflowpay.com/compare/xflow-vs-skydo 158/84 (1.88): Xflow's only high-rate comparison uses the compare-page shape.",
+      "Top chat: ChatGPT's answer table reused Skydo's row labels one for one and its 'choose if' lists."
+    ]
+  },
+  "slug": "x-vs-y-comparison",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, all 137 tracked prompts"
+}
