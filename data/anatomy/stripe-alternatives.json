@@ -1,0 +1,167 @@
+{
+  "title": "Stripe alternatives: Xflow's blog vs Skydo's compare page",
+  "pages": {
+    "a": {
+      "label": "Xflow",
+      "url": "https://xflowpay.com/blog/stripe-alternatives",
+      "title": "10 Best Stripe Alternatives & Competitors in 2026 for Global Payments",
+      "type": "Blog listicle (Peec: ALTERNATIVE). 10 alternatives grouped into three jobs: collection platforms, merchant of record, Indian gateways.",
+      "retrievals": 182,
+      "citations": 143,
+      "author": "Rahul Unnikrishnan, Head of Operations; verified by Deepthi Rajeev; published 13/08/2026 (schema 2026-06-24)",
+      "published": "2026-06-24",
+      "modified": "2026-08-13",
+      "schema": "BlogPosting, Person, FAQPage, BreadcrumbList"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/compare/stripe-alternatives",
+      "title": "The Best Stripe Alternatives for Indian Exporters in 2026",
+      "type": "Compare page (Peec: ALTERNATIVE), same template. Alternatives: SWIFT, PayPal, Wise, Payoneer, Dodo Payments, remittance apps, Skydo.",
+      "retrievals": 57,
+      "citations": 13,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage only"
+    }
+  },
+  "verdict": "Skydo's worst alternatives page: 13 citations from 57 fetches (0.23) against Xflow's 0.79. The Stripe question is about three different jobs, card checkout in India (Razorpay, Cashfree, PayU), merchant of record for global SaaS (Paddle, Dodo), and invoice collection (Skydo, Wise, Xflow). Xflow's page is organised by those three jobs and names all ten brands. Skydo's page lists PayPal, Wise, Payoneer and remittance apps, none of which is a Stripe substitute for anyone, and has no Razorpay, Cashfree, PayU or Paddle. The one thing ChatGPT does lift from it is Skydo's own line about being for invoices rather than checkout.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "4,776",
+      "b": "2,674",
+      "note": ""
+    },
+    {
+      "metric": "Headings H2 / H3 / H4",
+      "a": "12 / 11 / 57: top picks per use case, comparison table, why, how we evaluated, then H3 per brand under three H4 section labels (A collection platforms, B merchant of record, C Indian gateways)",
+      "b": "7 / 0 / 9",
+      "note": "The three-job grouping is the answer's own structure ('Recommendations by use case', 'If you're coming from Stripe')."
+    },
+    {
+      "metric": "Alternatives named",
+      "a": "Xflow, Skydo, Wise, Infinity, Payoneer, Paddle, Dodo Payments, Razorpay, Cashfree, PayU",
+      "b": "SWIFT, PayPal, Wise, Payoneer, Dodo Payments, remittance apps, Skydo",
+      "note": "ChatGPT's answers name Razorpay, Cashfree, PayU, PhonePe, Paddle, Adyen, Dodo. Skydo's page has one of those seven."
+    },
+    {
+      "metric": "Tables and header cells",
+      "a": "2 text-header tables: Platform / Key features / Pricing summary / Review rating (with G2 scores); Platform / Net on $1,000 / Net on $5,000",
+      "b": "Field / Details criteria table; feature table with logo headers",
+      "note": "G2 ratings per brand are a new kind of fact ChatGPT quotes ('developer experience: Stripe ≈ Razorpay > Cashfree > PayU')."
+    },
+    {
+      "metric": "Bullets",
+      "a": "124",
+      "b": "7",
+      "note": ""
+    },
+    {
+      "metric": "Paragraphs / average words / over 60",
+      "a": "68 / 26 / 1",
+      "b": "22 / 35 / 1",
+      "note": ""
+    },
+    {
+      "metric": "Gateway vs receiving-account distinction",
+      "a": "Explained in 'How we evaluated' and repeated in every gateway's cons ('costs more than it needs to if clients pay by bank transfer')",
+      "b": "Implied in the Stripe pain-point block ('card payments only')",
+      "note": "This distinction is the sentence ChatGPT uses to place Skydo: 'focused on invoice collection rather than website checkout'."
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Xflow 31, Stripe 30, Razorpay 20, Skydo 18, Cashfree 12, Infinity 14, Wise 14, Payoneer 14",
+      "b": "Skydo 33, Stripe 29, Wise 10, PayPal 7, Payoneer 7",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "12",
+      "b": "23",
+      "note": ""
+    },
+    {
+      "metric": "Dated facts",
+      "a": "'checked in July 2026'; Razorpay PA-CB 'December 2025'; Xflow 'February 2026'; G2 'as of July 2026'",
+      "b": "Stripe '4.3% + 2% conversion' linked to stripe.com/in/pricing; PA-CB dates on cards; no page date",
+      "note": ""
+    },
+    {
+      "metric": "Stripe-specific facts",
+      "a": "Invite-only in India, card-only, no UPI or bank transfer, no native FIRA, ~2% domestic / ~3% international cards, holds",
+      "b": "Invite-only, card-only, 4.3% + 2% = 6.3% effective, no FIRA, 'approach your bank and pay for it'",
+      "note": "Skydo's Stripe facts are good and were lifted ('Stripe's India availability and cross-border/compliance limitations')."
+    },
+    {
+      "metric": "Fanout coverage",
+      "a": "Serves both the global fanouts (Adyen, Paddle, Braintree) and the India fanouts (Razorpay, Cashfree, PayU)",
+      "b": "Serves neither; the page is a receiving-account comparison with 'Stripe' in the title",
+      "note": "11 fanouts on this prompt; 8 name Razorpay/Cashfree/PayU or Adyen/Paddle."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 10 Best Stripe Alternatives & Competitors in 2026; author, verifier, date",
+      "Opening sentence: numbered list of 10; paragraph on why Stripe fails in India (fee stacking, invite-only, no UPI)",
+      "H2 Our top picks for every use case: 10 bullets",
+      "H2 Comparison table: Platform / Key features / Pricing / G2 rating; net on $1,000 and $5,000 table",
+      "H2 Why businesses look for alternatives: 6 bold-lead bullets",
+      "H2 How we evaluated: 5 bullets including the gateway vs receiving-account distinction",
+      "H2 In-depth review: Section A collection platforms (H3 1. Xflow, 2. Skydo, 3. Wise, 4. Infinity, 5. Payoneer), Section B merchant of record (6. Paddle, 7. Dodo), Section C Indian gateways (8. Razorpay, 9. Cashfree, 10. PayU); each Best for / paragraph / Key features / Pros / Cons / Verdict",
+      "Which to choose, bottom line, FAQ"
+    ],
+    "b": [
+      "Eyebrow 'Stripe Alternatives for India · 2026'; H1 'The Best Stripe Alternatives for Indian Exporters in 2026'; one-paragraph lead with Stripe's fees",
+      "Calculator: invoice slider, four INR figures without labels, 'Save ₹… with Skydo'; 'Approved under RBI's PA-CB framework' x5",
+      "H2 Why Indian Exporters Are Looking for Stripe Alternatives: three H4 pain points (6.3% effective cost; invite-only access; card payments only, no FIRA)",
+      "H2 What to Look for in a Stripe Alternative: Field / Details table (fees, exchange rates, settlement, compliance, coverage, ease, support, PA-CB), CTA",
+      "H2 Top Stripe Alternatives: carousel of cards (SWIFT, PayPal, Wise, Payoneer, Dodo Payments, remittance apps, Skydo); each card: one paragraph, Strengths x3, Limitations x3, Cost / Speed / FIRA / Best for, 'Try Skydo Today'; first card duplicated in the crawl; Skydo card labelled 'Recommended'",
+      "H2 Stripe Alternatives Feature Comparison: table whose header cells are logos (crawled as '| Features | | | |'), rows Cost on $10K / Forex markup / RBI PA-CB / FIRA / Settlement",
+      "H2 Which Stripe Alternative Is Right for You: use-case blocks",
+      "H2 Stripe Alternatives FAQs; H2 'Stop Losing …% on Every Stripe Payment' CTA"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "best stripe alternatives in india (Xflow cited 6 times, position 3 of 12)",
+        "answer": "Table: Razorpay (Indian startups, SaaS, ecommerce), Cashfree (payouts), PayU (large merchants), PhonePe, PayPal, Payoneer, Skydo ('exporters, agencies, SaaS invoicing; competitive FX rates and export compliance; focused on invoice collection rather than website checkout'), Paddle (MoR). 'Selling internationally from India: Paddle, or combine Razorpay/Cashfree with PayPal or Payoneer.'",
+        "page": "The three-section structure, the Razorpay/Cashfree/PayU H3s, and Skydo's cons written by Xflow ('collection-only, so it will not replace a gateway')"
+      }
+    ],
+    "b": [
+      {
+        "chat": "stripe alternatives (Skydo cited 5 times, position 5 of 5)",
+        "answer": "'Skydo — particularly attractive for Indian freelancers, agencies, and B2B exporters receiving international invoices rather than card checkout.' 'Dodo Payments — a good SaaS/digital-product MoR.' 'Stripe's India availability and cross-border/compliance limitations make the decision quite different.'",
+        "page": "The Skydo card, the Dodo Payments card, and the H4 pain points (invite-only, card-only, no FIRA)"
+      },
+      {
+        "chat": "best stripe alternatives in india (the 6-citation chat above)",
+        "answer": "Not retrieved. Skydo's row in the answer came from Xflow's page.",
+        "page": ""
+      }
+    ]
+  },
+  "diagnosis": [
+    "'Stripe alternatives' is three questions in one: an Indian gateway, a merchant of record, or an invoice-collection account. Xflow's page is organised by those three jobs; Skydo's page answers only the third and pads it with PayPal, Payoneer and remittance apps.",
+    "The brands ChatGPT names (Razorpay, Cashfree, PayU, Paddle, Adyen) are absent from Skydo's page, so the page can contribute at most one row.",
+    "The gateway-versus-receiving-account sentence is the citation Skydo gets. It exists on Skydo's page only as a pain point about Stripe; on Xflow's page it is a stated evaluation criterion repeated under every gateway.",
+    "G2 ratings and dated regulatory facts per brand are quotable; Skydo's page has none of the former.",
+    "Retrieval is also low (57 fetches) because the title promises 'Stripe alternatives for Indian exporters' and the fanouts ask for payment processors and gateways; the compare page does not match the global half of the query at all.",
+    "The shared compare template is the wrong shape for this query even if its defects were fixed. This page needs a different brand list, not only a different layout.",
+    "Skydo's Stripe facts (invite-only, card-only, 6.3%, no FIRA) are good and should survive the rebuild."
+  ],
+  "spec": [
+    "Rebuild as a 10-brand listicle grouped by job: Indian gateways (Razorpay, Cashfree, PayU), merchant of record (Paddle, Dodo Payments, Lemon Squeezy), invoice collection (Skydo, Wise, Xflow, Infinity). Drop PayPal, remittance apps and SWIFT.",
+    "State the three-job distinction in the opening paragraph and in a 'how we evaluated' block; repeat it in each brand's cons.",
+    "Text-header comparison table with a fee summary, best for, and G2 rating per brand; a second table with net on $1,000 and $5,000 for the collection platforms.",
+    "Keep Skydo's Stripe pain points (invite-only, card-only, 6.3% effective, no FIRA) as the 'why people leave' block.",
+    "Title and H1: 'Best Stripe alternatives in India (2026): gateways, merchant of record and invoice collection'. Author, dates, BlogPosting + Person schema, four CTAs.",
+    "Success check: fetches above 150 and citations per fetch above 0.6 (today 57 and 0.23)."
+  ],
+  "slug": "stripe-alternatives",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
+  "bucket": "Alternatives listicle"
+}

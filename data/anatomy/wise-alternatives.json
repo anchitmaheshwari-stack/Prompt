@@ -247,7 +247,7 @@
   "bucket": "Alternatives listicle",
   "playbook": {
     "bucket": "Alternatives listicle",
-    "use_when": "The query is '<brand> alternatives', '<brand> competitors' or 'best alternatives to <brand> in India'. ChatGPT's answer is a ranked list of named platforms with a one-line role each and a use-case table.",
+    "use_when": "The query is '<brand> alternatives', '<brand> competitors' or 'best alternatives to <brand> in India'. ChatGPT's answer is a ranked list of named platforms with a one-line role each and a use-case table. Five teardowns sit in this bucket: Wise, PayPal, Payoneer, Stripe and Xflow alternatives.",
     "blueprint": [
       "Title and H1 contain the query verbatim: 'Best <Brand> alternatives for receiving international payments in India (2026)'.",
       "Byline: author, verifier, published and updated dates. BlogPosting and Person schema.",
@@ -258,6 +258,9 @@
       "'How we chose' with 4 criteria, and a compliance-fit block: PA-CB status and FIRA handling per brand with dates.",
       "One H3 per brand, numbered. Under each: H4 Best for (one sentence), H4 Key features (5-6 bullets), H4 Pros (4), H4 Cons (4), H4 Verdict (one line). Give competitors accurate numbers and give Skydo an honest con.",
       "'How to choose' with 4 bullets keyed to entity type, invoice size, compliance, and how you get paid.",
+      "Open with the query's decisive split in the first two paragraphs (Payoneer: marketplace payouts vs direct invoices; Stripe: gateway vs merchant of record vs invoice collection). Skydo's Payoneer page wins its query because it does this.",
+      "Name every brand ChatGPT's answer names for that query, including the ones that are not receiving accounts (Razorpay, Cashfree, PayU for PayPal and Stripe; PingPong, Airwallex, Infinity for Payoneer; Airwallex, Infinity, Veem for Xflow). A missing brand is a row sourced from a competitor.",
+      "Give Skydo an honest con on its own page. In every bucket, the page ChatGPT cites for Skydo's description is the competitor page that states Skydo's cons.",
       "'How we verified this' with sources and dates. FAQ of 6-7 questions with factual two-sentence answers.",
       "Label estimates 'about' and your own numbers 'exact'. 3,000-3,500 words is fine when it is 100+ bullets and short paragraphs.",
       "Four CTAs at most. Static HTML: no carousel, no logo-only table headers, no calculator in the crawled text."
@@ -268,7 +271,10 @@
       "xflowpay.com/blog/paypal-alternatives: 221 from 244 (0.91) vs skydo.com/compare/paypal-alternatives 98 from 281 (0.35).",
       "xflowpay.com/blog/stripe-alternatives: 143 from 182 (0.79) vs skydo.com/compare/stripe-alternatives 13 from 57 (0.23).",
       "infinityapp.in/blog/xflow-alternatives: 292 from 235 (1.24) vs skydo.com/blog/xflow-price-features-alternatives 2 from 19 (0.11).",
-      "ChatGPT lifted five different brands' lines from Xflow's page and only Skydo's own line from Skydo's page."
+      "ChatGPT lifted five different brands' lines from Xflow's page and only Skydo's own line from Skydo's page.",
+      "skydo.com/compare/payoneer-alternatives 372 from 204 (1.82) beats xflowpay.com 478 from 276 (1.73): the one page where Skydo's template wins, because its opening states the marketplace-vs-direct split.",
+      "skydo.com/compare/stripe-alternatives 13 from 57 (0.23): no Razorpay, Cashfree, PayU or Paddle on the page; ChatGPT sources those rows from Xflow.",
+      "skydo.com/blog/xflow-price-features-alternatives 2 from 19 (0.11) vs infinityapp.in 292 from 235 (1.24): a 2025 review with no table against a 2026 listicle with ten tables."
     ]
   }
 }

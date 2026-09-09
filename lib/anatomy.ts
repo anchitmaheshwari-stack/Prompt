@@ -41,6 +41,10 @@ const DIR = path.join(process.cwd(), 'data', 'anatomy');
 export const BUCKET_ORDER = [
   'how-to-guide',
   'wise-alternatives',
+  'paypal-alternatives',
+  'payoneer-alternatives',
+  'stripe-alternatives',
+  'xflow-alternatives',
   'x-vs-y-comparison',
   'persona-guide',
   'corridor-guide',

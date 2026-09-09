@@ -10,9 +10,11 @@ function rate(p: { retrievals: number; citations: number }) {
 }
 
 export default function PlaybookPage() {
-  const all = listAnatomies().filter((a) => a.playbook);
+  const everything = listAnatomies();
+  const all = everything.filter((a) => a.playbook);
   const items = all.filter((a) => !a.branded_only);
   const branded = all.filter((a) => a.branded_only);
+  const siblings = (bucket?: string) => everything.filter((x) => x.bucket === bucket && !x.playbook);
   return (
     <main className="max-w-5xl mx-auto p-8">
       <div className="mb-6 text-sm flex gap-4">
@@ -83,11 +85,20 @@ export default function PlaybookPage() {
                   </ul>
                 </div>
               </div>
-              <p className="mt-5 text-sm">
-                <Link href={`/anatomy/${a.slug}`} className="font-medium hover:underline">
-                  Full teardown: {a.title} →
-                </Link>
-              </p>
+              <div className="mt-5 text-sm space-y-1">
+                <p>
+                  <Link href={`/anatomy/${a.slug}`} className="font-medium hover:underline">
+                    Full teardown: {a.title} →
+                  </Link>
+                </p>
+                {siblings(a.bucket).map((s) => (
+                  <p key={s.slug}>
+                    <Link href={`/anatomy/${s.slug}`} className="hover:underline text-gray-700">
+                      Also in this bucket: {s.title} →
+                    </Link>
+                  </p>
+                ))}
+              </div>
             </section>
           );
         })}

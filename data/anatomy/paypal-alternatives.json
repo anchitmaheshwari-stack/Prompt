@@ -1,0 +1,189 @@
+{
+  "title": "PayPal alternatives: Xflow's blog vs Skydo's compare page",
+  "pages": {
+    "a": {
+      "label": "Xflow",
+      "url": "https://xflowpay.com/blog/paypal-alternatives",
+      "title": "Best PayPal Alternatives for Receiving International Payments in India",
+      "type": "Blog listicle (Peec: ALTERNATIVE). 7 named alternatives plus a SWIFT fallback, grouped by who pays you.",
+      "retrievals": 244,
+      "citations": 221,
+      "author": "Rahul Unnikrishnan, Head of Operations; verified by Deepthi Rajeev; published 04/09/2026 (schema datePublished 2025-11-26)",
+      "published": "2025-11-26",
+      "modified": "2026-09-04",
+      "schema": "BlogPosting, Person, FAQPage, BreadcrumbList"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/compare/paypal-alternatives",
+      "title": "The Best PayPal Alternatives for Indian Exporters in 2026",
+      "type": "Compare page (Peec: ALTERNATIVE), the same template as the Wise and Stripe pages. 6 alternatives: SWIFT, Stripe, Wise, Payoneer, Dodo Payments, remittance apps, then Skydo.",
+      "retrievals": 281,
+      "citations": 98,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage only"
+    }
+  },
+  "verdict": "Skydo's page is fetched more often than Xflow's and cited a third as often per fetch (0.35 vs 0.91). The PayPal answer has two halves: platforms for freelancers receiving invoices (Wise, Payoneer, Skydo) and gateways for businesses taking cards (Stripe, Razorpay, Cashfree). Xflow's page covers both halves with a 'best for' line per brand and three text-header cost tables, so ChatGPT builds its whole answer from it. Skydo's page has no Razorpay or Cashfree at all, so it can only supply the freelancer half, and it supplies that half through a logo-header table and a carousel.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "5,701",
+      "b": "2,587",
+      "note": "Long is fine when it is 114 bullets and three tables."
+    },
+    {
+      "metric": "Headings H2 / H3 / H4",
+      "a": "16 / 9 / 0: ranked list, comparison table, why people leave, cost on $1,000, cost by invoice size, how we picked, FIRA and PA-CB, one H3 per alternative, Venmo/Western Union/Instamojo, which to pick, mistakes, FAQ",
+      "b": "7 / 0 / 9: why, what to look for, top alternatives, feature comparison, which is right, FAQ, CTA",
+      "note": "Xflow answers 'why', 'which', 'how much' and 'is it compliant' under separate headings."
+    },
+    {
+      "metric": "Alternatives named",
+      "a": "Xflow, Wise, Payoneer, Skydo, Razorpay MoneySaver, BriskPe, Stripe, SWIFT wire; Venmo, Western Union and Instamojo explained away",
+      "b": "SWIFT, Stripe, Wise, Payoneer, Dodo Payments, remittance apps, Skydo",
+      "note": "No Razorpay or Cashfree on Skydo's page. The 'PayPal alternatives India' fanouts name Razorpay, Cashfree and PayU, and ChatGPT's answer gives them their own rows."
+    },
+    {
+      "metric": "Tables and header cells",
+      "a": "3 tables, all with text headers: Platform / Headline fee / Mid-market rate / Auto FIRA / Settlement; Platform / Fee model / Best for / Lands on $1,000; Platform / $2,000 / $5,000 / $10,000",
+      "b": "2 tables: a Field / Details criteria table with text headers, and the feature table with logo headers crawled as '| Features | | | | |'",
+      "note": "The one Skydo table ChatGPT can read is the criteria table, which contains no brand facts."
+    },
+    {
+      "metric": "Bullets",
+      "a": "114",
+      "b": "7",
+      "note": ""
+    },
+    {
+      "metric": "Paragraphs / average words / over 60",
+      "a": "84 / 32 / 16",
+      "b": "21 / 32 / 0",
+      "note": ""
+    },
+    {
+      "metric": "Per-brand block",
+      "a": "H3 per brand: Best for, one paragraph, Key features (4-5 bullets), Pros (3), Cons (2-3), Verdict",
+      "b": "Card per brand: one paragraph, Strengths (3), Limitations (3), Cost, Speed, FIRA, Best for, CTA",
+      "note": "Same facts, but Skydo's are inside a carousel and glued to labels ('Cost5-8% effective')."
+    },
+    {
+      "metric": "Worked numbers",
+      "a": "'$1,000 invoice → ₹93,860 (exact)' per platform, then $2,000 / $5,000 / $10,000, then a formula and a $5,000 worked example (₹36,000 more than PayPal)",
+      "b": "Calculator only; 'Cost on $10K' row in the logo table",
+      "note": "ChatGPT copies rupee figures from text tables; it cannot read the calculator."
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Xflow 43, PayPal 41, Wise 23, Payoneer 23, Skydo 16, Razorpay 14, BriskPe 12, Stripe 8",
+      "b": "Skydo 31, PayPal 28, Wise 9, Payoneer 9, Stripe 6, Razorpay 1, Cashfree 1",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "14",
+      "b": "23",
+      "note": ""
+    },
+    {
+      "metric": "Dated facts",
+      "a": "'as of February 2026' Xflow PA-CB; 'in-principle' Payoneer; visible published date; 'G2 as of mid-2026'",
+      "b": "'Free Weekly Digital FIRA from Feb 2026'; 'In-principle PA-CB (Jun 2025)' Wise; 'Jan 2026' Payoneer; no page date",
+      "note": "Skydo's cards carry good dated facts; the page itself has no date."
+    },
+    {
+      "metric": "Hedges ('about', 'typically')",
+      "a": "57",
+      "b": "9",
+      "note": "Xflow labels estimates 'about' and its own figure 'exact', which reads as sourced."
+    },
+    {
+      "metric": "Compliance block",
+      "a": "H2 'Will you still get your FIRA and stay RBI-compliant?': PA-CB status per brand with dates, plus a 'does switching break your FIRC workflow' Q&A",
+      "b": "PA-CB row in the logo table; PA-CB definition in the criteria table",
+      "note": ""
+    },
+    {
+      "metric": "Crawl artefacts",
+      "a": "none",
+      "b": "SWIFT card duplicated, calculator numbers without labels, PA-CB badge x5, logo headers",
+      "note": "Same defects as the Wise page because it is the same template."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 Best PayPal Alternatives for Receiving International Payments in India; author, verifier, date; banner CTA",
+      "Opening sentence: the ranked list of 7 platforms plus SWIFT; second paragraph: PayPal's 7-8% all-in cost",
+      "H2 The best PayPal alternatives, ranked: 7 bullets with bold brand and 'Best for'",
+      "H2 How they compare: 8-row text-header table (fee, mid-market rate, auto FIRA, settlement)",
+      "H2 Why Indian exporters start looking elsewhere: 4 bold-lead bullets (stacked fees, holds, weak documentation, hidden rate)",
+      "H2 What each alternative costs on a $1,000 invoice: 9-row table with rupee figures",
+      "H2 How the maths changes as invoices grow: $2,000 / $5,000 / $10,000 table; H3 formula and a $5,000 worked example",
+      "H2 How we picked this list: 5 criteria bullets",
+      "H2 Will you still get your FIRA: PA-CB status per brand, dated; Q&A on switching",
+      "H2 A closer look: H3 1. Xflow ... 7. Stripe, each Best for / paragraph / Key features / Pros / Cons / Verdict",
+      "H2 What about Venmo, Western Union or Instamojo",
+      "H2 Which to pick; H2 Why Xflow; H2 Mistakes; H2 Bottom line; H2 FAQ"
+    ],
+    "b": [
+      "Eyebrow 'PayPal Alternatives for India · 2026'; H1 'The Best PayPal Alternatives for Indian Exporters in 2026'; one-paragraph lead with PayPal's fees",
+      "Calculator: invoice slider, four INR figures without labels, 'Save ₹… with Skydo'; 'Approved under RBI's PA-CB framework' x5",
+      "H2 Why Indian Exporters Are Looking for PayPal Alternatives: three H4 pain points (high effective cost 4.4% + $0.30 + 3-4% FX; forced INR auto-withdrawal; weekly FIRA, no eBRC)",
+      "H2 What to Look for in a PayPal Alternative: Field / Details table (fees, exchange rates, settlement, compliance, coverage, ease, support, PA-CB), CTA",
+      "H2 Top PayPal Alternatives: carousel of cards (SWIFT, Stripe, Wise, Payoneer, Dodo Payments, remittance apps, Skydo); each card: one paragraph, Strengths x3, Limitations x3, Cost / Speed / FIRA / Best for, 'Try Skydo Today'; first card duplicated in the crawl; Skydo card labelled 'Recommended'",
+      "H2 PayPal Alternatives Feature Comparison: table whose header cells are logos (crawled as '| Features | | | |'), rows Cost on $10K / Forex markup / RBI PA-CB / FIRA / Settlement",
+      "H2 Which PayPal Alternative Is Right for You: use-case blocks",
+      "H2 PayPal Alternatives FAQs; H2 'Stop Losing …% on Every PayPal Payment' CTA"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "best paypal alternatives in india (cited 7 times, position 1 of 9 sources)",
+        "answer": "Use-case table: Freelancers receiving overseas payments → Wise, Payoneer, Skydo; Businesses accepting international card payments → Stripe, Razorpay, Cashfree; Marketplace payouts → Payoneer.",
+        "page": "H2 ranked list 'Best for' lines and the H2 'Which PayPal alternative should you pick'"
+      },
+      {
+        "chat": "same chat",
+        "answer": "Per platform: Best for, Pros, Cons for Wise ('transparent exchange rates... some features restricted by business type'), Payoneer ('multiple fee types add up'), Stripe ('availability and onboarding for Indian businesses can vary'), Razorpay, Cashfree, Skydo ('designed specifically for receiving international payments into India... RBI-compliant documentation... primarily focused on incoming payments').",
+        "page": "The H3 per brand: Best for / Pros / Cons blocks, including Skydo's cons written by Xflow"
+      }
+    ],
+    "b": [
+      {
+        "chat": "paypal alternatives (cited 4 times, position 3 of 19 sources)",
+        "answer": "Skydo: Indian freelancers/exporters; flat fees, 0% FX markup, automatic FIRA; RBI-authorised. 'Want to minimize fees on larger invoices: Skydo is particularly worth comparing.'",
+        "page": "The Skydo card and the H2 'Why Indian exporters are looking' lead"
+      },
+      {
+        "chat": "best paypal alternatives in india (the 7-citation chat above)",
+        "answer": "Not retrieved. Skydo's page was not among the 9 sources; the Skydo row in the answer came from Xflow's page.",
+        "page": "On the 'India' variant of the prompt, Xflow's page supplies Skydo's own description."
+      }
+    ]
+  },
+  "diagnosis": [
+    "The PayPal answer has two halves, invoice receivers and card gateways. Xflow's page covers both with a 'best for' line per brand; Skydo's page has no Razorpay, Cashfree or PayU, so half the answer must come from elsewhere.",
+    "ChatGPT's per-brand Best for / Pros / Cons blocks are copied from Xflow's H3 blocks, including the sentence about Skydo. Skydo's own description in the answer was written by Xflow.",
+    "Text-header tables with rupee figures at three invoice sizes are the most-copied block. Skydo's numbers are in a calculator and a logo-header table, both unreadable.",
+    "Skydo's page keeps the SWIFT, Dodo and remittance-app cards from the shared template; they are not PayPal alternatives anyone asks for and they crowd out the gateways that are.",
+    "A page that is fetched 281 times and cited 98 is a structure problem, not a retrieval problem. The URL, title and H1 already win the fetch.",
+    "23 CTAs and a carousel with a duplicated first card are the same defects diagnosed on the Wise page.",
+    "Xflow labels estimates 'about' and its own number 'exact', dates every regulatory claim, and answers 'will I still get my FIRA' under its own heading. Those three habits are cheap to copy."
+  ],
+  "spec": [
+    "Replace the six-card carousel with 7 named alternatives as numbered H3s: Wise, Payoneer, Razorpay MoneySaver Export, Cashfree Global Collections, Stripe, PayU or BriskPe, Skydo. Drop SWIFT, Dodo and remittance apps or move them to a 'what about' paragraph.",
+    "One text-header comparison table (Platform / Fee model / Best for / Lands on $1,000) and one cost-by-size table ($2,000 / $5,000 / $10,000), dated 'as of <month> 2026'.",
+    "Open with the ranked list in one sentence, then PayPal's all-in cost with the fee layers named.",
+    "Per brand: Best for, one paragraph, Key features (4-5), Pros (3), Cons (3), Verdict. Give Razorpay and Cashfree honest strengths for card checkout.",
+    "A 'Will you still get your FIRA' section with PA-CB status per brand and a date.",
+    "Author, verifier, published and updated dates, BlogPosting + Person schema. Four CTAs.",
+    "Success check: citations per fetch above 0.8 (today 0.35) and Skydo's row in the answer sourced from skydo.com."
+  ],
+  "slug": "paypal-alternatives",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
+  "bucket": "Alternatives listicle"
+}

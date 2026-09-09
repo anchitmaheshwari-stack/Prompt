@@ -9,6 +9,13 @@ function rate(p: { retrievals: number; citations: number }) {
 
 export default function AnatomyIndex() {
   const items = listAnatomies();
+  const groups: [string, typeof items][] = [];
+  for (const a of items) {
+    const key = a.bucket ?? 'Other';
+    const g = groups.find(([k]) => k === key);
+    if (g) g[1].push(a);
+    else groups.push([key, [a]]);
+  }
   return (
     <main className="max-w-4xl mx-auto p-8">
       <div className="mb-6 text-sm">
@@ -24,23 +31,25 @@ export default function AnatomyIndex() {
           Open the playbook: all bucket blueprints on one page →
         </Link>
       </p>
-      <ul className="space-y-3">
-        {items.map((a) => (
-          <li key={a.slug} className="border border-gray-200 rounded-lg p-4">
-            {a.bucket && (
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                {a.bucket}
-                {a.branded_only && <span className="ml-2 rounded bg-gray-100 px-1.5 py-0.5 text-[10px] normal-case tracking-normal text-gray-600">branded prompts only</span>}
-              </div>
-            )}
-            <Link href={`/anatomy/${a.slug}`} className="font-medium hover:underline">{a.title}</Link>
-            <div className="text-xs text-gray-500 mt-1">
-              {a.pages.a.label}: {a.pages.a.citations} citations / {a.pages.a.retrievals} fetches ({rate(a.pages.a)}) ·{' '}
-              {a.pages.b.label}: {a.pages.b.citations} / {a.pages.b.retrievals} ({rate(a.pages.b)})
-            </div>
-          </li>
-        ))}
-      </ul>
+      {groups.map(([bucket, list]) => (
+        <section key={bucket} className="mb-8">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">
+            {bucket}
+            {list[0].branded_only && <span className="ml-2 rounded bg-gray-100 px-1.5 py-0.5 text-[10px] normal-case tracking-normal text-gray-600">branded prompts only</span>}
+          </h2>
+          <ul className="space-y-3">
+            {list.map((a) => (
+              <li key={a.slug} className="border border-gray-200 rounded-lg p-4">
+                <Link href={`/anatomy/${a.slug}`} className="font-medium hover:underline">{a.title}</Link>
+                <div className="text-xs text-gray-500 mt-1">
+                  {a.pages.a.label}: {a.pages.a.citations} citations / {a.pages.a.retrievals} fetches ({rate(a.pages.a)}) ·{' '}
+                  {a.pages.b.label}: {a.pages.b.citations} / {a.pages.b.retrievals} ({rate(a.pages.b)})
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </main>
   );
 }

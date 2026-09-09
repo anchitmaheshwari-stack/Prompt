@@ -1,0 +1,169 @@
+{
+  "title": "Payoneer alternatives: Xflow's blog vs Skydo's compare page (the one Skydo wins)",
+  "pages": {
+    "a": {
+      "label": "Xflow",
+      "url": "https://xflowpay.com/blog/payoneer-alternatives",
+      "title": "Best Payoneer Alternatives in India for Receiving International Payments",
+      "type": "Blog listicle (Peec: ALTERNATIVE). 7 alternatives plus SWIFT fallback.",
+      "retrievals": 276,
+      "citations": 478,
+      "author": "Rahul Unnikrishnan, Head of Operations; verified by Deepthi Rajeev; published 10/08/2026 (schema 2025-11-21)",
+      "published": "2025-11-21",
+      "modified": "2026-08-10",
+      "schema": "BlogPosting, Person, FAQPage, BreadcrumbList"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/compare/payoneer-alternatives",
+      "title": "The Best Payoneer Alternatives for Indian Exporters in 2026",
+      "type": "Compare page (Peec: ALTERNATIVE), same template as the Wise, PayPal and Stripe pages. Alternatives: SWIFT, PayPal, Wise, Stripe, Dodo Payments, remittance apps, Skydo.",
+      "retrievals": 204,
+      "citations": 372,
+      "author": "none",
+      "published": "not stated",
+      "modified": "not stated",
+      "schema": "FAQPage only"
+    }
+  },
+  "verdict": "This is the one alternatives page where Skydo's template wins: 1.82 citations per fetch against Xflow's 1.73, and Skydo's best page of any kind on unbranded prompts. The reason is the question, not the template. 'Payoneer alternatives' is answered as 'it depends on how you get paid: marketplace or direct clients', and Skydo's page opens with exactly that split and carries the specific Payoneer numbers (2-3% withdrawal markup, $29.95 inactivity fee under $6,000, 2,000+ marketplace integrations, FIRA in 24-72 hours). The competition is also weaker: Wise's own Payoneer-alternatives blog is cited 0.73 per fetch. Copy what works here into the PayPal, Wise and Stripe pages rather than the other way round.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "3,352",
+      "b": "2,619",
+      "note": ""
+    },
+    {
+      "metric": "Headings H2 / H3 / H4",
+      "a": "15 / 8 / 35: shortlist, why people leave, comparison, fees by size, how we chose, compliance fit, one H3 per brand with H4 Best for / Key features / Pros / Cons / Verdict, how to choose, where Xflow fits, how we verified, bottom line, FAQ",
+      "b": "7 / 0 / 9",
+      "note": ""
+    },
+    {
+      "metric": "Alternatives named",
+      "a": "Xflow, Wise, Skydo, PingPong, Airwallex, BriskPe, Infinity, SWIFT",
+      "b": "SWIFT, PayPal, Wise, Stripe, Dodo Payments, remittance apps, Skydo",
+      "note": "ChatGPT's answer named PingPong and Airwallex (from Xflow) and Winvesta (from a Wise review). Skydo's page has none of the three."
+    },
+    {
+      "metric": "The opening framing",
+      "a": "'The best Payoneer alternatives for Indian freelancers and service exporters are 1. Xflow, 2. Wise, 3. Skydo...' then Payoneer's fee layers",
+      "b": "'Payoneer's 2,000+ marketplace integrations are unmatched for Upwork, Fiverr, and Amazon freelancers. But for direct B2B invoicing... the forex markup and inactivity fee eat into your margins.'",
+      "note": "Skydo's opening is the sentence ChatGPT's answer is built around ('depends on how you're getting paid'). This is the block to reuse."
+    },
+    {
+      "metric": "Payoneer-specific facts",
+      "a": "~1% receiving fee, up to 2% FX markup, 1-4% withdrawal fee, $29.95 under $6,000, no auto FIRA",
+      "b": "2-3% forex markup at INR withdrawal, ₹1.25 lakh on a $50K year, $29.95 under $6,000, no eBRC or GST invoicing, FIRA in 24-72 hours, ACH 1% and card 3.2% + $0.49",
+      "note": "Both carry the numbers; Skydo's are more specific and quoted ('currency conversion costs can be higher')."
+    },
+    {
+      "metric": "Tables and header cells",
+      "a": "2 text-header tables: Platform / Fee model / Best for / About on $1,000; Platform / $2,000 / $5,000 / $10,000 / vs top payout",
+      "b": "Field / Details criteria table (text headers); feature table with logo headers",
+      "note": ""
+    },
+    {
+      "metric": "Bullets",
+      "a": "119",
+      "b": "7",
+      "note": ""
+    },
+    {
+      "metric": "Per-brand block",
+      "a": "H4 Best for, Key features (5-6), Pros (4), Cons (4), Verdict, for all 7",
+      "b": "Card: paragraph, Strengths 3, Limitations 3, Cost / Speed / FIRA / Best for",
+      "note": "ChatGPT's answer table columns are Best for / Pros / Cons: both pages feed it."
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Payoneer 36, Xflow 29, Wise 12, Skydo 11, Infinity 8, BriskPe 8, Airwallex 6",
+      "b": "Skydo 31, Payoneer 30, Wise 10, Stripe 7, PayPal 6",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "11 (three of them repeated 'Compare your current receiving fees' H2s)",
+      "b": "23",
+      "note": ""
+    },
+    {
+      "metric": "Dated facts",
+      "a": "'as of July 2026' fees; 'as of February 2026' Xflow PA-CB; 'January 2026' Skydo PA-CB; G2 June 2026",
+      "b": "'In-principle RBI PA-CB (Jan 2026)' Payoneer; 'Jun 2025' Wise; 'January 2026' Skydo; no page date",
+      "note": ""
+    },
+    {
+      "metric": "Competition on the query",
+      "a": "wise.com/in/blog/payoneer-alternatives 319 from 437 (0.73); infinityapp.in/blog/payoneer-alternatives 121 from 210 (0.58); airwallex.com payoneer-alternatives 214 from 120 (1.78)",
+      "b": "",
+      "note": "Weaker field than the Wise or PayPal queries, where Wise's and PayPal's own domains dominate."
+    },
+    {
+      "metric": "Crawl artefacts",
+      "a": "none",
+      "b": "SWIFT card duplicated, calculator without labels, badge x5, logo headers",
+      "note": "Still there; the page wins despite them."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 Best Payoneer Alternatives in India for Receiving International Payments; author, verifier, date; banner",
+      "Opening sentence: numbered list 1-7 plus SWIFT; paragraph on Payoneer's fee layers; paragraph on how to choose",
+      "H2 The Payoneer alternatives shortlist: 8 bullets with bold brand and one line",
+      "H2 Why freelancers look for alternatives: 4 bold-lead bullets",
+      "H2 Comparing the top 7: text-header table with 'about ₹…' per platform, dated July 2026",
+      "H2 How fees change with invoice size: $2,000 / $5,000 / $10,000 table with 'vs top payout'",
+      "H2 How we chose: 4 criteria; H2 Compliance fit: PA-CB status per brand, dated",
+      "H2 Top 7: H3 1. Xflow ... 7. Infinity, each with H4 Best for / Key features / Pros / Cons / Verdict",
+      "H2 How to choose: 4 bullets; H2 Where Xflow fits; H2 How we verified this; H2 Bottom line; H2 FAQ"
+    ],
+    "b": [
+      "Eyebrow 'Payoneer Alternatives for India · 2026'; H1 'The Best Payoneer Alternatives for Indian Exporters in 2026'; one-paragraph lead with Payoneer's fees",
+      "Calculator: invoice slider, four INR figures without labels, 'Save ₹… with Skydo'; 'Approved under RBI's PA-CB framework' x5",
+      "H2 Why Indian Exporters Are Looking for Payoneer Alternatives: three H4 pain points (hidden 2-3% forex markup; $29.95 inactivity fee; no eBRC or GST invoicing)",
+      "H2 What to Look for in a Payoneer Alternative: Field / Details table (fees, exchange rates, settlement, compliance, coverage, ease, support, PA-CB), CTA",
+      "H2 Top Payoneer Alternatives: carousel of cards (SWIFT, PayPal, Wise, Stripe, Dodo Payments, remittance apps, Skydo); each card: one paragraph, Strengths x3, Limitations x3, Cost / Speed / FIRA / Best for, 'Try Skydo Today'; first card duplicated in the crawl; Skydo card labelled 'Recommended'",
+      "H2 Payoneer Alternatives Feature Comparison: table whose header cells are logos (crawled as '| Features | | | |'), rows Cost on $10K / Forex markup / RBI PA-CB / FIRA / Settlement",
+      "H2 Which Payoneer Alternative Is Right for You: use-case blocks",
+      "H2 Payoneer Alternatives FAQs; H2 'Stop Losing …% on Every Payoneer Payment' CTA"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "best payoneer alternatives in india (Xflow cited 7 times, position 3; Skydo's page retrieved at position 9 with 0 citations in this chat)",
+        "answer": "Table: Wise Business (freelancers with direct clients), Skydo (flat pricing, automatic FIRA, built for India; 'primarily designed for receiving payments rather than a full multi-currency wallet'), Xflow (flat-fee, eFIRA), PingPong (Amazon sellers), Airwallex (startups), Direct SWIFT wire. 'Agency earning $5,000+ per month: Xflow or Skydo'. Lowest fees: 1. Skydo 2. Wise Business 3. Xflow.",
+        "page": "H2 shortlist bullets, the H4 Best for / Cons blocks, and the fees-by-size table"
+      }
+    ],
+    "b": [
+      {
+        "chat": "best payoneer alternatives in india (a different run of the same prompt; Skydo cited 9 times, position 2 of 13)",
+        "answer": "'The best Payoneer alternative depends on how you're getting paid. If you're a freelancer working on marketplaces like Upwork or Fiverr, your needs are different from a business invoicing overseas clients directly.' Table rows: Wise, Skydo ('flat pricing, India-focused, FIRA support, built for export payments; less useful if you need marketplace integrations'), Stripe, PayPal. 'Upwork, Fiverr, Amazon sellers: Payoneer still has an advantage because of its extensive marketplace integrations.' 'Payoneer: currency conversion costs can be higher.'",
+        "page": "H2 'Why Indian exporters are looking' opening paragraphs; the Wise, Stripe, PayPal and Skydo cards' Best for and Limitations lines"
+      }
+    ]
+  },
+  "diagnosis": [
+    "The Payoneer question is 'marketplace or direct invoicing?'. Skydo's page states that split in its first two paragraphs, so ChatGPT's framing sentence and the Payoneer verdict both come from Skydo.",
+    "Specific competitor numbers get quoted: the 2-3% withdrawal markup, the $29.95 fee and the $6,000 threshold appear on both pages and in the answers.",
+    "Both pages feed the same Best for / Pros / Cons table; Skydo's card lines are short enough to lift even from a carousel.",
+    "Skydo still misses the brands the answer wants: PingPong, Airwallex, Infinity, BriskPe. Those rows came from Xflow.",
+    "The field is weak on this query. Wise's own Payoneer-alternatives blog cites at 0.73, so a 1.8 page leads. On the Wise and PayPal queries the same template is beaten by the brand's own domain and by Xflow.",
+    "The defects are unchanged (logo headers, carousel, 23 CTAs, no date). They cost less here because the opening paragraphs carry the answer.",
+    "Lesson for the other four pages: put the query's decisive split in the first two paragraphs and carry the incumbent's exact fee numbers there."
+  ],
+  "spec": [
+    "Keep the opening two paragraphs; they are the model for the other alternatives pages.",
+    "Add the missing brands as cards or H3s: PingPong (marketplace sellers), Airwallex (startups), Infinity and BriskPe (flat-percentage), so the answer's rows can be sourced here.",
+    "Replace the logo-header feature table with text headers and add a $2,000 / $5,000 / $10,000 landed-cost table, dated.",
+    "Add a visible published and updated date, an author, and BlogPosting + Person schema.",
+    "Cut CTAs to four and remove the duplicated SWIFT card and the calculator from the crawled text.",
+    "Success check: hold above 1.5 citations per fetch after the change and gain the PingPong/Airwallex rows."
+  ],
+  "slug": "payoneer-alternatives",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
+  "bucket": "Alternatives listicle"
+}

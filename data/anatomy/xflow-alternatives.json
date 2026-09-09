@@ -1,0 +1,170 @@
+{
+  "title": "Xflow alternatives: Infinity's listicle vs Skydo's Xflow review blog",
+  "pages": {
+    "a": {
+      "label": "Infinity",
+      "url": "https://infinityapp.in/blog/xflow-alternatives",
+      "title": "5 Best Xflow Alternatives for Cross-Border Payments in 2026",
+      "type": "Blog listicle (Peec: ALTERNATIVE). 5 alternatives, each with a Pricing / Pros / Cons / 'X vs Xflow' table / Summary block.",
+      "retrievals": 235,
+      "citations": 292,
+      "author": "Amrit Sharma; posted Apr 2, 2026",
+      "published": "2026-04-02",
+      "modified": "not stated",
+      "schema": "BlogPosting, FAQPage, Organization"
+    },
+    "b": {
+      "label": "Skydo",
+      "url": "https://skydo.com/blog/xflow-price-features-alternatives",
+      "title": "Xflow: Price, Features and Alternatives",
+      "type": "Blog review (Peec: ALTERNATIVE). An Xflow feature and pricing review with a four-brand 'alternatives' section at the end.",
+      "retrievals": 19,
+      "citations": 2,
+      "author": "Anoosh Kotak; 20 January 2025",
+      "published": "2025-01-20",
+      "modified": "not stated",
+      "schema": "BlogPosting, Person, FAQPage"
+    }
+  },
+  "verdict": "Infinity's page is fetched twelve times as often as Skydo's and cited 292 times to Skydo's 2. Skydo's page is a January 2025 review of Xflow with four alternatives in two sentences each and no table; it also states that Xflow only supports USD, which is no longer true. Infinity's page is a five-brand listicle where every brand gets pricing at $2,000 / $5,000 / $10,000, pros, cons, a brand-vs-Xflow table and a summary, plus a $30,000-a-month worked example. ChatGPT's answer table reproduces Infinity's brand set and its 'best for' lines, including Skydo's.",
+  "metrics": [
+    {
+      "metric": "Words",
+      "a": "4,241",
+      "b": "1,585",
+      "note": ""
+    },
+    {
+      "metric": "Headings H2 / H3",
+      "a": "11 / 26: quick glance, use-case list, why people leave, how we evaluated, comparison table, then H2 per brand with H3 Pricing / Pros / Cons / Brand vs Xflow / Summary, which to choose, FAQ",
+      "b": "4 / 12: Xflow features (5 H3), Xflow price, 4 alternatives (H3 each), conclusion, 3 FAQ H3s",
+      "note": "Skydo's page is about Xflow; the alternatives are an afterthought."
+    },
+    {
+      "metric": "Alternatives named",
+      "a": "Infinity, Skydo, Wise, Payoneer, Stripe (five, each with a full block)",
+      "b": "Skydo, Wise Business, PayPal, Payoneer (two to three sentences each)",
+      "note": "ChatGPT's table: Skydo, Wise Business, Payoneer, Airwallex, Stripe, Infinity, Veem. Six of seven are on Infinity's page."
+    },
+    {
+      "metric": "Tables",
+      "a": "10: a 7-column criteria table, then a two-column 'Brand vs Xflow' table for each of the five brands, plus Payoneer's fee table",
+      "b": "0",
+      "note": "Infinity's brand-vs-Xflow tables give ChatGPT a ready-made row per brand."
+    },
+    {
+      "metric": "Bullets",
+      "a": "156",
+      "b": "9",
+      "note": ""
+    },
+    {
+      "metric": "Paragraphs / average words",
+      "a": "319 / 11",
+      "b": "32 / 32",
+      "note": "Infinity writes one sentence per paragraph."
+    },
+    {
+      "metric": "Worked numbers",
+      "a": "Per brand: $2,000 / $5,000 / $10,000 fee in dollars (Infinity $10 / $25 / $50; Skydo $22.42 / $34.22 / $34.22 with GST; Xflow $12 / $20 / $40); a $30,000-a-month scenario (Infinity $150 vs Xflow Growth $160 vs Starter $180)",
+      "b": "Xflow $4,000 invoice on Starter vs Growth; Skydo $10,000 = $29",
+      "note": "ChatGPT's 'lowest overall fees: Skydo or Infinity (depending on transaction size)' comes from these tables."
+    },
+    {
+      "metric": "Skydo's own facts",
+      "a": "Skydo block: $19 / $29 / 0.3% + GST, zero FX margin, instant FIRA, global accounts in US, UK, Canada, Australia and 10+ more, under-24-hour settlement, cons at $2,000-$5,000, GST on fee",
+      "b": "$19 / $29 / 0.3%, live rates, free FIRA, accounts in US, UK, Canada, Australia",
+      "note": "Infinity states Skydo's cons (GST on fee, small-invoice cost) and gets cited for Skydo; Skydo's own page states no cons and is not cited."
+    },
+    {
+      "metric": "Xflow facts",
+      "a": "Starter $12 to $2,000 then 0.6%; Growth $20 to $5,000 then 0.4%; next-business-day settlement; eFIRA",
+      "b": "Same plans; 'Currently, Xflow only supports USD payments' in the FAQ",
+      "note": "Xflow lists 25+ currencies today. A wrong fact in the FAQ schema is a reason not to cite."
+    },
+    {
+      "metric": "Brand mentions",
+      "a": "Xflow 73, Infinity 25, Payoneer 25, Stripe 24, Skydo 22, Wise 21",
+      "b": "Xflow 33, Skydo 20, Wise 5, PayPal 4, Payoneer 4",
+      "note": ""
+    },
+    {
+      "metric": "CTAs",
+      "a": "11",
+      "b": "8",
+      "note": ""
+    },
+    {
+      "metric": "Dated facts",
+      "a": "Posted Apr 2, 2026; 2026 in title",
+      "b": "20 January 2025; '(2025)' in an internal link",
+      "note": "A 2025 date on a fintech pricing page reads as stale."
+    },
+    {
+      "metric": "Query ambiguity",
+      "a": "Handles it: opens 'If you are searching for an Xflow alternative, chances are you are already comparing platforms'",
+      "b": "Not addressed",
+      "note": "6 of the 12 fanouts on this prompt are workflow-software readings of 'xflow'; ChatGPT's answer opens 'If you mean Xflow for receiving international payments in India'."
+    }
+  ],
+  "skeleton": {
+    "a": [
+      "H1 5 Best Xflow Alternatives for Cross-Border Payments in 2026; author; date",
+      "Intro: why people search, 5 practical questions as bullets, EUR-support hook",
+      "H2 Quick glance: numbered 1-5 with one line each and anchor links; H3 Based on your use case: 5 bullets",
+      "H2 Why businesses look for Xflow alternatives: 4 bullets",
+      "H2 How we evaluated: 6 bullets ($2K/$5K/$10K, FX transparency, settlement, FIRA, predictability)",
+      "H2 Detailed comparison: 7-column criteria table (fee model, FX, settlement, tracking, FIRA, India fit, client pay flow) plus a note on 0% markup vs FX savings",
+      "H2 1. Infinity: H3 Pricing (fees at $2K/$5K/$10K, $30K/month scenario), Pros, Cons, Infinity vs Xflow table, Summary",
+      "H2 2. Skydo: same block, with GST-inclusive fees at four sizes and a Skydo vs Xflow table",
+      "H2 3. Wise, 4. Payoneer (with Payoneer's fee table), 5. Stripe: same block",
+      "H2 Which Xflow alternative should you choose; FAQ"
+    ],
+    "b": [
+      "Contents list; H1 Xflow: Price, Features and Alternatives; author; 20 January 2025; Skydo banner x2",
+      "Two-paragraph intro about Xflow",
+      "H2 Top Xflow features: H3 Virtual bank account, Automated digital FIRA, Payment links, Invoicing tools, Live FX rates, each one paragraph with an example",
+      "H2 Xflow price: Starter / Growth / Scale in prose, one worked $4,000 example; CTA block",
+      "H2 4 Best Xflow Alternatives: H3 Skydo (three paragraphs), Wise Business (paragraph + 3 bullets), PayPal (paragraph + 3 bullets), Payoneer (paragraph + 3 bullets)",
+      "H2 conclusion recommending Skydo; CTA",
+      "FAQ: Does Xflow provide FIRC; What currencies (says USD only); Live forex rate",
+      "Author box, related blogs"
+    ]
+  },
+  "lifted": {
+    "a": [
+      {
+        "chat": "xflow alternatives (Infinity cited 8 times, position 3 of 12; g2 and cbinsights pages also cited)",
+        "answer": "Table: Skydo (freelancers & exporters: flat-fee pricing, automatic FIRA, competitive FX rates), Wise Business (multi-currency accounts, transparent exchange rates), Payoneer (marketplace sellers), Airwallex, Stripe (SaaS), Infinity (Indian service exporters: low FX markup, free FIRA, simple pricing), Veem. 'Lowest overall fees: Skydo or Infinity (depending on transaction size).' 'Best for freelancers: Skydo, Xflow, or Wise Business.'",
+        "page": "H2 Quick glance lines, the H2 2. Skydo Pros bullets, the Skydo vs Xflow table, and the per-size fee comparisons"
+      }
+    ],
+    "b": [
+      {
+        "chat": "xflow alternatives (all unbranded runs)",
+        "answer": "2 citations from 19 fetches in 90 days. Skydo's description in the answers is sourced from Infinity's page.",
+        "page": "A review titled 'Xflow: Price, Features and Alternatives' with no comparison table and a stale USD-only claim"
+      }
+    ]
+  },
+  "diagnosis": [
+    "The page is a review, not a list. Its title, H1 and first 60 percent are about Xflow's features; the alternatives are four short H3s at the end with no numbers per brand except Skydo's.",
+    "No table. Infinity gives ChatGPT six ready-made rows (criteria table) and five brand-vs-Xflow tables; Skydo gives prose.",
+    "Fees at fixed invoice sizes are the most-quoted block. Infinity works $2,000 / $5,000 / $10,000 for every brand and a $30,000-a-month scenario; Skydo works one $4,000 example for Xflow only.",
+    "Skydo's own row in ChatGPT's answer is sourced from Infinity, which states Skydo's cons (GST on fee, flat fee heavy on small invoices). A page that states no cons for itself is not the page that gets cited for itself.",
+    "The page is dated January 2025 and says Xflow only supports USD. Both signal stale.",
+    "The query is ambiguous (workflow software, graph library); Infinity disambiguates in the first sentence, and ChatGPT's answer does the same.",
+    "Retrieval is the first problem (19 fetches vs 235): the title does not say 'alternatives' first, and the page does not contain the brands the fanouts name (Airwallex, Infinity, Veem)."
+  ],
+  "spec": [
+    "Retitle and restructure: 'Best Xflow alternatives in India (2026): fees, FX and FIRA compared'. Move the Xflow review to its own URL or a short 'what Xflow is' section at the top that disambiguates from the workflow-software Xflow.",
+    "Six alternatives as numbered H2s: Skydo, Wise Business, Payoneer, Airwallex, Infinity, Stripe. Each with Pricing at $2,000 / $5,000 / $10,000, Pros, Cons (including Skydo's), a brand-vs-Xflow table with text headers, Summary.",
+    "One criteria table across all brands (fee model, FX, settlement, FIRA, India fit, how the client pays) and a $30,000-a-month worked scenario.",
+    "Correct the Xflow facts: 25+ currencies, Starter / Growth / Scale plans, final PA-CB February 2026, next-business-day settlement.",
+    "Author, published and updated dates in 2026, BlogPosting + Person schema, FAQ with the disambiguation question ('Is this the payments Xflow?').",
+    "Success check: fetches above 100 and citations per fetch above 0.8 (today 19 and 0.11)."
+  ],
+  "slug": "xflow-alternatives",
+  "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
+  "bucket": "Alternatives listicle"
+}
