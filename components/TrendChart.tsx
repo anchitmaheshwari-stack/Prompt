@@ -1,6 +1,6 @@
 type Props = {
   title: string;
-  weeks: string[];
+  dates: string[];
   a: number[];
   b: number[];
   labelA: string;
@@ -8,7 +8,8 @@ type Props = {
 };
 
 /** Server-rendered SVG line chart, two series, no client JS. */
-export default function TrendChart({ title, weeks, a, b, labelA, labelB }: Props) {
+export default function TrendChart({ title, dates, a, b, labelA, labelB }: Props) {
+  const weeks = dates;
   const W = 560;
   const H = 220;
   const padL = 36;
@@ -40,14 +41,19 @@ export default function TrendChart({ title, weeks, a, b, labelA, labelB }: Props
           </g>
         ))}
         {weeks.map((w, i) => (
-          <text key={w} x={x(i)} y={H - padB + 14} fontSize={9} textAnchor="end" fill="#6b7280" transform={`rotate(-40 ${x(i)} ${H - padB + 14})`}>
-            {fmt(w)}
-          </text>
+          i % 7 === 0 || i === n - 1 ? (
+            <g key={w}>
+              <line x1={x(i)} x2={x(i)} y1={padT} y2={H - padB} stroke="#f3f4f6" strokeWidth={1} />
+              <text x={x(i)} y={H - padB + 14} fontSize={9} textAnchor="end" fill="#6b7280" transform={`rotate(-40 ${x(i)} ${H - padB + 14})`}>
+                {fmt(w)}
+              </text>
+            </g>
+          ) : null
         ))}
-        <path d={path(a)} fill="none" stroke={colA} strokeWidth={2} />
-        <path d={path(b)} fill="none" stroke={colB} strokeWidth={2} />
-        {a.map((v, i) => <circle key={`a${i}`} cx={x(i)} cy={y(v)} r={2.5} fill={colA} />)}
-        {b.map((v, i) => <circle key={`b${i}`} cx={x(i)} cy={y(v)} r={2.5} fill={colB} />)}
+        <path d={path(a)} fill="none" stroke={colA} strokeWidth={1.5} />
+        <path d={path(b)} fill="none" stroke={colB} strokeWidth={1.5} />
+        {a.map((v, i) => <circle key={`a${i}`} cx={x(i)} cy={y(v)} r={1.6} fill={colA} />)}
+        {b.map((v, i) => <circle key={`b${i}`} cx={x(i)} cy={y(v)} r={1.6} fill={colB} />)}
       </svg>
       <div className="flex gap-4 text-xs text-gray-700 mt-1">
         <span className="flex items-center gap-1"><span className="inline-block w-3 h-0.5" style={{ background: colA }} />{labelA} (total {total(a)})</span>

@@ -55,10 +55,10 @@ export default async function AnatomyPage({ params }: { params: Promise<{ slug: 
       <p className="border-l-4 border-l-amber-400 bg-amber-50 rounded-r-lg p-4 text-sm mb-8">{a.verdict}</p>
 
       {a.trend && (
-        <Section title="Weekly trend: retrievals and citations">
+        <Section title="Daily trend: retrievals and citations">
           <div className="grid md:grid-cols-2 gap-4">
-            <TrendChart title="Retrievals per week" weeks={a.trend.weeks} a={a.trend.a.retrievals} b={a.trend.b.retrievals} labelA={A.label} labelB={B.label} />
-            <TrendChart title="Citations per week" weeks={a.trend.weeks} a={a.trend.a.citations} b={a.trend.b.citations} labelA={A.label} labelB={B.label} />
+            <TrendChart title="Retrievals per day" dates={a.trend.dates} a={a.trend.a.retrievals} b={a.trend.b.retrievals} labelA={A.label} labelB={B.label} />
+            <TrendChart title="Citations per day" dates={a.trend.dates} a={a.trend.a.citations} b={a.trend.b.citations} labelA={A.label} labelB={B.label} />
           </div>
           {a.trend.note && <p className="text-xs text-gray-500 mt-2">{a.trend.note}</p>}
         </Section>
