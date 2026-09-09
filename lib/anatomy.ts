@@ -16,6 +16,9 @@ export type AnatomyPage = {
 
 export type Lifted = { chat: string; answer: string; page: string };
 
+export type TrendSeries = { retrievals: number[]; citations: number[] };
+export type Trend = { weeks: string[]; a: TrendSeries; b: TrendSeries; note?: string };
+
 export type Playbook = { bucket: string; use_when: string; blueprint: string[]; evidence: string[] };
 
 export type Anatomy = {
@@ -31,6 +34,7 @@ export type Anatomy = {
   diagnosis: string[];
   spec: string[];
   playbook?: Playbook;
+  trend?: Trend;
   /** True when the bucket only exists on branded prompts; kept for reference, excluded from the unbranded playbook. */
   branded_only?: boolean;
 };

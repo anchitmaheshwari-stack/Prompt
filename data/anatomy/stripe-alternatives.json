@@ -163,5 +163,87 @@
   ],
   "slug": "stripe-alternatives",
   "window": "ChatGPT only (openai-0), 2026-06-06 to 2026-09-04, the 105 unbranded prompts (Peec's non-branded tag)",
-  "bucket": "Alternatives listicle"
+  "bucket": "Alternatives listicle",
+  "trend": {
+    "weeks": [
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22",
+      "2026-06-29",
+      "2026-07-06",
+      "2026-07-13",
+      "2026-07-20",
+      "2026-07-27",
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31"
+    ],
+    "a": {
+      "retrievals": [
+        2,
+        1,
+        10,
+        24,
+        18,
+        12,
+        9,
+        12,
+        13,
+        15,
+        22,
+        28,
+        16
+      ],
+      "citations": [
+        0,
+        0,
+        3,
+        11,
+        24,
+        12,
+        11,
+        17,
+        12,
+        3,
+        16,
+        19,
+        15
+      ]
+    },
+    "b": {
+      "retrievals": [
+        0,
+        1,
+        5,
+        16,
+        4,
+        2,
+        1,
+        1,
+        4,
+        8,
+        7,
+        6,
+        2
+      ],
+      "citations": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        5
+      ]
+    },
+    "note": "Weekly totals from Peec, ChatGPT only, unbranded prompts. Weeks with no row in Peec are shown as 0. The 2026-09-01 week is partial (window ends 2026-09-04)."
+  }
 }
