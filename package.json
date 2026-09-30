@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "videos:snapshot": "node --env-file-if-exists=.env.local scripts/video-snapshot.mjs",
+    "videos:setup": "node --env-file-if-exists=.env.local scripts/video-snapshot.mjs --setup"
   },
   "dependencies": {
     "next": "16.2.9",
