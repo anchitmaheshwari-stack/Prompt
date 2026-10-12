@@ -85,3 +85,20 @@
 .viz-num {
   font-variant-numeric: tabular-nums;
 }
+
+/* A metric added to the chart fades in instead of popping. */
+.viz-line {
+  animation: viz-fade 280ms ease-out;
+}
+@keyframes viz-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .viz-root *,
+  .viz-root *::before,
+  .viz-root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
