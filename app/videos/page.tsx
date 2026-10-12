@@ -40,9 +40,6 @@ export default async function VideosIndex() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-      <nav className="text-sm mb-5" style={{ color: 'var(--ink-3)' }}>
-        <Link href="/prompts" className="hover:underline">← All prompts</Link>
-      </nav>
       <header className="flex flex-wrap items-end justify-between gap-4 mb-8">
         <div>
           <h1 className="text-2xl font-semibold">Video tracker</h1>

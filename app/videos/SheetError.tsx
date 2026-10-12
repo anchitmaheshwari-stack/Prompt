@@ -1,13 +1,9 @@
-import Link from 'next/link';
 import { SHEET_ID } from '@/lib/sheetdb.mjs';
 
 /** Shown when the tracker Sheet can't be read (missing token, no access, Sheets API off). */
 export default function SheetError({ error }: { error: unknown }) {
   return (
     <main className="max-w-3xl mx-auto p-8">
-      <div className="mb-6 text-sm">
-        <Link href="/prompts" className="text-gray-500 hover:text-gray-900">← All prompts</Link>
-      </div>
       <h1 className="text-2xl font-semibold mb-2">Video tracker</h1>
       <p className="text-sm text-gray-700 mb-2">Couldn&apos;t read the tracker Sheet:</p>
       <pre className="text-xs bg-gray-50 border border-gray-200 rounded p-3 whitespace-pre-wrap mb-4">{String((error as Error)?.message ?? error)}</pre>

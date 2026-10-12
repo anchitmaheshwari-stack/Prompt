@@ -1,20 +1,5 @@
-/** Top-level sections of the app, shared by the nav bar and the home page. */
+/** Top-level sections of the app, shown in the nav bar. Add a section here to give it a nav link. */
 export const SECTIONS = [
-  {
-    href: '/prompts',
-    label: 'Prompt RCA',
-    description: 'Root-cause analysis for the important AI prompts: visibility, fan-outs, sources and the lever to pull.',
-  },
-  {
-    href: '/anatomy',
-    label: 'Page anatomy',
-    description: 'Side-by-side teardowns of a competitor page that AI cites and the Skydo page competing with it.',
-  },
-  {
-    href: '/anatomy/playbook',
-    label: 'Playbook',
-    description: 'Every content bucket’s blueprint on one page: what winning pages do and what to change.',
-  },
   {
     href: '/videos',
     label: 'Video tracker',

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SECTIONS } from '@/lib/sections';
 
-/** Top bar on every page. The most specific matching section is highlighted (Playbook over Page anatomy). */
+/** Top bar on every page. The most specific matching section is highlighted. */
 export default function SiteNav() {
   const path = usePathname();
   const active = [...SECTIONS]

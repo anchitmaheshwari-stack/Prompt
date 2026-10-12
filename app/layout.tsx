@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Skydo analysis",
-  description: "Prompt RCA, page anatomy, playbook and video tracker",
+  description: "Video tracker for AI-generated YouTube videos on Skydo blogs",
 };
 
 export default function RootLayout({
