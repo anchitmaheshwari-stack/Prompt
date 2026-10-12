@@ -15,6 +15,7 @@
   --series-3: #1baf7a;
   --series-4: #eda100;
   --series-5: #e87ba4;
+  --series-6: #008300;
   --series-1-wash: rgba(42, 120, 214, 0.07);
   --good: #0ca30c;
   --good-text: #006300;
@@ -44,6 +45,7 @@
     --series-3: #199e70;
     --series-4: #c98500;
     --series-5: #d55181;
+    --series-6: #008300;
     --series-1-wash: rgba(57, 135, 229, 0.1);
     --good-text: #0ca30c;
     --bad-text: #e66767;
@@ -67,6 +69,7 @@
   --series-3: #199e70;
   --series-4: #c98500;
   --series-5: #d55181;
+  --series-6: #008300;
   --series-1-wash: rgba(57, 135, 229, 0.1);
   --good-text: #0ca30c;
   --bad-text: #e66767;

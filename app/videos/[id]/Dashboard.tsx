@@ -12,7 +12,7 @@ const shortDate = (d: string) => toDate(d).toLocaleDateString('en-IN', { day: 'n
 const addDays = (d: string, n: number) => new Date(toDate(d).getTime() + n * 864e5).toISOString().slice(0, 10);
 const maxDate = (a: string, b: string) => (a > b ? a : b);
 
-type MetricKey = 'ytViews' | 'plays' | 'clicks' | 'impressions' | 'position';
+type MetricKey = 'ytViews' | 'pageViews' | 'plays' | 'clicks' | 'impressions' | 'position';
 
 type Ctx = { addedOn: string; videoPublished: string; lastAnalyticsDay: string | null; prevTotal: Map<string, number | null> };
 type Row = { day: Day; value: number | null; note?: string };
@@ -46,6 +46,15 @@ const METRICS: Metric[] = [
       const prev = c.prevTotal.get(d.date);
       return d.ytTotal !== null && prev != null ? { value: Math.max(0, d.ytTotal - prev), note: 'estimate' } : { value: null };
     },
+    total: sum,
+  },
+  {
+    key: 'pageViews',
+    label: 'Blog page views',
+    hint: 'All visits to the blog post from any source: Google, direct, social, AI tools, YouTube (Mixpanel, www.skydo.com only). Search clicks are the part that came from Google.',
+    color: 'var(--series-6)',
+    format: int,
+    daily: (d) => ({ value: d.pageViews }),
     total: sum,
   },
   {
@@ -205,7 +214,7 @@ export default function Dashboard({ data }: { data: Data }) {
       </div>
 
       {/* Metric cards: click to add or remove a line */}
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
         {METRICS.map((m) => {
           const on = selected.includes(m.key);
           const total = m.total(perMetric[m.key]);
