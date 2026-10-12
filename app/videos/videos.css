@@ -12,6 +12,9 @@
   --border: rgba(11, 11, 11, 0.1);
   --series-1: #2a78d6;
   --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
   --series-1-wash: rgba(42, 120, 214, 0.07);
   --good: #0ca30c;
   --good-text: #006300;
@@ -38,6 +41,9 @@
     --border: rgba(255, 255, 255, 0.1);
     --series-1: #3987e5;
     --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-5: #d55181;
     --series-1-wash: rgba(57, 135, 229, 0.1);
     --good-text: #0ca30c;
     --bad-text: #e66767;
@@ -58,6 +64,9 @@
   --border: rgba(255, 255, 255, 0.1);
   --series-1: #3987e5;
   --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
   --series-1-wash: rgba(57, 135, 229, 0.1);
   --good-text: #0ca30c;
   --bad-text: #e66767;

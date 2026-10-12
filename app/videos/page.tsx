@@ -1,32 +1,12 @@
 import Link from 'next/link';
 import { SHEET_ID } from '@/lib/sheetdb.mjs';
-import { dateRange, getVideo, latestCounter, listVideos, sum, timeAgo, todayIST } from '@/lib/videos';
+import { getVideo, latestCounter, listVideos, sum, timeAgo } from '@/lib/videos';
 import SheetError from './SheetError';
 
 export const dynamic = 'force-dynamic';
 export const metadata = { title: 'Video tracker' };
 
 const int = (v: number) => Math.round(v).toLocaleString('en-IN');
-
-/** Tiny page-views trend for a card; the full chart lives on the video page. */
-function Sparkline({ values, marker }: { values: (number | null)[]; marker: number }) {
-  const W = 220;
-  const H = 44;
-  const max = Math.max(1, ...values.map((v) => v ?? 0));
-  const x = (i: number) => (values.length > 1 ? (i * W) / (values.length - 1) : W / 2);
-  const y = (v: number) => 4 + (1 - v / max) * (H - 8);
-  const d = values
-    .map((v, i) => (v === null ? null : `${x(i).toFixed(1)},${y(v).toFixed(1)}`))
-    .filter(Boolean)
-    .map((p, i) => `${i ? 'L' : 'M'}${p}`)
-    .join(' ');
-  return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-11" aria-hidden preserveAspectRatio="none">
-      {marker >= 0 && <rect x={x(marker)} y={0} width={W - x(marker)} height={H} fill="var(--series-1-wash)" />}
-      <path d={d} fill="none" stroke="var(--series-1)" strokeWidth={1.75} vectorEffect="non-scaling-stroke" />
-    </svg>
-  );
-}
 
 export default async function VideosIndex() {
   let entries;
@@ -62,8 +42,7 @@ export default async function VideosIndex() {
           {entries.map(({ v, store }) => {
             const c = latestCounter(store);
             const plays = sum(store, v.addedOn, (d) => d.mp?.plays);
-            const views = sum(store, v.addedOn, (d) => d.mp?.pageViews);
-            const dates = dateRange(v.blogPublished, todayIST());
+            const clicks = sum(store, v.addedOn, (d) => d.gsc?.clicks);
             // Only the data sources count here; page checks (schema etc.) are shown on the video page.
             const allOk = ['youtube', 'gsc', 'mixpanel'].every((k) => store.status[k]?.ok);
             return (
@@ -81,7 +60,7 @@ export default async function VideosIndex() {
                     {[
                       ['YouTube views', c ? int(c.views) : '–'],
                       ['Plays on blog', int(plays)],
-                      ['Play rate', views ? `${Math.round((plays / views) * 100)}%` : '–'],
+                      ['Search clicks', int(clicks)],
                     ].map(([k, val]) => (
                       <div key={k}>
                         <dt className="text-xs" style={{ color: 'var(--ink-2)' }}>{k}</dt>
@@ -89,12 +68,8 @@ export default async function VideosIndex() {
                       </div>
                     ))}
                   </dl>
-                  <div className="mt-3">
-                    <div className="text-[11px] mb-0.5" style={{ color: 'var(--ink-3)' }}>Blog page views · shaded since the video went in</div>
-                    <Sparkline values={dates.map((d) => store.daily[d]?.mp?.pageViews ?? null)} marker={dates.indexOf(v.addedOn)} />
-                  </div>
                   <div className="flex justify-between text-xs mt-3" style={{ color: 'var(--ink-3)' }}>
-                    <span>Added to blog {new Date(v.addedOn + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })}</span>
+                    <span>Plays and clicks since added to blog {new Date(v.addedOn + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })}</span>
                     <span>
                       <span aria-hidden style={{ color: allOk ? 'var(--good)' : 'var(--critical)' }}>{allOk ? '●' : '▲'}</span>{' '}
                       {allOk ? 'All sources OK' : 'A source failed'} · updated {timeAgo(store.updatedAt)}

@@ -57,13 +57,6 @@ export default async function VideoPage({ params }: { params: Promise<{ id: stri
       detail: store.status[key]?.error ?? 'not run yet',
     })),
     health: store.health ? { embedFound: store.health.embedFound, videoObjectSchema: store.health.videoObjectSchema } : null,
-    breakdowns: {
-      trafficSources: (store.sources ?? []).map((s) => ({ label: s.source, value: s.views })),
-      locations: (store.locations ?? []).map((l) => ({ label: l.location, value: l.views })),
-      embeds: (store.embeds ?? []).map((e) => ({ label: e.site, value: e.views })),
-      retention: store.retention ?? [],
-      queries: store.queries ?? [],
-    },
     sheetUrl: `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`,
   };
 

@@ -18,8 +18,6 @@ export type Day = {
   position: number | null;
 };
 
-export type Bar = { label: string; value: number };
-
 export type Dashboard = {
   video: {
     videoId: string;
@@ -33,12 +31,5 @@ export type Dashboard = {
   updatedLabel: string;
   sources: { name: string; ok: boolean; detail: string }[];
   health: { embedFound: boolean; videoObjectSchema: boolean } | null;
-  breakdowns: {
-    trafficSources: Bar[];
-    locations: Bar[];
-    embeds: Bar[];
-    retention: { ratio: number; watch: number }[];
-    queries: { query: string; clicks: number; impressions: number; position: number }[];
-  };
   sheetUrl: string;
 };
