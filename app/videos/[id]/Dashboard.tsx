@@ -12,7 +12,7 @@ const shortDate = (d: string) => toDate(d).toLocaleDateString('en-IN', { day: 'n
 const addDays = (d: string, n: number) => new Date(toDate(d).getTime() + n * 864e5).toISOString().slice(0, 10);
 const maxDate = (a: string, b: string) => (a > b ? a : b);
 
-type MetricKey = 'ytViews' | 'pageViews' | 'plays' | 'clicks' | 'impressions' | 'position' | 'aiBlog' | 'aiVideo';
+type MetricKey = 'ytViews' | 'pageViews' | 'plays' | 'clicks' | 'impressions' | 'position' | 'aiBlog' | 'aiVideo' | 'aiBlogCites' | 'aiVideoCites';
 
 type Ctx = { addedOn: string; videoPublished: string; lastAnalyticsDay: string | null; prevTotal: Map<string, number | null> };
 type Row = { day: Day; value: number | null; note?: string };
@@ -100,20 +100,38 @@ const METRICS: Metric[] = [
   },
   {
     key: 'aiBlog',
-    label: 'AI answers using blog',
-    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the blog in as a source.',
+    label: 'AI retrievals: blog',
+    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the blog in as a source. Each answer counts once.',
     color: 'var(--series-7)',
     format: int,
     daily: (d) => ({ value: d.aiBlog }),
     total: sum,
   },
   {
+    key: 'aiBlogCites',
+    label: 'AI citations: blog',
+    hint: 'Inline citations of the blog in those AI answers (Peec). One answer can cite the blog several times, so this can be higher than retrievals.',
+    color: 'var(--series-9)',
+    format: int,
+    daily: (d) => ({ value: d.aiBlogCites }),
+    total: sum,
+  },
+  {
     key: 'aiVideo',
-    label: 'AI answers using video',
-    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the YouTube video in as a source. Counted from the day the video was published.',
+    label: 'AI retrievals: video',
+    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the YouTube video in as a source. Each answer counts once. Counted from the day the video was published.',
     color: 'var(--series-8)',
     format: int,
     daily: (d, c) => ({ value: d.date >= c.videoPublished ? d.aiVideo : null }),
+    total: sum,
+  },
+  {
+    key: 'aiVideoCites',
+    label: 'AI citations: video',
+    hint: 'Inline citations of the YouTube video in those AI answers (Peec). One answer can cite it several times. Counted from the day the video was published.',
+    color: 'var(--series-10)',
+    format: int,
+    daily: (d, c) => ({ value: d.date >= c.videoPublished ? d.aiVideoCites : null }),
     total: sum,
   },
 ];
@@ -232,7 +250,7 @@ export default function Dashboard({ data }: { data: Data }) {
       </div>
 
       {/* Metric cards: click to add or remove a line */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
         {METRICS.map((m) => {
           const on = selected.includes(m.key);
           const total = m.total(perMetric[m.key]);

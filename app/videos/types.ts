@@ -18,6 +18,8 @@ export type Day = {
   position: number | null;
   aiBlog: number | null;
   aiVideo: number | null;
+  aiBlogCites: number | null;
+  aiVideoCites: number | null;
 };
 
 export type Dashboard = {

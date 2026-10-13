@@ -18,6 +18,8 @@
   --series-6: #008300;
   --series-7: #7a5ad8;
   --series-8: #0b8ea6;
+  --series-9: #a0522d;
+  --series-10: #5c6b7a;
   --series-1-wash: rgba(42, 120, 214, 0.07);
   --good: #0ca30c;
   --good-text: #006300;
@@ -50,6 +52,8 @@
     --series-6: #008300;
     --series-7: #9277ec;
     --series-8: #1ba5bf;
+    --series-9: #c87a4e;
+    --series-10: #8d9cab;
     --series-1-wash: rgba(57, 135, 229, 0.1);
     --good-text: #0ca30c;
     --bad-text: #e66767;
@@ -76,6 +80,8 @@
   --series-6: #008300;
   --series-7: #9277ec;
   --series-8: #1ba5bf;
+  --series-9: #c87a4e;
+  --series-10: #8d9cab;
   --series-1-wash: rgba(57, 135, 229, 0.1);
   --good-text: #0ca30c;
   --bad-text: #e66767;

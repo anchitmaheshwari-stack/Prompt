@@ -45,6 +45,8 @@ export default async function VideoPage({ params }: { params: Promise<{ id: stri
       position: r.gsc?.position ?? null,
       aiBlog: r.ai?.blogRetrievals ?? null,
       aiVideo: r.ai?.videoRetrievals ?? null,
+      aiBlogCites: r.ai?.blogCitations ?? null,
+      aiVideoCites: r.ai?.videoCitations ?? null,
     };
   });
 
