@@ -43,10 +43,12 @@ export default async function VideoPage({ params }: { params: Promise<{ id: stri
       clicks: r.gsc?.clicks ?? null,
       ctr: r.gsc?.ctr ?? null,
       position: r.gsc?.position ?? null,
+      aiBlog: r.ai?.blogRetrievals ?? null,
+      aiVideo: r.ai?.videoRetrievals ?? null,
     };
   });
 
-  const names: Record<string, string> = { youtube: 'YouTube', gsc: 'Search Console', mixpanel: 'Mixpanel', page: 'Page check' };
+  const names: Record<string, string> = { youtube: 'YouTube', gsc: 'Search Console', mixpanel: 'Mixpanel', peec: 'Peec AI', page: 'Page check' };
   const data: Data = {
     video,
     days,

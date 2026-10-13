@@ -12,7 +12,7 @@ const shortDate = (d: string) => toDate(d).toLocaleDateString('en-IN', { day: 'n
 const addDays = (d: string, n: number) => new Date(toDate(d).getTime() + n * 864e5).toISOString().slice(0, 10);
 const maxDate = (a: string, b: string) => (a > b ? a : b);
 
-type MetricKey = 'ytViews' | 'pageViews' | 'plays' | 'clicks' | 'impressions' | 'position';
+type MetricKey = 'ytViews' | 'pageViews' | 'plays' | 'clicks' | 'impressions' | 'position' | 'aiBlog' | 'aiVideo';
 
 type Ctx = { addedOn: string; videoPublished: string; lastAnalyticsDay: string | null; prevTotal: Map<string, number | null> };
 type Row = { day: Day; value: number | null; note?: string };
@@ -97,6 +97,24 @@ const METRICS: Metric[] = [
       const imp = w.reduce((s, r) => s + r.day.impressions!, 0);
       return imp ? w.reduce((s, r) => s + r.value! * r.day.impressions!, 0) / imp : null;
     },
+  },
+  {
+    key: 'aiBlog',
+    label: 'AI answers using blog',
+    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the blog in as a source.',
+    color: 'var(--series-7)',
+    format: int,
+    daily: (d) => ({ value: d.aiBlog }),
+    total: sum,
+  },
+  {
+    key: 'aiVideo',
+    label: 'AI answers using video',
+    hint: 'Answers from ChatGPT, Google AI Overview, AI Mode and Gemini to the prompts tracked in Peec that pulled the YouTube video in as a source. Counted from the day the video was published.',
+    color: 'var(--series-8)',
+    format: int,
+    daily: (d, c) => ({ value: d.date >= c.videoPublished ? d.aiVideo : null }),
+    total: sum,
   },
 ];
 
@@ -214,7 +232,7 @@ export default function Dashboard({ data }: { data: Data }) {
       </div>
 
       {/* Metric cards: click to add or remove a line */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3" role="group" aria-label="Metrics on the chart">
         {METRICS.map((m) => {
           const on = selected.includes(m.key);
           const total = m.total(perMetric[m.key]);
@@ -249,7 +267,7 @@ export default function Dashboard({ data }: { data: Data }) {
           {series.length > 1
             ? 'Each line is scaled to its own highest point in these dates, so you can compare shapes. Hover for the real numbers.'
             : 'Click more cards to compare them on the same chart. Hover for daily numbers.'}{' '}
-          Search data and YouTube views arrive 2–3 days late.
+          Search data and YouTube views arrive 2–3 days late. AI answers come from Peec AI&apos;s daily run of the tracked prompts.
         </p>
       </section>
     </main>

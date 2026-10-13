@@ -21,6 +21,8 @@ export type DayRow = {
   };
   gsc?: { clicks: number; impressions: number; ctr: number; position: number };
   mp?: { pageViews: number; pageUsers: number; plays: number; playUsers: number; completions: number };
+  /** AI answers tracked in Peec that pulled the blog / the video in as a source. */
+  ai?: { blogRetrievals: number; blogCitations: number; videoRetrievals: number; videoCitations: number };
 };
 
 export type SourceStatus = { ok: boolean; at: string; error?: string };
@@ -92,6 +94,12 @@ export async function getVideo(id: string): Promise<{ video: TrackedVideo; store
       row.mp = {
         pageViews: num(r.mp_page_views)!, pageUsers: num(r.mp_visitors) ?? 0, plays: num(r.mp_plays) ?? 0,
         playUsers: num(r.mp_play_users) ?? 0, completions: num(r.mp_completions) ?? 0,
+      };
+    }
+    if (num(r.ai_blog_retrievals) !== undefined) {
+      row.ai = {
+        blogRetrievals: num(r.ai_blog_retrievals)!, blogCitations: num(r.ai_blog_citations) ?? 0,
+        videoRetrievals: num(r.ai_video_retrievals) ?? 0, videoCitations: num(r.ai_video_citations) ?? 0,
       };
     }
     store.daily[date] = row;

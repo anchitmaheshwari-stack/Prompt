@@ -16,6 +16,8 @@ export type Day = {
   clicks: number | null;
   ctr: number | null;
   position: number | null;
+  aiBlog: number | null;
+  aiVideo: number | null;
 };
 
 export type Dashboard = {
